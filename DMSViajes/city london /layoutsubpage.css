@@ -1,0 +1,57 @@
+header {
+	width: 100%;
+	height: 40px;
+	background-color: silver;
+	
+}
+
+.fileteopciones {
+	width: 100%;
+	height: 60px;
+	background-color: deepskyblue;
+}
+
+.slide {
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.slide img {
+	width: 100%;
+	height: 500px;
+	position: absolute;
+}
+
+.slide .img2slide, .slide .img3slide {
+	display: none;
+}
+
+
+/*.sectionimgsp {
+	width: 80%;
+	height: 400px;
+	margin: 0 auto;
+	background-color: yellow;
+}
+
+/*.verticalcenter {
+	position: absolute;
+	top: 10%;
+}*/
+
+.opcionesusuario {
+	width: 100%;
+	text-align: center;
+}
+
+.opciones {
+	display: inline-block;
+}
+
+.textoopciones {
+	font-size: 35px;
+	color: white;
+	font-style: bold;
+}
