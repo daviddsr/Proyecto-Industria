@@ -1,14 +1,14 @@
 Home------------------------------------------
 
-<html>
+-html-
 
- <header>
+ -header-
   -Logo corporativo
   -Sign up / Sign in
   -Redes sociales
- </header>
+ -/header-
 
- <body>
+ -body-
   -Background: "nubes.jpg"
   -Secciones en circulitos.
    +Mapa mundi / ¿a dónde vas? / Elige tu destino
@@ -20,15 +20,15 @@ Home------------------------------------------
    +Aventura 
    +Relax
    +Playa
- </body>
+ -/body-
 
- <footer>
+ -footer-
   -Follow us
   -About us
   -Datos de contacto
- </footer>	
+ -footer-	
 
-</html>		
+-/html		
 
 Mapa mundi-------------------------------------
 
