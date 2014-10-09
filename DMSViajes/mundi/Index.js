@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  /* Selection of Continents */
+
+    /* OCEANIA */
+
    	$(".oceania-1").mouseenter(function(){
    		$(".oceania-1").addClass("selectoc");
    		$(".oceania-2").addClass("selectoc");
@@ -91,4 +95,8 @@ $(document).ready(function() {
       $(".europe-4").removeClass("selecteu");
     });
 });
+
+/*function popUp(){
+  window.open("http://www.google.com");
+};*/
 
