@@ -3,15 +3,107 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Index</title>
-	<link rel="stylesheet" type="text/css" href="../varied/reset.css"/>
-	<link rel="stylesheet" type="text/css" href="../varied/common.css"/>
 	<link rel="stylesheet" type="text/css" href="Index.css">
 	<script src="jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="Index.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+
+			var id = '#dialog';
+
+			//Get the screen height and width
+			var maskHeight = $(document).height();
+			var maskWidth = $(window).width();
+
+			//Set heigth and width to mask to fill up the whole screen
+			$('#mask').css({'width':maskWidth,'height':maskHeight});
+
+			//transition effect
+			$('#mask').fadeIn(1000);
+			$('#mask').fadeTo("slow",0.8);
+
+			//Get the window height and width
+			var winH = $(window).height();
+			var winW = $(window).width();
+
+			//Set the popup window to center
+			$(id).css('top',  winH/2-$(id).height()/2);
+			$(id).css('left', winW/2-$(id).width()/2);
+
+			//transition effect
+			$(id).fadeIn(2000);
+
+			//if close button is clicked
+			$('.window .close').click(function (e) {
+			//Cancel the link behavior
+				e.preventDefault();
+
+				$('#mask').hide();
+				$('.window').hide();
+			});
+
+			//if mask is clicked
+			$('#mask').click(function () {
+				$(this).hide();
+				$('.window').hide();
+			});
+
+		});
+
+</script>
+
+<style type="text/css">
+	body {
+	font-family:verdana;
+	font-size:15px;
+	}
+
+	#mask {
+  		position:absolute;
+ 		left:0;
+ 		top:0;
+  		z-index:9000;
+ 		background-color:#000;
+ 		display:none;
+	}
+	#boxes .window {
+  		position:absolute;
+  		left:0;
+  		top:0;
+  		width:440px;
+  		height:200px;
+  		display:none;
+  		z-index:9999;
+  		padding:20px;
+	}
+
+	#boxes #dialog {
+  		width:375px;
+  		height:203px;
+  		padding:10px;
+  		background-color:#ffffff;
+	}
+</style>
+
 </head>
-<body>
+<body onLoad="javascript:showLightBox()">
+	<div id="boxes">
+		<div style="top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window">
+		We need something to help you!
+		<div>
+			Origin:<input/>
+			Destination:<input/>
+		</div>
+		<a href="#" class="close">Accept</a>
+	</div>
+<!-- Mask to cover the whole screen -->
+	<div style="width: 1478px; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
+	</div>
 	<div class="mundi">
-		<img src="./img/mundi/mapa.jpg" class="imgmundi">
+		<img src="./img/mundi/map.jpg" class="imgmundi">
 		<! Oceania !>
 		<a href="../oceania/oceania.html"><div class="oceania-1"></div></a>
 		<a href="../oceania/oceania.html"><div class="oceania-2"></div></a>
