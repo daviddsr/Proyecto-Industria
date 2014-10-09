@@ -3,3 +3,10 @@
 	display: block;
 	margin: 0 auto;
 }
+
+.formOrigin{
+	background-color: pink;
+	width: 60%;
+	margin: 0 auto;	
+	display: block;
+}
