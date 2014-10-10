@@ -13,11 +13,6 @@ body	{
 		/*height: 100%;*/
 		}
 
-#popup	{
-		/*visibility: hidden;*/
-		margin: auto;
-		}
-
 .mundi	{
 		width: 100%;
 		height: 100%;
@@ -35,13 +30,81 @@ body	{
 
 
 
-/* MENU */
+/* POPUP */
 
-.menu 	{
-		width: 350px;
-		height: 600px;
-		border: 5px solid black;
+#mask	{
+  		position:absolute;
+ 		left:0;
+ 		top:0;
+  		z-index:9000;
+  		background-color: #C8C8C8;
+ 		display:none;
 		}
+
+#boxes .window 	{
+  				position:absolute;
+  				left:0;
+  				top:0;
+  				width:440px;
+  				height:200px;
+  				display:none;
+  				z-index:9999;
+  				padding:20px;
+				}
+
+#boxes #popup 	{
+  				width:375px;
+  				height:203px;
+  				padding:10px;
+  				background-color:#ffffff;
+				border-radius: 10px;
+				background-color: #fffaf0;
+				box-shadow: inset 1px 1px 80px #c0c0c0;
+				}
+
+.tellus	{
+		text-align: center;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-family: 'Nunito', sans-serif;
+		}
+
+.inporigin	{
+			display: block;
+			margin: auto;
+			margin-top: 50px;
+			}
+
+.accept		{
+			position: absolute;
+			left: 95px;
+			bottom: 30px;
+			border-radius: 5px;
+			width: 200px;
+			height: 30px;
+			}
+
+/*
+.origin	{
+		margin-left: 50px;
+		padding-top: 0px;
+		height: 50px;
+		}
+*/
+
+./*
+dest 	{
+		margin-left: 50px;
+		}
+*/
+
+/*
+.hwin	{
+		display: inline-block;
+		}
+*/
+
 
 /* OCEANIA */
 
