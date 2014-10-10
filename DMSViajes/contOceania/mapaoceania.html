@@ -5,16 +5,34 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="reset.css" />
 	<link rel="stylesheet" type="text/css" href="mapaoceania.css" />
+	<script defer type="text/javascript" src="mapaoceania.js"></script>
 </head>
 <body>
-<map name="mapeo">
-	<area alt="Perth" shape="circle" coords="263,418,15" href="www.google.es/">
-	<area alt="Melbourne" shape="circle" coords="600,515,15" href="www.google.com">
-	<area alt="Canberra" shape="circle" coords="662,472,15" href="www.google.com">
-	<area alt="Sidney" shape="circle" coords="720,423,15" href="www.google.com">
-</map>
+<div>
+	<map name="mapeo" id="mapa">
+		<area alt="Ver Perth" shape="circle" coords="265,425,15" href="http://www.google.es/">
+		<area alt="Ver Melbourne" shape="circle" coords="600,515,15" href="http://www.google.es/">
+		<area alt="Ver Canberra" shape="circle" coords="662,472,15" href="http://www.google.es/">
+		<area alt="Ver Sidney" shape="circle" coords="720,423,15" href="http://www.google.es/">
+	</map>
 
-<img src="./img/mapaoceania.jpg" usemap="#mapeo">
+	<img src="./img/mapaoceania.jpg" usemap="#mapeo" id="mapaoceania">
+
+	<p class="citynames" id="perth">Perth</p>
+	<p class="citynames" id="melbourne">Melbourne</p>
+	<p class="citynames" id="canberra">Canberra</p>
+	<p class="citynames" id="sidney">Sidney</p>
+
+
+
+	<img src="./img/preciosaltos.jpg" class="alerta-precios-altos">
+
+
+	<button type="button" name="botonfiltroprecios" class="botonfiltroprecios">
+		Precios
+	</button>
+	
+</div>
 	
 </body>
 </html>

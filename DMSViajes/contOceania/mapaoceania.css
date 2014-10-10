@@ -1,0 +1,52 @@
+div {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.citynames {
+	font-size: 25px;
+	font-style: bold;
+	color: white;
+}
+
+#perth {
+	position: absolute;
+	top: 60%;
+	left: 21%;
+}
+
+#melbourne {
+	position: absolute;
+	top: 74%;
+	left: 46%;
+}
+
+#canberra {
+	position: absolute;
+	top: 68%;
+	left: 50%;
+}
+
+#sidney {
+	position: absolute;
+	top: 60%;
+	left: 54%;
+}
+
+#mapaoceania {
+	width: 100%;
+	display: inline-block;
+}
+
+.alerta-precios-altos {
+	display: none;
+}
+
+.botonfiltroprecios {
+	display: inline-block;
+	width: 100px;
+	position:absolute;
+	top: 20%;
+	left: 3%;
+}
