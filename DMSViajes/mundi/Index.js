@@ -1,4 +1,40 @@
 $(document).ready(function() {
+
+  /* POPUP */
+
+  var pop = '#popup';
+
+  //Get the screen height and width
+  var maskHeight = $(document).height();
+  var maskWidth = $(window).width();
+
+  //Set heigth and width to mask to fill up the whole screen
+  $('#mask').css({'width':maskWidth,'height':maskHeight});
+
+  // mask transition effect
+  $('#mask').fadeIn(1000);
+  $('#mask').fadeTo("slow",0.8);
+
+  //Get the window height and width
+  var winH = $(window).height();
+  var winW = $(window).width();
+
+  //Set the popup window to center
+  $(pop).css('top',  winH/2-$(pop).height()/2);
+  $(pop).css('left', winW/2-$(pop).width()/2);
+
+  //window transition effect
+  $(pop).fadeIn(2000);
+
+  //if accept button is clicked
+  $('.window .accept').click(function (e) {
+  //Cancel the link behavior
+    e.preventDefault();
+
+    $('#mask').hide();
+    $('.window').hide();
+  });
+
   /* Selection of Continents */
 
     /* OCEANIA */
@@ -95,8 +131,4 @@ $(document).ready(function() {
       $(".europe-4").removeClass("selecteu");
     });
 });
-
-/*function popUp(){
-  window.open("http://www.google.com");
-};*/
 
