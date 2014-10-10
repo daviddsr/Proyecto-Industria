@@ -1,12 +1,93 @@
+/*
+.formOrigin{
+	background-color: pink;
+	width: 60%;
+	margin: 0 auto;	
+	display: block;
+}
+*/
+
+.container {
+	position: relative;	
+}
+
+.formCase {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+
+.writeDestination {
+	height: 8%;
+	font-size: 2rem;
+	width: 111%;
+}
+
+.info {
+	width: 25%;
+	background-color: lightgreen;
+}
+
 .eurMap{
 	width: 100%;
 	display: block;
 	margin: 0 auto;
 }
 
-.formOrigin{
-	background-color: pink;
-	width: 60%;
-	margin: 0 auto;	
-	display: block;
+.cityClass {
+	position: absolute;
+	color: white;
+	font-size: 1.5rem;
+	text-decoration: underline-none;
+}
+
+.madrid {
+	top:68%;
+	left:35%;
+}
+
+.london {
+	top:41%;
+	left: 38%;
+}
+
+.paris {
+	top:47%;
+	left: 40%;
+}
+
+.rome {
+	top:41%;
+	left: 38%;
+}
+
+.rome {
+	top:63%;
+	left: 49%;
+}
+
+.brussels {
+	top:43%;
+	left: 42%;
+}
+
+.amsterdam {
+	top:39%;
+	left: 42%;
+}
+
+.berna {
+	top:52%;
+	left: 42%;
+}
+
+
+.berlin {
+	top: 39%;
+	left: 49%;
+}
+
+.athens {
+	top:71%;
+	left: 58%;
 }
