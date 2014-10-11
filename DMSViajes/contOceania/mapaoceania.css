@@ -39,8 +39,13 @@ div {
 	display: inline-block;
 }
 
-.alerta-precios-altos {
+.hidden {
 	display: none;
+
+}
+
+.alerta-precios-altos {
+	display: inline-block;
 }
 
 .botonfiltroprecios {
@@ -49,4 +54,13 @@ div {
 	position:absolute;
 	top: 20%;
 	left: 3%;
+}
+
+.containers-sign {
+	width: 30px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	top: 5%;
+	left: 20%;
 }

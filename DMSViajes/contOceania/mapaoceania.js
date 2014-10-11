@@ -34,5 +34,7 @@ var buttonprecios = document.getElementByClass('botonfiltroprecios');
 buttonprecios.onclick = señalesprecios;
 
 function señalesprecios() {
+var señal = document.getElementByClass('alerta-precios-altos');
+señal.remove('hidden');
 
 }
