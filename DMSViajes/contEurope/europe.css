@@ -41,22 +41,28 @@
 .summary{
 	width: 90%;
 	height: 90%;
-	font-size: 2em;
+	font-size: 1.2rem;
 	display: block;
 	margin: 0 auto;
 	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+	text-align: center;
+}
+
+.tripHeader {
+	font-size: 1.6rem;
 }
 
 .eurMap{
-	width: 100%;
+	width: 90%;
 	display: block;
 	margin: 0 auto;
+	padding-top: 3%;
 }
 
 .cityClass {
 	position: absolute;
-	color: white;
-	font-size: 1.5rem;
+	color: rgb(134, 27, 109);
+	font-size: 1.15rem;
 	text-decoration: none;
 }
 
