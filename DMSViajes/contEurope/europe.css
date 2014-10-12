@@ -6,113 +6,167 @@
 	display: block;
 }
 */
-
-.container {
-	position: relative;	
+body {
+	background-image: url(./img/nubes.jpg);
 }
 
-.formCase {
+header {
+	background-color: rgb(53, 196, 215);
+	text-align: center;
+	padding: 0.5rem;
+	width: 30%;
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+	
+}
+
+.divBorder {
+	border: 6px solid rgb(2, 2, 94);
+}
+
+.positionAb{
 	position: absolute;
-	top: 5%;
-	left: 5%;
 }
 
-.writeDestination {
-	height: 8%;
-	font-size: 2rem;
-	width: 111%;
+.positionRl {
+	position: relative;
+}
+
+.papyrusFont {
+	font-family: Papyrus, fantasy;
+}
+
+.futuraFont {
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.textStyle {
+	font-size: 1.2rem;
+	margin-top: 0.8rem;
+}
+
+
+.title {
+	font-size: 3rem;
+	font-family: Papyrus, fantasy;
+	color: rgb(2, 2, 94);
+
+}
+
+.writeHere {
+	height: 1.4rem;
+	font-size: 1.2rem;
+	width: 65%;
 }
 
 .info {
-	width: 20%;
-	background-color: lightgreen;
-	height: 50%;
-	position: absolute;
-	top: 15%;
-	left: 5%;
-	opacity: 0.7;
+	background-color: rgb(252, 252, 129);
 	padding: 2%;
 	border-radius: 25px;
 	box-sizing: border-box;
-	font-style: italic;
-
+	font-size: 1.3rem;
+	font-family: Papyrus, fantasy;
 }
 
-.summary{
-	width: 90%;
-	height: 90%;
-	font-size: 1.2rem;
+.container {
+	width: 40%;
 	display: block;
 	margin: 0 auto;
-	font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-	text-align: center;
+	margin-bottom: 20px;
 }
+
 
 .tripHeader {
 	font-size: 1.6rem;
+	text-align: center;
 }
 
-.eurMap{
-	width: 90%;
-	display: block;
-	margin: 0 auto;
-	padding-top: 3%;
+.layers{
+	display: inline-block;
+	background-color: rgb(252, 252, 129);
+	box-sizing: border-box;
+	padding: 2%;
+	width: 20%;
+	margin: 1%;
+	vertical-align: top;
+	text-align: center;
 }
+
+.mapContainer{
+	display: inline-block;
+	width: 75%;
+}
+
+.mapImage{
+	width:100%;
+}
+
+
 
 .cityClass {
 	position: absolute;
 	color: rgb(134, 27, 109);
 	font-size: 1.15rem;
 	text-decoration: none;
+	font-family: Papyrus, fantasy;
+	
+}
+
+.cityBox {
+	width: 3.8rem;
+	height: 1.5rem;
+	border: 0.15rem solid black;
+	background-color: white;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 0.05rem;
+	opacity: 0.7;
 }
 
 .madrid {
-	top:68%;
-	left:35%;
+	top: 68%;
+	left: 23%;
 }
 
 .london {
-	top:41%;
-	left: 38%;
+	top: 40%;
+	left: 27%;
 }
 
 .paris {
+	top:51%;
+	left: 38%;
+}
+
+.rome {
+	top:65%;
+	left: 47%;
+}
+
+.brussels {
 	top:47%;
 	left: 40%;
 }
 
-.rome {
-	top:41%;
-	left: 38%;
-}
-
-.rome {
-	top:63%;
-	left: 49%;
-}
-
-.brussels {
-	top:43%;
-	left: 42%;
-}
-
 .amsterdam {
-	top:39%;
-	left: 42%;
+	top:43%;
+	left: 41%;
 }
 
 .berna {
-	top:52%;
-	left: 42%;
+	top:55%;
+	left: 44%;
 }
 
 
 .berlin {
-	top: 39%;
-	left: 49%;
+	top: 45%;
+	left: 47%;
 }
 
 .athens {
-	top:71%;
-	left: 58%;
+	top:72%;
+	left: 54%;
 }
