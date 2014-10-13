@@ -6,37 +6,40 @@
 	<link rel="stylesheet" type="text/css" href="../varied/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="../varied/common.css"/>
 	<link rel="stylesheet" type="text/css" href="europe.css">
+	<script defer type="text/javascript" src="europe.css"></script>
 </head>
 <body>
-	<!-- <div class="formOrigin"> 
-		<form action="">
-			<input type="text" name="origin" id="" value="origin">
-		</form> 
-	-->
-	<!--coords="484,466,15"-->
-	<!--<div class="eurMap">
-		<map name="cities" class="citiesMap">
-			<area alt="Madrid" shape="circle" coords="484,466,15" href="https://maps.google.es/">
-		</map>
-		<img position="relative" usemap="#cities" class="eurMap" src="./img/europe5.png"> 
-	</div> -->
-	<div class="container">
-		<img usemap="#cities" class="eurMap" src="./img/europe5.png">
-		<form class="container formCase" action=""><input class="writeDestination" type="text" placeholder="write here your destination"></form>	
-		<section class="container info">
-			<div class="container summary">
-				<h1>Your trip summary</h1>
-				<p>Origin</p>
-				<p>Destination</p>
-				<p>Dates</p>
+	<header class="divBorder">
+		<h1 class="title">DSR TRIPS</h1>
+	</header>
+	
+		<form action="" class="container info divBorder">
+			<h1 class="tripHeader">Your trip summary:</h1>
+			<p>Origin: <input class="writeHere" type="text" placeholder="destination"></p>
+			<p>Destination: <input class="writeHere" type="text" placeholder="destination"></p>
+			<p>Departure date:<input class="writeHere" type="date"</p>
+			<p>Returning date:<input class="writeHere" type="date"</p>
+		</form>	
+		<aside class="layers divBorder">
+			<h1 class="tripHeader papyrusFont">Layers</h1>
+			<p class="textStyle"><input type="checkbox">Capitals</p>
+			<p class="textStyle"><input type="checkbox">Beaches</p>
+			<p class="textStyle"><input type="checkbox">Mountains</p>
+			<p class="textStyle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque accusamus dolore veritatis. A est voluptate ratione velit tempora suscipit obcaecati blanditiis nihil placeat, natus modi, deserunt dolor ipsam molestias veniam.</p>
+		</aside>
+		<div class="mapContainer positionRl">
+			<img class="mapImage" usemap="#cities" src="./img/europe5.png">
+			<div class="madrid positionAb cityBox">
+				<h1>
+					<a class="cityClass" href="../cityMadrid/madrid.html">Madrid</a>
+				</h1>
 			</div>
-		</section>	
-		<h1>
-			<a class="cityClass madrid" href="../cityMadrid/madrid.html">Madrid</a>
-		</h1>
-		<h1>
-			<a class="cityClass london" href="../cityLondon/london.html">London</a>
-		</h1>
+			<div class="london positionAb cityBox">
+				<h1>
+					<a class="cityClass" href="../cityLondon/london.html">London</a>
+				</h1>
+			</div>
+		<!--
 		<h1>
 			<a class="cityClass paris" href="../cityParis/paris.html">Paris</a>
 		</h1>
@@ -58,6 +61,7 @@
 		<h1>
 			<a class="cityClass athens" href="../cityAthens/athens.html">Athens</a>
 		</h1>
+	-->
 	</div>
 </body>
 </html>
