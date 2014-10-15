@@ -1,0 +1,87 @@
+header{
+	width: 75%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+body {
+	background-image: url(./img/nubes.jpg);
+}
+
+.ilblock{
+	display: inline-block;
+}
+
+.block{
+	display: block;
+}
+
+.inline{
+	display: inline;
+}
+
+.hCenter{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.logo{
+	background-color: lightgreen;
+	width: 10%;
+	float: left;
+}
+
+.slogan{
+	background-color: yellow;
+	width: 40%;
+	font-size: 1.5rem;
+}
+
+.account{
+	background-color: lightgreen;
+	width: 12%;
+	height: 3rem;
+	list-style: none;
+	float: right;
+	border-radius: 35%;
+	font-size: 1rem;
+}
+
+.section1{
+	width: 75%;
+	margin: 0 auto;
+	position: relative;
+	height: 15rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+}
+
+.window{
+	width: 15rem;
+	height: 15rem;
+	border-radius: 100%;
+	text-align: center;
+	position: absolute;
+	border: 2px solid white;
+	color: white;
+}
+
+.window1{
+	left: 0rem;
+	background-image: url(./img/mapadelmundo.jpg);
+}
+
+.window2{
+	left: 22rem;
+	background-color: rgb(30, 87, 26);	
+}
+
+.window3{
+	right: 0rem;
+	background-color: rgb(199, 23, 49);
+}
+
+.ipMargin{
+	margin: 10px;
+}
