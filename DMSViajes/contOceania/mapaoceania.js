@@ -1,3 +1,5 @@
+//Resize dinamically map image;
+
 window.onload = function () {
     var ImageMap = function (map) {
             var n,
@@ -30,11 +32,36 @@ window.onload = function () {
 
 
 
-var buttonprecios = document.getElementByClass('botonfiltroprecios');
-buttonprecios.onclick = señalesprecios;
 
-function señalesprecios() {
-var señal = document.getElementByClass('alerta-precios-altos');
-señal.remove('hidden');
+var vuelosoceania = JSON.parse(vuelosoceania)
 
-}
+var buttonprizes = document.getElementByClass('botonfiltroprecios');
+
+buttonprizes.onclick = mostrarseñales;
+
+function mostrarseñales() {
+
+        var precios = vuelosoceania.VuelosOceania.Perth.precio[i];
+        var señalverdeperth = getElementById('greenperth');
+        var señalamarillaperth = getElementById('yellowperth');
+        var señalrojaperth = getElementById('redperth');
+
+        for(var i=0; i < precios.length;i++)
+            if (precios[i] <180) {
+                señalverdeperth.remove('hidden');
+            }
+            if else (precios[i] < 650) {
+                señalamarillaperth.remove('hidden');
+            }
+            else {
+                señalrojaperth.remove('hidden');
+            }
+        };
+
+
+    
+
+
+
+
+

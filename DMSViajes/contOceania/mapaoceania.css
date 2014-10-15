@@ -44,7 +44,7 @@ div {
 
 }
 
-.alerta-precios-altos {
+.inline-block {
 	display: inline-block;
 }
 
@@ -56,11 +56,33 @@ div {
 	left: 3%;
 }
 
-.containers-sign {
+.containers-signprecios {
 	width: 30px;
 	height: 20px;
 	display: inline-block;
+	position: relative;
+}
+
+#signperth {
 	position: absolute;
-	top: 5%;
-	left: 20%;
+	top: 48%;
+	left: 15.7%;
+}
+
+#signmelbourne {
+	position: absolute;
+	top: 62%;
+	left: 40.5%;
+}
+
+#signcanberra {
+	position: absolute;
+	top: 55.5%;
+	left: 44.8%;
+}
+
+#signsidney {
+	position: absolute;
+	top: 48%;
+	left: 49%;
 }
