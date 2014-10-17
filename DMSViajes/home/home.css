@@ -1,0 +1,146 @@
+header{
+	width: 75%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+body {
+	background-image: url(./img/nubes.jpg);
+}
+
+.ilblock{
+	display: inline-block;
+}
+
+.block{
+	display: block;
+}
+
+.inline{
+	display: inline;
+}
+
+.hCenter{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.divHidden1 {
+	visibility: hidden;
+	width: 15%;
+	height: 1%;
+	background-color: black;
+}
+
+.divHidden2 {
+	visibility: hidden;
+	width: 13%;
+	height: 1%;
+	background-color: black;
+}
+
+.logo{
+	background-color: darkblue;
+	width: 10%;
+	height: 2rem;
+	font-size: 1.3rem;
+	border: 2px solid white;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	vertical-align: top;
+	color: white;
+
+}
+
+.slogan{
+	background-color: darkblue;
+	width: 40%;
+	font-size: 1.75rem;
+	border: 2px solid white;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	vertical-align: top;
+	color: white;
+}
+
+.account{
+	background-color: darkblue;
+	width: 12%;
+	list-style: none;
+	border-radius: 1rem;
+	border: 2px solid white;
+	font-size: 1rem;
+	padding: 0.5rem;
+	vertical-align: top;
+}
+
+.aStyle{
+	color: white;
+}
+
+.section1{
+	width: 75%;
+	margin: 0 auto;
+	height: 15rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	text-align: center;
+
+}
+
+.window{
+	width: 15rem;
+	height: 15rem;
+	border-radius: 100%;
+	text-align: center;
+	border: 2px solid white;
+	color: white;
+	vertical-align: top;
+	position: relative;
+	transition:all 1s ease-out;
+}
+
+.window:hover{
+	color: green;
+	box-shadow: 10px 10px 5px 2px green;
+}
+
+.window1{
+	background-image: url(./img/worldGlobe2.jpg);
+	background-size: 100%;
+	font-size: 1.8rem;
+}
+
+.window2{
+	background-color: rgb(30, 87, 26);	
+}
+
+.window3{
+	background-color: rgb(199, 23, 49);
+	font-size: 1.8rem;
+}
+
+.divHidden {
+	visibility: hidden;
+	width: 5%;
+	height: 1%;
+	background-color: black;
+}
+
+.ipMargin{
+	margin: 10px;
+}
+
+footer{
+	width: 75%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.footerList{
+	list-style: none;
+}
+
+.white{
+	color: white;
+}
