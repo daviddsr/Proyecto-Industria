@@ -1,20 +1,22 @@
 header{
-	width: 100%;
+	width: 90%;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 
 body {
-	width: 100%;
-	height: 1300px;
-	background-image: url(../home/img/nubes.jpg);
-	background-size: 100% 100%
-
+	width: 90%;
+	background-image: url(../images/nubes.jpg);
+	background-size: 100% 150%;
 }
 
-.bd {
-	width: 75%;
-	margin-left: 50px;
+.maps {
+	margin: 0 auto;
+	width: 90%;
+}
+
+.mainForm {
+	width: 40%;
 }
 
 .sectionform {
@@ -73,53 +75,40 @@ body {
 	text-align: center;
 }
 
-.divHidden1 {
-	visibility: hidden;
-	width: 15%;
-	height: 1%;
-	background-color: black;
-}
-
-.divHidden2 {
-	visibility: hidden;
-	width: 13%;
-	height: 1%;
-	background-color: black;
+.titleBox{
+	background-color: darkblue;
+	border: 2px solid white;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	color: white;
 }
 
 .logo{
-	background-color: darkblue;
 	width: 10%;
 	height: 2rem;
 	font-size: 1.3rem;
-	border: 2px solid white;
-	border-radius: 1rem;
 	padding: 0.5rem;
 	vertical-align: top;
-	color: white;
-
 }
 
 .slogan{
-	background-color: darkblue;
 	width: 40%;
-	font-size: 1.75rem;
-	border: 2px solid white;
-	border-radius: 1rem;
-	padding: 0.5rem;
-	vertical-align: top;
-	color: white;
+	font-size: 1.75rem;	
+	vertical-align: top;	
+	margin-right: 7.5%;
+	margin-left: 7.5%;
 }
 
 .account{
-	background-color: darkblue;
 	width: 12%;
 	list-style: none;
-	border-radius: 1rem;
-	border: 2px solid white;
 	font-size: 1rem;
 	padding: 0.5rem;
 	vertical-align: top;
+}
+
+.mainForm{
+	margin: 0 auto;
 }
 
 .aStyle{
@@ -154,7 +143,7 @@ body {
 }
 
 .window1{
-	background-image: url(./img/worldGlobe2.jpg);
+	background-image: url(../images/worldGlobe2.jpg);
 	background-size: 100%;
 	font-size: 1.8rem;
 }
@@ -191,4 +180,8 @@ footer{
 
 .white{
 	color: white;
+}
+
+.inputB{
+	display: none;
 }

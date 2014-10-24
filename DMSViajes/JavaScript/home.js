@@ -1,4 +1,4 @@
-var goButton = document.getElementById('goButton');
+/*var goButton = document.getElementById('goButton');
 goButton.onclick = function(){
     var myInput = document.getElementById('origin').value;
     var myInput2 = document.getElementById('dateOr').value;
@@ -12,4 +12,14 @@ goButton.onclick = function(){
     window.localStorage.setItem("dateOr", myInput2);
     window.localStorage.setItem("Destination", myInput3);
     window.localStorage.setItem("dateDest", myInput4);
+}*/
+
+var moreDest = document.getElementById("destB");
+destB.onclick = function moreDest (argument) {
+    var inputDestB = document.getElementById("inputDestB");
+    var inputDateB = document.getElementById("inputDateB");
+    inputDestB.classList.remove("inputB");
+    inputDateB.classList.remove("inputB");
 }
+
+
