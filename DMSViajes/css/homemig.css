@@ -4,7 +4,12 @@ body {
 	background-size: 100% 100%;
 }
 
-.hCenter{
+.background {
+	background-color: rgb(34, 139, 103);
+	background-size: 100%;
+}
+
+.header{
 	margin: 0 auto;
 	text-align: center;
 	width: 90%;
@@ -13,7 +18,8 @@ body {
 }
 
 .maps {
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .sectionform {
@@ -69,11 +75,9 @@ body {
 
 .mainForm {
 	width: 40%;
-	margin-top: 2rem;
+	margin: 0 auto;
 	margin-bottom: 2rem;
 }
-
-
 
 .titleBox{
 	background-color: darkblue;
@@ -107,16 +111,12 @@ body {
 	vertical-align: top;
 }
 
-.mainForm{
-	margin: 0 auto;
-}
-
 .aStyle{
 	color: white;
 }
 
 .section1{
-	width: 75%;
+	width: 90%;
 	margin: 0 auto;
 	height: 15rem;
 	padding-top: 5rem;
@@ -140,6 +140,8 @@ body {
 .window:hover{
 	color: green;
 	box-shadow: 10px 10px 5px 2px green;
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
 }
 
 .window1{
@@ -169,7 +171,7 @@ body {
 }
 
 footer{
-	width: 75%;
+	width: 90%;
 	text-align: center;
 	margin: 0 auto;
 }
