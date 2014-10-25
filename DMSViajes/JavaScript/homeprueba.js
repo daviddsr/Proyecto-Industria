@@ -86,10 +86,39 @@ goButton.onclick = function(){
    // var VuelosSpain = JSON.parse(vuelosspain)
 
 
-    var lowcost = document.getElementById('checkbox_lowcost');
+   /* var lowcost = document.getElementById('checkbox_lowcost');
 
     var espana = document.getElementsByClassName('spain');
     var espanagreen = document.getElementsByClassName('spaingreen');
+
+document.getElementById('checkbox_lowcost').addEventListener("checked", function filtrar() {
+    console.log('a')
+            for(i in vuelosspain["VuelosSpain"]) { 
+                console.log('b');
+                
+                for(x in vuelosspain["VuelosSpain"][i]["dates"]) {
+                    var precio = vuelosspain["VuelosSpain"][i]["dates"][x]["precio"];
+                    console.log('c')
+                    if (precio.value < 180) {
+                        console.log('d');
+                        espana[0].className('spain display');
+                        espanagreen[0].className('spaingreen')
+
+                    } 
+                }
+        }
+    }); */
+
+var lowcost = document.getElementById('checkbox_lowcost');
+
+    var espana = document.getElementsByClassName('spain');
+    var espanagreen = document.getElementsByClassName('spaingreen');
+
+document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('checkbox_lowcost').addEventListener('CheckboxStateChange', filtrar)
+});
+
+
 
 function filtrar() {
     console.log('a')
@@ -107,9 +136,10 @@ function filtrar() {
                     } 
                 }
         }
-    }
+    };
 
-if (lowcost.checked == true) {
-    console.log('e')
-  filtrar();
-};  
+
+
+
+
+ 
