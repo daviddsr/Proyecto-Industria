@@ -292,11 +292,7 @@ body {
 	box-shadow: 10px 10px 5px 2px green;
 }
 
-.window1{
-	background-image: url(./img/worldGlobe2.jpg);
-	background-size: 100%;
-	font-size: 1.8rem;
-}
+
 
 .window2{
 	background-color: rgb(30, 87, 26);	
