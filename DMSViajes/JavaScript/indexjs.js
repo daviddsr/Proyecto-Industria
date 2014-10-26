@@ -33,7 +33,7 @@ goButton.onclick = function(){
                                     {"fecha": "18/10/2014","precio": 35 },
                                     {"fecha": "20/10/2014","precio": 25 }
                                 ]
-                            },  
+                            }  
                             
                         ]
                     }
@@ -86,19 +86,22 @@ goButton.onclick = function(){
    // var VuelosSpain = JSON.parse(vuelosspain)
 
 
-   /* var lowcost = document.getElementById('checkbox_lowcost');
+   var lowcost = document.getElementById('checkbox_lowcost');
 
     var espana = document.getElementsByClassName('spain');
     var espanagreen = document.getElementsByClassName('spaingreen');
 
-document.getElementById('checkbox_lowcost').addEventListener("checked", function filtrar() {
+document.getElementById('checkbox_lowcost').addEventListener("change", filtrar);
+
+
+    function filtrar() {
     console.log('a')
             for(i in vuelosspain["VuelosSpain"]) { 
                 console.log('b');
                 
                 for(x in vuelosspain["VuelosSpain"][i]["dates"]) {
                     var precio = vuelosspain["VuelosSpain"][i]["dates"][x]["precio"];
-                    console.log('c')
+                    console.log('precio')
                     if (precio.value < 180) {
                         console.log('d');
                         espana[0].className('spain display');
@@ -107,36 +110,7 @@ document.getElementById('checkbox_lowcost').addEventListener("checked", function
                     } 
                 }
         }
-    }); */
-
-var lowcost = document.getElementById('checkbox_lowcost');
-
-    var espana = document.getElementsByClassName('spain');
-    var espanagreen = document.getElementsByClassName('spaingreen');
-
-document.addEventListener('DOMContentLoaded', function () {
-      document.getElementById('checkbox_lowcost').addEventListener('CheckboxStateChange', filtrar)
-});
-
-
-
-function filtrar() {
-    console.log('a')
-            for(i in vuelosspain["VuelosSpain"]) { 
-                console.log('b');
-                
-                for(x in vuelosspain["VuelosSpain"][i]["dates"]) {
-                    var precio = vuelosspain["VuelosSpain"][i]["dates"][x]["precio"];
-                    console.log('c')
-                    if (precio.value < 180) {
-                        console.log('d');
-                        espana[0].className('spain display');
-                        espanagreen[0].className('spaingreen')
-
-                    } 
-                }
-        }
-    };
+    }; 
 
 
 

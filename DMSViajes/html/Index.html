@@ -1,37 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Index</title>
-	<link rel="stylesheet" type="text/css" href="Index.css">
-	<script src="jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="Index.js"></script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<title>DSM TRIPS - home</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/indexcss.css" />
+	<link rel="stylesheet" type="text/css" href="../css/cssmenufiltros.css" />
+	<script defer type="text/javascript" src="../JavaScript/indexjs.js"></script>
 
 </head>
 <body>
-	<div id="boxes">
-		<div style="top: 199.5px; left: 551.5px; display: none;" id="popup" class="window">
-			<h3 class="tellus">Tell us the origin of your trip</h3>
-			<input type="text" placeholder="Type the City" autofocus="autofocus" autocomplete="on" class="inporigin"/>
-			<input type="submit" value="Continue with your trip!" class="accept"/>
-		</div>
-	</div>
-<!-- Mask to cover the whole screen -->
-	<div style="width: 1478px; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
-	</div>
-	<div class="mundi">
-		<img src="./img/mundi/map.jpg" class="imgmundi">
-		<! Oceania !>
-		<a href="../oceania/oceania.html"><div class="oceania-1"></div></a>
-		<a href="../oceania/oceania.html"><div class="oceania-2"></div></a>
-		<a href="../oceania/oceania.html"><div class="oceania-3"></div></a>
-		<! Europe !>
-		<a href="../europe/europe.html"><div class="europe-1"></div></a>
-		<a href="../europe/europe.html"><div class="europe-2"></div></a>
-		<a href="../europe/europe.html"><div class="europe-3"></div></a>
-		<a href="../europe/europe.html"><div class="europe-4"></div></a>
-	</div>
+	<header>
+		<img src="../images/logo2dms300.png">
+	</header>
+			
+		<ul id="menu">
+   				<li>
+    				<p>Cost</p>
+    					<ul>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_lowcost" value="value"><p class="textfilters">Low Cost</p></li>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_mediumcost" value="value"><p class="textfilters">Medium Cost</p></li>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_highcost" value="value"><p class="textfilters">High Cost</p></li>
+    					</ul>
+        
+    			</li>
+    			<li>
+    				<p>Theme</p>
+    					<ul>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Adventure</p></li>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Sun & Beach</p></li>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Snow</p></li>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Relax</p></li>
+    					</ul>
+        
+    			</li>
+    	</ul>
+	
+
+	<section class="bd ilblock">
+		
+		
+
+		<img src="../images/mapas/mapamundidefinitivo.svg.png" id="mapamundo">
+		<img src="../images/mapas/spain36default.png" class="spain">
+		<img src="../images/mapas/spain36green.png" class="spaingreen display">
+		<img src="../images/mapas/portugal18default.png" class="portugal display">
+		<img src="../images/mapas/portugal18green.png" class="portugal">
+		<img src="../images/mapas/francia31default.png" class="francia display">
+		<img src="../images/mapas/francia31green.png" class="francia">
+		<img src="../images/mapas/unitedkingdom34default.png" class="unitedkingdom">
+		<img src="../images/mapas/italia36default.png" class="italia">
+		<img src="../images/mapas/suiza12default.png" class="suiza">
+		<img src="../images/mapas/alemania25default.png" class="alemania">
+		<img src="../images/mapas/luxemburgo4default.png" class="luxemburgo">
+		<img src="../images/mapas/belgica10default.png" class="belgica">
+		<img src="../images/mapas/holanda10default.png" class="holanda">
+		<img src="../images/mapas/austria17default.png" class="austria">
+		<img src="../images/mapas/eslovenia10default.png" class="eslovenia">
+		<img src="../images/mapas/croacia12default.png" class="croacia">
+		<img src="../images/mapas/bosnia9default.png" class="bosnia">
+		<img src="../images/mapas/montenegro6default.png" class="montenegro">
+		<img src="../images/mapas/serbia12default.png" class="serbia">
+	</section>	
+	
+	<section class="sectionform ilblock">
+		<form action="" class="verticalAlign">
+			<input id="origin" class="ipMargin" type="text" placeholder="Origin">
+			<input id="dateOr" type="date" class="ipMargin">
+			<input id="destination" class="ipMargin" type="text" placeholder="Destination">
+			<input  id="dateDest" type="date" class="ipMargin">
+			<input id="goButton" type="Button" value="Go">
+		</form>
+	</section>
+	
+<!--Hasta aquí/-->
+
+<section class="section1">
+	<div class="window window1 ilblock"><h2 class="verticalAlign2">map</h2></div>
+	
+	<div class="window window3 ilblock"><h2 class="verticalAlign2">I'm feeling lucky</h2></div>
+	
+</section>	
 </body>
+<footer>
+	<ol class="footerList">
+		<li><a class="white" href="">About us</a></li>
+		<li><a class="white" href="">Facebook</a></li>
+		<li><a class="white" href="">Twitter</a></li>
+		<li><a class="white" href="">Email us</a></li>
+	</ol>
+</footer>
 </html>
