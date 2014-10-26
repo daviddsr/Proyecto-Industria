@@ -1,20 +1,28 @@
-//function to add form content to the localStorage:
+//function to add form content to localStorage:
 
-/*var goButton = document.getElementById('goButton');
-goButton.onclick = function(){
+var go = document.getElementById('goButton');
+function locStorage (){
     var myInput = document.getElementById('origin').value;
     var myInput2 = document.getElementById('dateOr').value;
     var myInput3 = document.getElementById('destination').value;
     var myInput4 = document.getElementById('dateDest').value;
-    window.localStorage.removeItem("Origin");
+    var myInput5 = document.getElementById('inputDestB').value;
+    var myInput6 = document.getElementById('inputDateB').value
+    /*window.localStorage.removeItem("Origin");
     window.localStorage.removeItem("dateOr");
     window.localStorage.removeItem("Destination");
-    window.localStorage.removeItem("dateDest")
+    window.localStorage.removeItem("dateDest");
+    window.localStorage.removeItem("destination2");
+    window.localStorage.removeItem("dateDest2");*/
     window.localStorage.setItem("Origin", myInput);
     window.localStorage.setItem("dateOr", myInput2);
     window.localStorage.setItem("Destination", myInput3);
     window.localStorage.setItem("dateDest", myInput4);
-}*/
+    window.localStorage.setItem("destination2", myInput5);
+    window.localStorage.setItem("dateDest2", myInput6);
+};
+
+go.onclick = locStorage;
 
 //functions to add a destination in the form
 
@@ -28,7 +36,7 @@ function moreDest () {
 };
 
 function moreDest2 () {
-    var inputDestB = document.getElementById('inputDateB');
+    var inputDateB = document.getElementById('inputDateB');
 
      if (inputDateB.className == 'inputB')
         {inputDateB.classList.remove('inputB')
@@ -36,9 +44,20 @@ function moreDest2 () {
      else {inputDateB.classList.add('inputB')};
 };
 
-destB = document.getElementById('destB')
-destB.onclick = moreDest
+function buttonLabel(){
+    if (inputDateB.className != 'inputB')
+        {destB.childNodes[0].nodeValue = "Remove destination"}
+    else{destB.childNodes[0].nodeValue = "Add destination"}
+};
 
+destB = document.getElementById('destB')
+destB.onclick = moreMoreDest
+
+function moreMoreDest(){
+    moreDest ();
+    moreDest2();
+    buttonLabel();
+}
 
 //Trying to unify the previous function:
 
