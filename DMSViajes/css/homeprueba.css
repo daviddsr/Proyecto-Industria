@@ -1,7 +1,7 @@
 header{
 	width: 100%;
 	/*padding-top: 2rem;*/
-	padding-bottom: 3rem;
+	padding-bottom: 1rem;
 }
 
 body {
@@ -24,16 +24,20 @@ body {
 	vertical-align: top;
 }
 
-#labellowcost {
-	display: inline-block;
-	vertical-align: top;
-}
-
 #mapamundo {
 	display: block;
 }
 
+
+
 .spain {
+	display: block;
+	position: absolute;
+	top: 24.4%;
+	left: 41.9%;
+}
+
+.spaingreen {
 	display: block;
 	position: absolute;
 	top: 24.4%;

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>DSM TRIPS - home</title>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="../css/homeprueba.css" />
+	<link rel="stylesheet" type="text/css" href="../css/cssmenufiltros.css" />
 	<script defer type="text/javascript" src="../JavaScript/homeprueba.js"></script>
 
 </head>
@@ -12,20 +13,29 @@
 	<header>
 		<img src="../images/logo2dms300.png">
 	</header>
-
-	<ul id="nav">
-    <li>
-    	Cost
-    	<ul>
-    		<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value">Low Cost</li>
-    		<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value">Medium Cost</li>
-    		<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value">High Cost</li>
-    	</ul>
+			
+		<ul id="menu">
+   				<li>
+    				<p>Cost</p>
+    					<ul>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_lowcost" value="value"><p class="textfilters">Low Cost</p></li>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_mediumcost" value="value"><p class="textfilters">Medium Cost</p></li>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_highcost" value="value"><p class="textfilters">High Cost</p></li>
+    					</ul>
         
-    </li>
-
-	<!--<input type="checkbox" name="checkbox" id="checkbox_id" value="value">
-	<label for="checkbox_id" id="labellowcost">Vuelos Low Cost</label>-->
+    			</li>
+    			<li>
+    				<p>Theme</p>
+    					<ul>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Adventure</p></li>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Sun & Beach</p></li>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Snow</p></li>
+    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Relax</p></li>
+    					</ul>
+        
+    			</li>
+    	</ul>
+	
 
 	<section class="bd ilblock">
 		
@@ -33,8 +43,11 @@
 
 		<img src="../images/mapas/mapamundidefinitivo.svg.png" id="mapamundo">
 		<img src="../images/mapas/spain36default.png" class="spain">
-		<img src="../images/mapas/portugal18default.png" class="portugal">
-		<img src="../images/mapas/francia31default.png" class="francia">
+		<img src="../images/mapas/spain36green.png" class="spaingreen display">
+		<img src="../images/mapas/portugal18default.png" class="portugal display">
+		<img src="../images/mapas/portugal18green.png" class="portugal">
+		<img src="../images/mapas/francia31default.png" class="francia display">
+		<img src="../images/mapas/francia31green.png" class="francia">
 		<img src="../images/mapas/unitedkingdom34default.png" class="unitedkingdom">
 		<img src="../images/mapas/italia36default.png" class="italia">
 		<img src="../images/mapas/suiza12default.png" class="suiza">
@@ -68,7 +81,7 @@
 	<div class="window window3 ilblock"><h2 class="verticalAlign2">I'm feeling lucky</h2></div>
 	
 </section>	
-</bodsdfasdfy>
+</body>
 <footer>
 	<ol class="footerList">
 		<li><a class="white" href="">About us</a></li>

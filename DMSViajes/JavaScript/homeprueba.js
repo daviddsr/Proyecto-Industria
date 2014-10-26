@@ -13,20 +13,21 @@ goButton.onclick = function(){
     window.localStorage.setItem("Destination", myInput3);
     window.localStorage.setItem("dateDest", myInput4);
 
-
-
-
+}
     var vuelosspain= {"VuelosSpain":
                         [
 
-                            {"Madrid":
+                            {"city":"Madrid",
+                            "dates":
+
                                 [
                                     {"fecha": "15/10/2014","precio": 50 },
                                     {"fecha": "16/10/2014","precio": 40 },
                                     {"fecha": "19/10/2014","precio": 45 }
                                 ]
                             },
-                            {"Barcelona":
+                            {"city":"Barcelona",
+                            "dates":
                                 [
                                     {"fecha": "15/10/2014","precio": 55 },
                                     {"fecha": "18/10/2014","precio": 35 },
@@ -37,4 +38,108 @@ goButton.onclick = function(){
                         ]
                     }
 
-    var VuelosSpain = JSON.parse(vuelosspain)
+    var vuelosportugal= {"VuelosPortugal":
+                        [
+
+                            {"city":"Lisboa",
+                            "dates":
+                                [
+                                    {"fecha": "15/10/2014","precio": 55 },
+                                    {"fecha": "16/10/2014","precio": 80 },
+                                    {"fecha": "19/10/2014","precio": 65 }
+                                ]
+                            },
+                            {"Oporto":
+                                [
+                                    {"fecha": "15/10/2014","precio": 65 },
+                                    {"fecha": "18/10/2014","precio": 45 },
+                                    {"fecha": "20/10/2014","precio": 55 }
+                                ]
+                            },  
+                            
+                        ]
+                    }
+
+    var vuelosfrance= {"VuelosFrancia":
+                        [
+
+                            {"city":"Paris",
+                            "dates":
+                                [
+                                    {"fecha": "15/10/2014","precio": 185 },
+                                    {"fecha": "16/10/2014","precio": 200 },
+                                    {"fecha": "19/10/2014","precio": 225 }
+                                ]
+                            },
+                            {"city":"Marsella",
+                            "dates":
+                                [
+                                    {"fecha": "15/10/2014","precio": 195 },
+                                    {"fecha": "18/10/2014","precio": 230 },
+                                    {"fecha": "20/10/2014","precio": 220 }
+                                ]
+                            },  
+                            
+                        ]
+                    }
+
+   // var VuelosSpain = JSON.parse(vuelosspain)
+
+
+   /* var lowcost = document.getElementById('checkbox_lowcost');
+
+    var espana = document.getElementsByClassName('spain');
+    var espanagreen = document.getElementsByClassName('spaingreen');
+
+document.getElementById('checkbox_lowcost').addEventListener("checked", function filtrar() {
+    console.log('a')
+            for(i in vuelosspain["VuelosSpain"]) { 
+                console.log('b');
+                
+                for(x in vuelosspain["VuelosSpain"][i]["dates"]) {
+                    var precio = vuelosspain["VuelosSpain"][i]["dates"][x]["precio"];
+                    console.log('c')
+                    if (precio.value < 180) {
+                        console.log('d');
+                        espana[0].className('spain display');
+                        espanagreen[0].className('spaingreen')
+
+                    } 
+                }
+        }
+    }); */
+
+var lowcost = document.getElementById('checkbox_lowcost');
+
+    var espana = document.getElementsByClassName('spain');
+    var espanagreen = document.getElementsByClassName('spaingreen');
+
+document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('checkbox_lowcost').addEventListener('CheckboxStateChange', filtrar)
+});
+
+
+
+function filtrar() {
+    console.log('a')
+            for(i in vuelosspain["VuelosSpain"]) { 
+                console.log('b');
+                
+                for(x in vuelosspain["VuelosSpain"][i]["dates"]) {
+                    var precio = vuelosspain["VuelosSpain"][i]["dates"][x]["precio"];
+                    console.log('c')
+                    if (precio.value < 180) {
+                        console.log('d');
+                        espana[0].className('spain display');
+                        espanagreen[0].className('spaingreen')
+
+                    } 
+                }
+        }
+    };
+
+
+
+
+
+ 

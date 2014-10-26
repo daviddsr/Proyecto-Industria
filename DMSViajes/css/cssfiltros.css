@@ -1,43 +1,63 @@
-#nav{
+/*#nav{
     list-style:none;
     font-weight:bold;
     margin-top: 2rem;
-    float:left; /* Clear floats */
+    float:left; /* Clear floats 
     width:100%;
 }
 
-#nav li{
-    float:left;
-    position:relative;
-    }
-
-/*#nav input{
-    display:block;
-    padding:5px;
-    color:#fff;
-    background:#333;
-    text-decoration:none;
+#nav {
+    background-color: #222;
 }*/
 
-#nav a:hover{
-    color:#fff;
-    background:#6b0c36;
-    text-decoration:underline;
+#nav {
+    width: 960px;
+    margin-left: 20px;
+    text-align: left;
 }
 
-#nav ul{
-    background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
-    background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
-    list-style:none;
-    position:absolute;
-    left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+.menuitems {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 100px
 }
 
-#nav ul li{
-    padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
-    float:none;
+p {
+    font-size: 20px;
+    color: orange;
 }
 
-#nav ul a{
+#nav ul input{
     white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+
+.menuitems:hover ul{ 
+    display: inline-block;
+}
+
+.costfilters {
+    display: none;
+    position: absolute;
+    border-top: 0;
+    background-color: grey;
+    margin-top: 10px;
+}
+
+.themefilters {
+    display: none;
+    position: absolute;
+    border-top: 0;
+    margin-top: 10px;
+}
+
+#nav ul ul input {
+    display: block;
+}
+
+/*#nav ul ul input, visited {
+    color: #ccc;
+}
+
+#nav ul ul input:hover {
+    color: #099;
 }
