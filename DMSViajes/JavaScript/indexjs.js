@@ -1,4 +1,4 @@
-var goButton = document.getElementById('goButton');
+/*var goButton = document.getElementById('goButton');
 goButton.onclick = function(){
     var myInput = document.getElementById('origin').value;
     var myInput2 = document.getElementById('dateOr').value;
@@ -13,7 +13,7 @@ goButton.onclick = function(){
     window.localStorage.setItem("Destination", myInput3);
     window.localStorage.setItem("dateDest", myInput4);
 
-};
+};*/
     
 
     var vuelosmadrid= {"VuelosMadrid":
@@ -30,19 +30,19 @@ goButton.onclick = function(){
                                         ]
                                     }  
                                 ]
-                            }
+                            },
 
                             {"Francia":
                                 [
                                     {"city":"Paris",
                                      "dates":
                                         [
-                                            {"fecha": "05/11/2014", "precio": 95},
-                                            {"fecha": "05/11/2014","precio": 125}
+                                            {"fecha": "05/11/2014", "precio": 180},
+                                            {"fecha": "05/11/2014","precio": 185}
                                         ]
                                     }
                                 ]
-                            }
+                            },
 
                             {"Portugal":
                                 [
@@ -88,9 +88,43 @@ document.getElementById('checkbox_lowcost').addEventListener("change", filtrar);
 
                     } 
                 }
+            }
         }
     }; 
 
+
+    var francia = document.getElementsByClassName('francia');
+    var franciagreen = document.getElementsByClassName('franciagreen');
+    var franciayellow = document.getElementsByClassName('franciayellow');
+
+document.getElementById('checkbox_lowcost').addEventListener("change", filtrarfrancia);
+
+
+    function filtrarfrancia() {
+    console.log('a')
+            for(i in vuelosmadrid["VuelosMadrid"]) { 
+                console.log('b')
+                
+                for(x in vuelosmadrid["VuelosMadrid"][i]["Francia"]) {
+                    console.log('c')
+                    for (y in vuelosmadrid["VuelosMadrid"][i]["Francia"][x]["dates"]) {
+                    var precio = vuelosmadrid["VuelosMadrid"][i]["Francia"][x]["dates"][y]["precio"];
+                    console.log('precio')
+                    if (precio < 180) {
+                        console.log('d')
+                        francia[0].className ='francia display';
+                        franciagreen[0].className ='franciagreen';
+
+                    } 
+                    else if (precio < 600) {
+                        francia[0].className = 'francia display';
+                        franciagreen[0].className = 'franciagreen display';
+                        franciayellow[0].className = 'franciayellow';
+                    }
+                }
+            }
+        }
+    };
 
 
 
