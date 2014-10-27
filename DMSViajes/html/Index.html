@@ -10,36 +10,59 @@
 
 </head>
 <body>
+
 	<header>
 		<img src="../images/logo2dms300.png">
-	</header>
-			
-		<ul id="menu">
-   				<li>
-    				<p>Cost</p>
-    					<ul>
-    						<li><input type="checkbox" name="checkbox" id="checkbox_lowcost" value="value"><p class="textfilters">Low Cost</p></li>
-    						<li><input type="checkbox" name="checkbox" id="checkbox_mediumcost" value="value"><p class="textfilters">Medium Cost</p></li>
-    						<li><input type="checkbox" name="checkbox" id="checkbox_highcost" value="value"><p class="textfilters">High Cost</p></li>
-    					</ul>
-        
-    			</li>
-    			<li>
-    				<p>Theme</p>
-    					<ul>
-    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Adventure</p></li>
-    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Sun & Beach</p></li>
-    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Snow</p></li>
-    						<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Relax</p></li>
-    					</ul>
-        
-    			</li>
-    	</ul>
-	
 
+	<!-- MAIN FORM -->
+
+		<section class="mainForm titleBox">
+			<h3>Fill your choice</h3>
+			<!--<form action="mainForm">-->
+			<input id="origin" class="" type="text" placeholder="Origin">
+			<input id="dateOr" type="date" class="">
+			<input id="destination" class="" type="text" placeholder="Destination">
+			<input id="dateDest" type="date" class="">
+			<input id="inputDestB" class="inputB" type="text" placeholder="Destination">
+			<input id="inputDateB" type="date" class="inputB">
+			<br>
+			<button id="destB">Add destination</button>
+			<br>
+			<button id="goButton">Go</button>
+			<!--</form>-->
+		</section>
+
+	</header>
+
+		<ul id="menu">
+
+   			<li id="cost">
+   				<p class="categories">Cost</p>
+    			<ul>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_lowcost" value="value"><p class="textfilters">Low Cost</p></li>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_mediumcost" value="value"><p class="textfilters">Medium Cost</p></li>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_highcost" value="value"><p class="textfilters">High Cost</p></li>
+    			</ul>
+    		</li>
+
+    		<li id="theme">
+    			<p class="categories">Theme</p>
+    		    <ul>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Adventure</p></li>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Sun & Beach</p></li>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Snow</p></li>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Relax</p></li>
+    			</ul>
+    		</li>
+
+    	</ul>
+
+<div class="divLeft"></div>
+<div class="divRight"></div>
+
+<div class="oval">
 	<section class="bd ilblock">
-		
-		
+
 
 		<img src="../images/Mapas/mapamundidefinitivo.svg.png" id="mapamundo">
 		<img src="../images/Mapas/spain36default.png" class="spain">
@@ -61,9 +84,13 @@
 		<img src="../images/Mapas/bosnia9default.png" class="bosnia">
 		<img src="../images/Mapas/montenegro6default.png" class="montenegro">
 		<img src="../images/Mapas/serbia12default.png" class="serbia">
-	</section>	
-	
-	<section class="sectionform ilblock">
+	</section>
+</div>
+
+
+<!-- OLD CIRCLE FORM -->
+
+	<!--<section class="sectionform ilblock">
 		<form action="" class="verticalAlign">
 			<input id="origin" class="ipMargin" type="text" placeholder="Origin">
 			<input id="dateOr" type="date" class="ipMargin">
@@ -71,23 +98,49 @@
 			<input  id="dateDest" type="date" class="ipMargin">
 			<input id="goButton" type="Button" value="Go">
 		</form>
-	</section>
-	
-<!--Hasta aquí/-->
+	</section>-->
 
-<section class="section1">
+<!-- HOVER´S -->
+
+	<!-- France -->
+	<div class="franceDiv">
+		<h3 class="francetitle">France</h3>
+		<div class="citiesFranceOne">
+			<ul class="ulOne">
+				<li class="cityLinks"><button id="butParis" class="addBut">Add</button><a href="../html/paris.html">Paris</a></li>
+				<li class="cityLinks"><button id="butTropez" class="addBut">Add</button><a href="">S.Tropez</a></li>
+				<li class="cityLinks"><button id="butLyon" class="addBut">Add</button><a href="">Lyon</a></li>
+				<li class="cityLinks"><button id="butJorobado" class="addBut">Add</button><a href="">Jorobado</a></li>
+			</ul>
+		</div>
+		<div class="citiesFranceTwo">
+			<ul class="ulTwo">
+				<li class="cityLinks"><button id="butMarsella" class="addBut">Add</button><a href="">Marsella</a></li>
+				<li class="cityLinks"><button id="butNiza" class="addBut">Add</button><a href="">Niza</a></li>
+				<li class="cityLinks"><button id="butMasPijos" class="addBut">Add</button><a href="">Mas Pijos</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- ******************************************************** -->
+
+<!--<section class="section1">
 	<div class="window window1 ilblock"><h2 class="verticalAlign2">map</h2></div>
-	
+
 	<div class="window window3 ilblock"><h2 class="verticalAlign2">I'm feeling lucky</h2></div>
-	
-</section>	
-</body>
+
+</section>-->
 <footer>
+	<img src="../images/ironhackicon.png" class="imgFooter" style="width:90px; height: 50px">
+	<img src="../images/generation.png" class="imgFooter" style="width:110px; height: 50px">
+	<img src="../images/isdi.png" class="imgFooter" style="width:160px; height: 50px">
+	<img src="../images/mckinsey.jpg" class="imgFooter" style="width:70px; height: 70px">
 	<ol class="footerList">
-		<li><a class="white" href="">About us</a></li>
-		<li><a class="white" href="">Facebook</a></li>
-		<li><a class="white" href="">Twitter</a></li>
-		<li><a class="white" href="">Email us</a></li>
+		<li><a href="">About us</a></li>
+		<li><a href="">Facebook</a></li>
+		<li><a href="">Twitter</a></li>
+		<li><a href="">Email us</a></li>
 	</ol>
 </footer>
+</body>
 </html>
