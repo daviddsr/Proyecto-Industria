@@ -147,6 +147,20 @@ footer 	{
 	left: 41.9%;
 }
 
+.spainyellow {
+	display: block;
+	position: absolute;
+	top: 24.4%;
+	left: 41.9%;
+}
+
+.spainred {
+	display: block;
+	position: absolute;
+	top: 24.4%;
+	left: 41.9%;
+}
+
 
 
 .portugal {
@@ -170,6 +184,13 @@ footer 	{
 	left: 41.4%;
 }
 
+.portugalred {
+	display: block;
+	position: absolute;
+	top: 26.75%;
+	left: 41.4%;
+}
+
 .francia {
 	display: block;
 	position: absolute;
@@ -185,6 +206,13 @@ footer 	{
 }
 
 .franciayellow {
+	display: block;
+	position: absolute;
+	top: 20.1%;
+	left: 43.6%;
+}
+
+.franciared {
 	display: block;
 	position: absolute;
 	top: 20.1%;

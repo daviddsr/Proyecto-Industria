@@ -132,148 +132,125 @@ but.onclick = function(){
 
 
 
-    var vuelosmadrid= {"VuelosMadrid":
-                        [ 
-                            {"Spain":
-                                [
-
-                                    {"city":"Barcelona",
-                                     "dates":
-
-                                        [
-                                            {"fecha": "05/11/2014","precio": 50 },
-                                            {"fecha": "05/11/2014","precio": 40 }
-                                        ]
-                                    }  
-                                ]
-                            },
-
-                            {"Francia":
-                                [
-                                    {"city":"Paris",
-                                     "dates":
-                                        [
-                                            {"fecha": "05/11/2014", "precio": 180},
-                                            {"fecha": "05/11/2014","precio": 185}
-                                        ]
-                                    }
-                                ]
-                            },
-
-                            {"Portugal":
-                                [
-                                    {"city":"Lisboa",
-                                     "dates":
-                                        [
-                                            {"fecha": "05/11/2014", "precio": 75},
-                                            {"fecha": "05/11/2014","precio": 60}
-                                        ]
-                                    }
-                                ]
-                            }    
+    var vuelosmadrid=[
+                    {Imagennaranja:'spain',
+                    Imagenverde:'spaingreen',
+                    Imagenamarilla:'spainyellow',
+                    Imagenrojo: 'spainred',
+                    ciudades:
+                        [
+                            {ciudad:"Barcelona",
+                            fechas:
+                             [
+                                {fecha:"05/11/2014",precio: 50 },
+                                {fecha:"05/11/2014",precio: 40 }
+                             ]
+                            }  
                         ]
-                    };
+                    },
 
-    
+                    {Imagennaranja:"francia",
+                    Imagenverde:'franciagreen',
+                    Imagenamarilla:'franciayellow',
+                    Imagenrojo: 'franciared',
+                    ciudades:
+                        [
+                            {ciudad:"Paris",
+                            fechas:
+                                [
+                                    {fecha:"05/11/2014",precio: 190},
+                                    {fecha:"05/11/2014",precio: 225}
+                                ]
+                            }  
+                        ]
+                    },
 
-   // var VuelosSpain = JSON.parse(vuelosspain)
+                    {Imagennaranja:"portugal",
+                    Imagenverde:'portugalgreen',
+                    Imagenamarilla:'portugalyellow',
+                    Imagenrojo: 'portugalred',
+                    ciudades:
+                        [
+                            {ciudad:"Lisboa",
+                            fechas:
+                                [
+                                    {fecha:"05/11/2014",precio: 45},
+                                    {fecha:"05/11/2014",precio: 75}
+                                ]
+                            }  
+                        ]
+                    }
+
+            ];
 
 
-   var lowcost = document.getElementById('checkbox_lowcost');
-
-    var espana = document.getElementsByClassName('spain');
-    var espanagreen = document.getElementsByClassName('spaingreen');
 
 document.getElementById('checkbox_lowcost').addEventListener("change", filtrar);
+document.getElementById('checkbox_mediumcost').addEventListener("change", filtrar);
+document.getElementById('checkbox_highcost').addEventListener("change", filtrar);
 
 
-    function filtrar() {
+function filtrar() {
     console.log('a')
-            for(i in vuelosmadrid["VuelosMadrid"]) { 
-                console.log('b')
-                
-                for(x in vuelosmadrid["VuelosMadrid"][i]["Spain"]) {
+    console.log(vuelosmadrid[0].Imagenrojo);
+                for(x in vuelosmadrid) {
                     console.log('c')
-                    for (y in vuelosmadrid["VuelosMadrid"][i]["Spain"][x]["dates"]) {
-                    var precio = vuelosmadrid["VuelosMadrid"][i]["Spain"][x]["dates"][y]["precio"];
-                    console.log('precio')
-                    if (precio < 180) {
-                        console.log('d')
-                        espana[0].className ='spain display';
-                        espanagreen[0].className ='spaingreen';
+                    //document.getElementsByClassName(vuelosmadrid[x].ImagenRojo).className = vuelosmadrid[x].ImagenRojo + ' display';
+                    //document.getElementsByClassName(vuelosmadrid[x].Imagennaranja).className = vuelosmadrid[x].Imagennaranja;
+                    //document.getElementsByClassName(vuelosmadrid[x].Imagenamarilla).className = vuelosmadrid[x].Imagenamarilla + ' display';
+                    //document.getElementsByClassName(vuelosmadrid[x].Imagenverde).className = vuelosmadrid[x].Imagenverde + ' display';
+                    var rojodefault = document.getElementsByClassName(vuelosmadrid[x].Imagenrojo);
+                    var naranjadefault = document.getElementsByClassName(vuelosmadrid[x].Imagennaranja);
+                    var amarillodefault = document.getElementsByClassName(vuelosmadrid[x].Imagenamarilla);
+                    var verdedefault = document.getElementsByClassName(vuelosmadrid[x].Imagenverde);
+                    rojodefault[0].className = vuelosmadrid[x].Imagenrojo + ' display';
+                    naranjadefault[0].className = vuelosmadrid[x].Imagennaranja;
+                    amarillodefault[0].className = vuelosmadrid[x].Imagenamarilla + ' display';
+                    verdedefault[0].className = vuelosmadrid[x].Imagenverde + ' display';
+                    for (y in vuelosmadrid[x].ciudades) {
+                        for (z in vuelosmadrid[x].ciudades[y].fechas) {
+                            var precio = vuelosmadrid[x].ciudades[y].fechas[z].precio;
+                            console.log('precio')
+                            if (document.getElementById('checkbox_lowcost').checked === true && precio < 180) {
+                                console.log('lc')
+                                var rojo = document.getElementsByClassName(vuelosmadrid[x].Imagenrojo);
+                                var naranja = document.getElementsByClassName(vuelosmadrid[x].Imagennaranja);
+                                var amarillo = document.getElementsByClassName(vuelosmadrid[x].Imagenamarilla);
+                                var verde = document.getElementsByClassName(vuelosmadrid[x].Imagenverde); 
+                                rojo[0].className = vuelosmadrid[x].Imagenrojo + ' display';
+                                naranja[0].className = vuelosmadrid[x].Imagennaranja + ' display';
+                                amarillo[0].className = vuelosmadrid[x].Imagenamarilla + ' display';
+                                verde[0].className = vuelosmadrid[x].Imagenverde ;
+                                /*var espana = document.getElementsByClassName('spaingreen');
+                                espana[0].className ='spaingreen';*/
 
-                    } 
+                            }
+                            else if (document.getElementById('checkbox_mediumcost').checked === true && precio<600) {
+                              console.log('mc')
+                                var rojomedium = document.getElementsByClassName(vuelosmadrid[x].Imagenrojo);
+                                var naranjamedium = document.getElementsByClassName(vuelosmadrid[x].Imagennaranja);
+                                var amarillomedium = document.getElementsByClassName(vuelosmadrid[x].Imagenamarilla);
+                                var verdemedium = document.getElementsByClassName(vuelosmadrid[x].Imagenverde);
+                                rojomedium[0].className = vuelosmadrid[x].Imagenrojo + ' display';
+                                naranjamedium[0].className = vuelosmadrid[x].Imagennaranja + ' display';
+                                amarillomedium[0].className = vuelosmadrid[x].Imagenamarilla;
+                                verdemedium[0].className = vuelosmadrid[x].Imagenverde + ' display'; 
+                            
+
+
+                            }  else if (document.getElementById('checkbox_highcost').checked === true) {
+                              console.log('hc')
+                                var rojohigh = document.getElementsByClassName(vuelosmadrid[x].Imagenrojo);
+                                var naranjahigh = document.getElementsByClassName(vuelosmadrid[x].Imagennaranja);
+                                var amarillohigh = document.getElementsByClassName(vuelosmadrid[x].Imagenamarilla);
+                                var verdehigh = document.getElementsByClassName(vuelosmadrid[x].Imagenverde);
+                                rojohigh[0].className = vuelosmadrid[x].Imagenrojo;
+                                naranjahigh[0].className = vuelosmadrid[x].Imagennaranja + ' display';
+                                amarillohigh[0].className = vuelosmadrid[x].Imagenamarilla + ' display';
+                                verdehigh[0].className = vuelosmadrid[x].Imagenverde + ' display';
+                            }
                 }
             }
         }
     };
-
-    var francia = document.getElementsByClassName('francia');
-    var franciagreen = document.getElementsByClassName('franciagreen');
-    var franciayellow = document.getElementsByClassName('franciayellow');
-
-document.getElementById('checkbox_mediumcost').addEventListener("change", filtrarfrancia);
-
-
-    function filtrarfrancia() {
-    console.log('a')
-            for(i in vuelosmadrid["VuelosMadrid"]) { 
-                console.log('b')
-                
-                for(x in vuelosmadrid["VuelosMadrid"][i]["Francia"]) {
-                    console.log('c')
-                    for (y in vuelosmadrid["VuelosMadrid"][i]["Francia"][x]["dates"]) {
-                    var precio = vuelosmadrid["VuelosMadrid"][i]["Francia"][x]["dates"][y]["precio"];
-                    console.log('precio')
-                    if (precio < 180) {
-                        console.log('d')
-                        francia[0].className ='francia display';
-                        franciagreen[0].className ='franciagreen';
-
-                    } 
-                    else if (precio < 600) {
-                        francia[0].className = 'francia display';
-                        franciagreen[0].className = 'franciagreen display';
-                        franciayellow[0].className = 'franciayellow';
-                    }
-                }
-            }
-        }
-    };
-
-
-
-var portugal = document.getElementsByClassName('portugal');
-    var portugalgreen = document.getElementsByClassName('portugalgreen');
-    var portugalyellow = document.getElementsByClassName('portugalyellow');
-
-document.getElementById('checkbox_lowcost').addEventListener("change", filtrarportugal);
-
-
-    function filtrarportugal() {
-    console.log('a')
-            for(i in vuelosmadrid["VuelosMadrid"]) { 
-                console.log('b')
-                
-                for(x in vuelosmadrid["VuelosMadrid"][i]["Portugal"]) {
-                    console.log('c')
-                    for (y in vuelosmadrid["VuelosMadrid"][i]["Portugal"][x]["dates"]) {
-                    var precio = vuelosmadrid["VuelosMadrid"][i]["Portugal"][x]["dates"][y]["precio"];
-                    console.log('precio')
-                    if (precio < 180) {
-                        console.log('d')
-                        portugal[0].className ='portugal display';
-                        portugalgreen[0].className ='portugalgreen';
-
-                    } 
-                    else if (precio < 600) {
-                        portugal[0].className = 'francia display';
-                        portugalgreen[0].className = 'franciagreen display';
-                        portugalyellow[0].className = 'franciayellow';
-                    }
-                }
-            }
-        }
-    };
-
 
