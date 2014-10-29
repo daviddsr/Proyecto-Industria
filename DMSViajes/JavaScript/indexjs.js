@@ -195,10 +195,6 @@ function filtrar() {
     console.log(vuelosmadrid[0].Imagenrojo);
                 for(x in vuelosmadrid) {
                     console.log('c')
-                    //document.getElementsByClassName(vuelosmadrid[x].ImagenRojo).className = vuelosmadrid[x].ImagenRojo + ' display';
-                    //document.getElementsByClassName(vuelosmadrid[x].Imagennaranja).className = vuelosmadrid[x].Imagennaranja;
-                    //document.getElementsByClassName(vuelosmadrid[x].Imagenamarilla).className = vuelosmadrid[x].Imagenamarilla + ' display';
-                    //document.getElementsByClassName(vuelosmadrid[x].Imagenverde).className = vuelosmadrid[x].Imagenverde + ' display';
                     var rojodefault = document.getElementsByClassName(vuelosmadrid[x].Imagenrojo);
                     var naranjadefault = document.getElementsByClassName(vuelosmadrid[x].Imagennaranja);
                     var amarillodefault = document.getElementsByClassName(vuelosmadrid[x].Imagenamarilla);
@@ -225,7 +221,7 @@ function filtrar() {
                                 espana[0].className ='spaingreen';*/
 
                             }
-                            else if (document.getElementById('checkbox_mediumcost').checked === true && precio<600) {
+                            else if (document.getElementById('checkbox_mediumcost').checked === true && 180>precio<600) {
                               console.log('mc')
                                 var rojomedium = document.getElementsByClassName(vuelosmadrid[x].Imagenrojo);
                                 var naranjamedium = document.getElementsByClassName(vuelosmadrid[x].Imagennaranja);
@@ -238,7 +234,7 @@ function filtrar() {
                             
 
 
-                            }  else if (document.getElementById('checkbox_highcost').checked === true) {
+                            }  else if (document.getElementById('checkbox_highcost').checked === true && precio>600) {
                               console.log('hc')
                                 var rojohigh = document.getElementsByClassName(vuelosmadrid[x].Imagenrojo);
                                 var naranjahigh = document.getElementsByClassName(vuelosmadrid[x].Imagennaranja);

@@ -127,6 +127,8 @@ footer 	{
 	vertical-align: top;
 }
 
+/*Países imágenes*/
+
 #mapamundo {
 	display: block;
 }
@@ -226,6 +228,27 @@ footer 	{
 	left: 42%;
 }
 
+.unitedkingdomgreen {
+	display: block;
+	position: absolute;
+	top: 12.8%;
+	left: 42%;
+}
+
+.unitedkingdomyellow {
+	display: block;
+	position: absolute;
+	top: 12.8%;
+	left: 42%;
+}
+
+.unitedkingdomred {
+	display: block;
+	position: absolute;
+	top: 12.8%;
+	left: 42%;
+}
+
 .italia {
 	display: block;
 	position: absolute;
@@ -241,6 +264,27 @@ footer 	{
 }
 
 .alemania {
+	display: block;
+	position: absolute;
+	top: 17%;
+	left: 45.9%;
+}
+
+.alemaniagreen {
+	display: block;
+	position: absolute;
+	top: 17%;
+	left: 45.9%;
+}
+
+.alemaniayellow {
+	display: block;
+	position: absolute;
+	top: 17%;
+	left: 45.9%;
+}
+
+.alemaniared {
 	display: block;
 	position: absolute;
 	top: 17%;
