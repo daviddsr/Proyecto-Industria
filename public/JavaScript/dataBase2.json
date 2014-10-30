@@ -1,0 +1,51 @@
+{"vuelosmadrid": [
+                    {"Imagennaranja":"spain",
+                    "Imagenverde":"spaingreen",
+                    "Imagenamarilla":"spainyellow",
+                    "Imagenrojo": "spainred",
+                    "ciudades":
+                        [
+                            {"ciudad":"Barcelona",
+                            "fechas":
+                             [
+                                {"fecha":"2014-11-05","precio": 50 },
+                                {"fecha":"2014-11-06","precio": 40 }
+                             ]
+                            }
+                        ]
+                    },
+
+                    {"Imagennaranja":"francia",
+                    "Imagenverde":"franciagreen",
+                    "Imagenamarilla":"franciayellow",
+                    "Imagenrojo": "franciared",
+                    "ciudades":
+                        [
+                            {"ciudad":"Paris",
+                            "fechas":
+                                [
+                                    {"fecha":"2014-11-05","precio": 190},
+                                    {"fecha":"2014-11-06","precio": 225},
+                                    {"fecha":"2014-11-06","precio": 225}
+                                ]
+                            }
+                        ]
+                    },
+
+                    {"Imagennaranja":"portugal",
+                    "Imagenverde":"portugalgreen",
+                    "Imagenamarilla":"portugalyellow",
+                    "Imagenrojo": "portugalred",
+                    "ciudades":
+                        [
+                            {"ciudad":"Lisboa",
+                            "fechas":
+                                [
+                                    {"fecha":"2014-11-05","precio": 45},
+                                    {"fecha":"2014-11-06","precio": 75}
+                                ]
+                            }
+                        ]
+                    }
+
+            ]}

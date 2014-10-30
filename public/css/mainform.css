@@ -1,0 +1,18 @@
+.input {
+	margin-bottom: 10px;
+}
+
+.inputText {
+	width: 140px; 
+}
+
+.inputDate {
+	width: 140px;
+}
+
+.form {
+	border: 1px solid black;
+	width: 293px;
+	padding: 20px;
+}
+

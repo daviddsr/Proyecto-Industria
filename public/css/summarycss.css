@@ -1,0 +1,121 @@
+header{
+	width: 100%;
+	/*padding-top: 2rem;*/
+	padding-bottom: 1rem;
+	background-image: url(../images/professionalpattern.jpg);
+	background-size: 100%;
+	border-bottom: 1px solid black;
+}
+
+li {
+	list-style-type: none;
+	margin-left: 20%;
+	display: inline-block;
+}
+
+.table_vuelos {
+	width: 900px;
+	height: 100px;
+	background-color: orange;
+	border: 1px solid black;
+
+
+}
+
+th {
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+
+td {
+	margin-right: 50px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.lista_resumen_vuelos {
+	display: inline-block;
+}
+
+.tableprecio {
+	display:inline-block;
+	background-color: orange;
+	width: 150px;
+	height: 100px;
+	margin-left: 200px;
+	position: relative;
+}
+
+.tdprecio {
+	font-size: 20px;
+	position: absolute;
+	left: 30%;
+	top: 5%;
+}
+
+.tdpreciocantidad {
+	font-weight: bold;
+	font-size: 40px;
+	position: absolute;
+	left: 20%;
+	top: 40%;
+	width: 100px;
+}
+
+.reservar {
+	font-weight: bold;
+}
+
+.boton_reservar {
+	display: inline-block;
+	background-color: orange;
+	width: 150px;
+	height: 25px;
+	position: relative;
+	margin-right: 111px;
+	float: right;
+}
+
+.reservar {
+	position: absolute;
+	font-size: 25px;
+	left: 15%;
+	text-decoration: none;
+	color: black;
+
+}
+
+.resumen {
+	width: 600px;
+	height: 50px;
+	margin-left: 250px;
+	margin-top: 50px;
+	
+}
+
+.span_origen {
+	margin-right: 15px;
+	vertical-align: middle;
+	
+	
+}
+
+.span_pais_origen {
+	margin-right: 40px;
+	vertical-align: middle;
+	
+	
+}
+
+.span_destino {
+	margin-right: 15px;
+	vertical-align: middle;
+	
+	
+}
+
+.span_pais_destino {
+	vertical-align: middle;
+	
+}
