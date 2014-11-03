@@ -9,47 +9,30 @@
 	<link rel="stylesheet" type="text/css" href="./css/index_divOnFrance.css" />
 	<link rel="stylesheet" type="text/css" href="./css/index_form.css" />
 	<link rel="stylesheet" type="text/css" href="./css/index_paises.css" />
+	<link rel="stylesheet" type="text/css" href="./css/index_logIn.css">
 	<script type="text/javascript" src="./JavaScript/jquery-2.1.1.min.js"></script>
-	<script defer type="text/javascript" src="./JavaScript/dataBase_funcionalities.js"></script>
+	<script defer type="text/javascript" src="../JavaScript/dataBase_funcionalities.js"></script>
 	<script defer type="text/javascript" src="./JavaScript/index_storage_form.js"></script>
 </head>
 <body>
 
 	<header>
-		<img src="./images/logo2dms300.png">
 
-	<!-- MAIN FORM -->
+		<div class="logIn">
+			<p class="e-mail-text">E-mail:</p>
+			<input type="e-mail" class="logIn-input">
+			<p class="password-text">Password:</p>
+			<input type="text" class="password-input">
+			<a href="" class="signUp-btn">Sign Up</a>
+			<button type="submit" class="logIn-btn">Log In</button>
+		</div>
 
-		<section class="mainForm titleBox">
-			<h3>Fill your choice</h3>
-			<!--<form action="mainForm">-->
-			<input id="origin" class="" type="text" placeholder="Origin">
-			<input id="dateOr" type="date" class="">
-			<input id="destination" class="" type="text" placeholder="Destination">
-			<input id="dateDest" type="date" class="">
-			<input id="inputDestB" class="inputB" type="text" placeholder="Destination">
-			<input id="inputDateB" type="date" class="inputB">
-			<br>
-			<button id="destB">Add destination</button>
-			<br>
-			<button id="goButton">Go</button>
-			<!--</form>-->
-		</section>
+		<img src="./images/logodms200.png" class="logo">
+
+
 
 	</header>
 
-	<!-- Pop Up -->
-	<div id="boxes">
-		<div style="top: 199.5px; left: 551.5px; display: none;" id="popup" class="win">
-			<h3 class="tellus">Tell us the origin of your trip</h3>
-			<input type="text" placeholder="Type the City" autofocus="autofocus" autocomplete="on" id="originpop" class="inporigin"/>
-			<input type="submit" value="Continue with your trip!" id="popbut" class="accept"/>
-		</div>
-	</div>
-	<!-- Mask to cover the whole screen -->
-	<div style="width: 1478px; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
-
-	<!-- ***************************** -->
 
 		<ul id="menu">
 
@@ -73,13 +56,39 @@
     		</li>
 
     	</ul>
+		<div class="menuDec"></div>
 
-<div class="divLeft"></div>
-<div class="divRight"></div>
+<!--<div class="divLeft"></div>
+<div class="divRight"></div>-->
 
-<div class="oval">
+	<article class="form">
+		<form action='/summary' method="POST" id="allForm" class="form" action="./summary" >
+			<input id="roundTrip-btn" class="input round-btn" type="radio" checked="checked"><span>Round trip</span>
+			<input id="oneWay-btn" class="input round-btn" type="radio"><span>One way</span><br>
+			<div id="divInputs" class="divInputs">
+				<input id="origin-input" class="input inputText" type="text" placeholder="Origin">
+				<input id="origin-date" class="input inputDate" type="date"><br>
+				<input id="dest-input" class="input inputText" type="text" placeholder="Destination">
+				<input id="dest-date" class="input inputDate" type="date"><br>
+			</div>
+			<button id="addDest-btn" class="input addDest-btn">Add destination</button><br>
+			<button id="remDest-btn" class="input remDest-btn">Remove destination</button><br>
+			<span>Passengers</span>
+			<select>
+					<option value="1" selected="selected">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+			</select>
+				<button action='submit' id="go-btn">GO!</button>
+			<!--<input id="go-btn" type="image" src="../images/go_small.png" name="GoButton">-->
+		</form>
+	</article>
+
+<!--<div class="oval">-->
 	<section class="bd ilblock">
 
+
+<!-- ******************************************************** -->
 
 		<img src="./images/Mapas/mapadelmundo.svg.png" id="mapamundo">
 		<img src="./images/Mapas/spain36default.png" class="spain">
@@ -99,35 +108,17 @@
 		<img src="./images/Mapas/unitedkingdom34yellow.png" class="unitedkingdomyellow display">
 		<img src="./images/Mapas/unitedkingdom34red.png" class="unitedkingdomred display">
 		<img src="./images/Mapas/italia36default.png" class="italia">
-		<!--<img src="../images/Mapas/suiza12default.png" class="suiza">-->
 		<img src="./images/Mapas/alemania25default.png" class="alemania">
 		<img src="./images/Mapas/alemania25green.png" class="alemaniagreen display">
 		<img src="./images/Mapas/alemania25yellow.png" class="alemaniayellow display">
 		<img src="./images/Mapas/alemania25red.png" class="alemaniared display">
-		<!-- <img src="../images/Mapas/luxemburgo4default.png" class="luxemburgo"> -->
 		<img src="./images/Mapas/belgica10default.png" class="belgica">
 		<img src="./images/Mapas/holanda10default.png" class="holanda">
 		<img src="./images/Mapas/austria17default.png" class="austria">
-		<!-- <img src="../images/Mapas/eslovenia10default.png" class="eslovenia">
-		<img src="../images/Mapas/croacia12default.png" class="croacia">
-		<img src="../images/Mapas/bosnia9default.png" class="bosnia">
-		<img src="../images/Mapas/montenegro6default.png" class="montenegro">
-		<img src="../images/Mapas/serbia12default.png" class="serbia"> -->
 	</section>
-</div>
+<!--</div>-->
 
-
-<!-- OLD CIRCLE FORM -->
-
-	<!--<section class="sectionform ilblock">
-		<form action="" class="verticalAlign">
-			<input id="origin" class="ipMargin" type="text" placeholder="Origin">
-			<input id="dateOr" type="date" class="ipMargin">
-			<input id="destination" class="ipMargin" type="text" placeholder="Destination">
-			<input  id="dateDest" type="date" class="ipMargin">
-			<input id="goButton" type="Button" value="Go">
-		</form>
-	</section>-->
+<!-- ******************************************************** -->
 
 <!-- HOVER´S -->
 
@@ -136,7 +127,7 @@
 		<h3 class="francetitle">France</h3>
 		<div class="citiesFranceOne">
 			<ul class="ulOne">
-				<li class="cityLinks"><button id="butParis" class="addBut">Add</button><a href="./paris">Paris</a></li>
+				<li class="cityLinks"><button id="butParis" class="addBut">Add</button><a href="./html/paris">Paris</a></li>
 				<li class="cityLinks"><button id="butTropez" class="addBut">Add</button><a href="">S.Tropez</a></li>
 				<li class="cityLinks"><button id="butLyon" class="addBut">Add</button><a href="">Lyon</a></li>
 				<li class="cityLinks"><button id="butJorobado" class="addBut">Add</button><a href="">Jorobado</a></li>
@@ -151,19 +142,32 @@
 		</div>
 	</div>
 
-	<!-- ******************************************************** -->
+<!-- ******************************************************** -->
 
 <footer>
-	<img src="./images/ironhackicon.png" class="imgFooter" style="width:90px; height: 50px">
-	<img src="./images/generation.png" class="imgFooter" style="width:110px; height: 50px">
-	<img src="./images/isdi.png" class="imgFooter" style="width:160px; height: 50px">
-	<img src="./images/mckinsey.jpg" class="imgFooter" style="width:70px; height: 70px">
-	<ol class="footerList">
-		<li><a href="">About us</a></li>
+	<ol class="footerListOne">
+		<li class="hLinks">Follow us:</li>
 		<li><a href="">Facebook</a></li>
 		<li><a href="">Twitter</a></li>
 		<li><a href="">Email us</a></li>
 	</ol>
+	<ol class="footerListTwo">
+		<li class="hLinks">Who are we?</li>
+		<li><a href="">DMS Trips</a></li>
+		<li><a href="">The Team</a></li>
+		<li><a href="">The History</a></li>
+	</ol>
+	<ol class="footerListThree">
+		<li class="hLinks">Patterns:</li>
+		<li><a href="">McKinsey Social Iniciative</a></li>
+		<li><a href="">Generation Spain</a></li>
+		<li><a href="">Ironhack</a></li>
+		<li><a href="">ISDI</a></li>
+	</ol>
+	<img src="./images/ironhackicon.png" class="imgFooter" style="width:90px; height: 50px">
+	<img src="./images/generation.png" class="imgFooter" style="width:110px; height: 50px">
+	<img src="./images/isdi.png" class="imgFooter" style="width:160px; height: 50px">
+	<img src="./images/mckinsey.jpg" class="imgFooter" style="width:70px; height: 70px">
 </footer>
 </body>
 </html>

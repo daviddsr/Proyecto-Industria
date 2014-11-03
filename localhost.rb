@@ -5,7 +5,7 @@ get '/' do
 	erb :Index
 end
 
-get '/summary' do
+post '/summary' do
 	erb :summary
 end
 

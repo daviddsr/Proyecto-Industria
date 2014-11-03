@@ -22,6 +22,7 @@ function locStorage (){
 
 go.onclick=function(){
    locStorage();
+   location.href='./summary.html';
 }
 
 var addDest = document.getElementById('addDest-btn')

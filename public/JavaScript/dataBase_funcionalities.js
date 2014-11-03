@@ -1,4 +1,3 @@
-
 var vuelosmadrid=[
                     {Imagennaranja:'spain',
                     Imagenverde:'spaingreen',
@@ -82,8 +81,8 @@ function filtrar() {
                                 naranja[0].className = vuelosmadrid[x].Imagennaranja + ' display';
                                 amarillo[0].className = vuelosmadrid[x].Imagenamarilla + ' display';
                                 verde[0].className = vuelosmadrid[x].Imagenverde ;
-                                /*var espana = document.getElementsByClassName('spaingreen');
-                                espana[0].className ='spaingreen';*/
+                                var espana = document.getElementsByClassName('spaingreen');
+                                espana[0].className ='spaingreen';
 
                             }
                             else if (document.getElementById('checkbox_mediumcost').checked === true && 180>precio<600) {
@@ -114,4 +113,6 @@ function filtrar() {
             }
         }
     };
+
+
 

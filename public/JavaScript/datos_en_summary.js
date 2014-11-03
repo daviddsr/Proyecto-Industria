@@ -1,65 +1,10 @@
-
-var vuelosmadrid=[
-                    {Imagennaranja:'spain',
-                    Imagenverde:'spaingreen',
-                    Imagenamarilla:'spainyellow',
-                    Imagenrojo: 'spainred',
-                    ciudades:
-                        [
-                            {ciudad:"Barcelona",
-                            fechas:
-                             [
-                                {fecha:"2014-11-05",precio: 50 },
-                                {fecha:"2014-11-06",precio: 40 }
-                             ]
-                            }
-                        ]
-                    },
-
-                    {Imagennaranja:"francia",
-                    Imagenverde:'franciagreen',
-                    Imagenamarilla:'franciayellow',
-                    Imagenrojo: 'franciared',
-                    ciudades:
-                        [
-                            {ciudad:"Paris",
-                            fechas:
-                                [
-                                    {fecha:"2014-11-05",precio: 190},
-                                    {fecha:"2014-11-06",precio: 225},
-                                    {fecha:"2014-11-06",precio: 225}
-                                ]
-                            }
-                        ]
-                    },
-
-                    {Imagennaranja:"portugal",
-                    Imagenverde:'portugalgreen',
-                    Imagenamarilla:'portugalyellow',
-                    Imagenrojo: 'portugalred',
-                    ciudades:
-                        [
-                            {ciudad:"Lisboa",
-                            fechas:
-                                [
-                                    {fecha:"2014-11-05",precio: 45},
-                                    {fecha:"2014-11-06",precio: 75}
-                                ]
-                            }
-                        ]
-                    }
-
-            ];
-
-
-window.onload = check;
+window.onload = json;
 
 
 function check(){
   var ciudadorigen = window.localStorage.getItem("Origin");
   var ciudaddestino = window.localStorage.getItem("Destination");
-  var fechaorigen = window.localStorage.getItem("dateOr");
-  // console.log(vuelosmadrid[1].ciudades[0].fechas[1].fecha)
+  var fechaorigen = window.localStorage.getItem("Origin-Date");
   if (ciudadorigen === "Madrid"){
     console.log("1")
     for (x in vuelosmadrid) {
@@ -87,7 +32,7 @@ function constructor(){
   var divdestino = document.createElement('div');
   var divorigen = document.createElement('div');
 
-  var fechaorigen = window.localStorage.getItem("dateOr");
+  var fechaorigen = window.localStorage.getItem("Origin-Date");
   var origenname = window.localStorage.getItem('Origin');
   var llegadaname = window.localStorage.getItem('Destination');
 
@@ -101,4 +46,14 @@ function constructor(){
 
   var listavuelos = document.getElementById('lista_resumen_vuelos');
   listavuelos.appendChild(livuelo);
+};
+
+
+function json(){
+    $.getJSON("/JavaScript/dataBase.json",function(data){
+        window.vuelosmadrid = data.vuelosmadrid;
+        check();
+    });
 }
+
+
