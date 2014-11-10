@@ -1,0 +1,52 @@
+.logIn	{
+		width: 300px;
+		height: 100px;
+		position: relative;
+		float: right;
+		top: 20px;
+		right: 50px;
+		border: 1px solid black;
+}
+
+.logIn-input	{
+				position: relative;
+				top: 10px;
+				left: 48px;
+}
+
+.password-input	{
+				position: relative;
+				top: 0px;
+				left: 60px;
+}
+
+.e-mail-text	{
+				font-size: 16px;
+				position: relative;
+				top: 5px;
+				left: 5px;
+}
+
+.password-text	{
+				display: block;
+				width: 80px;
+				font-size: 16px;
+				position: relative;
+				top: 20px;
+				left: 0px;
+}
+
+.signUp-btn	{
+			position: relative;
+			float: left;
+			top: 40px;
+			left: 135px;
+			font-size: 12px;
+}
+
+.logIn-btn	{
+			position: relative;
+			float: right;
+			top: 35px;
+			right: 30px;
+}
