@@ -1,4 +1,4 @@
-window.onload = json;
+window.onload = getData;
 
 
 function check(){
@@ -49,11 +49,15 @@ function constructor(){
 };
 
 
-function json(){
+//Marta Fonda told us not to call json to the function because it's a name reserved. So we call it getData.
+
+function getData(){
     $.getJSON("/JavaScript/dataBase.json",function(data){
         window.vuelosmadrid = data.vuelosmadrid;
         check();
     });
 }
+
+
 
 

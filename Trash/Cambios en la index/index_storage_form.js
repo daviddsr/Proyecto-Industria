@@ -22,30 +22,8 @@ function locStorage (){
 
 go.onclick=function(){
    locStorage();
+   location.href='./summary.html';
 }
-
-var roundTripRadio = document.getElementById('roundTrip-btn')
-var oneWayRadio = document.getElementById('oneWay-btn')
-
-function roundTrip(){
-  var oneWayRadio = document.getElementById('oneWay-btn')
-  var destDate = document.getElementById('dest-date')
-  destDate.removeAttribute("disabled", "disabled")
-  
-  oneWayRadio.checked = false
-}
-
-function oneWayTrip(){
-  var roundTripRadio = document.getElementById('roundTrip-btn')
-  var destDate = document.getElementById('dest-date')
-  
-  roundTripRadio.checked = false
-  destDate.setAttribute("disabled", "disabled")
-}
-
-roundTripRadio.onclick = roundTrip
-oneWayRadio.onclick = oneWayTrip
-
 
 var addDest = document.getElementById('addDest-btn')
 addDest.onclick = moreDest
@@ -80,6 +58,46 @@ function removeDest(){
   dest2Date.parentNode.removeChild(dest2Date);
 }
 
+
+  /*  if (inputDestB.className == 'inputB')
+       {inputDestB.classList.remove('inputB')
+   }
+    else {inputDestB.classList.add('inputB')};*/
+
+
+/*function moreDest2 () {
+   var inputDateB = document.getElementById('inputDateB');
+
+    if (inputDateB.className == 'inputB')
+       {inputDateB.classList.remove('inputB')
+   }
+    else {inputDateB.classList.add('inputB')};
+};*/
+
+/*function buttonLabel(){
+  var dest2 = document.getElementById('dest2-input')
+  var addDest = document.getElementById('addDest-btn')
+
+  if (typeof dest2 != "undefined"){
+    addDest.childNodes[0].nodeValue = "Add Destination"
+  }else{
+    addDest.childNodes[0].nodeValue = "Remove Destination"
+  }*/
+
+   /*if (inputDateB.className != 'inputB')
+       {destB.childNodes[0].nodeValue = "Remove destination"}
+   else{destB.childNodes[0].nodeValue = "Add destination"}*/
+/*};*/
+
+
+/*destB = document.getElementById('destB')
+destB.onclick = moreMoreDest*/
+
+/*function moreMoreDest(){
+   moreDest ();
+   /*moreDest2();*/
+   /*buttonLabel();
+}*/
 
 /* Add Destination To The Input With Add Button */
 

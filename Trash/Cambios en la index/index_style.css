@@ -1,0 +1,148 @@
+header{
+	width: 100%;
+	/*padding-top: 2rem;*/
+	padding-bottom: 1rem;
+	/*background-image: url(../images/professionalpattern.jpg);*/
+	background-color: white;
+	background-size: 100%;
+	border-bottom: 1px solid black;
+}
+
+body {
+	width: 100%;
+	height: 920px;
+	/*background-image: url(../images/nubes.jpg);*/
+	/*background-size: 100% 100%*/
+	/*background-color: #707070;*/
+	background-color: white;
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+}
+
+footer 	{
+		width: 100%;
+		height: 150px;
+		background-color: white;
+		position: relative;
+		bottom: -70px;
+		border-top: 1px solid black;
+}
+
+.bd {
+	width: 75%;
+	/*margin-left: 75px;*/
+	position: relative;
+	top: 60px;
+	left: -50px;
+	background-color: white;
+}
+
+#checkbox_id {
+	display:inline-block;
+	vertical-align: top;
+}
+
+/* Header */
+
+/*.logo{
+	background-color: darkblue;
+	width: 10%;
+	height: 2rem;
+	font-size: 1.3rem;
+	border: 2px solid white;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	vertical-align: top;
+	color: white;
+}*/
+
+.logo	{
+		position: relative;
+		top: 5px;
+		left: 50px;
+}
+
+.slogan{
+	background-color: darkblue;
+	width: 40%;
+	font-size: 1.75rem;
+	border: 2px solid white;
+	border-radius: 1rem;
+	padding: 0.5rem;
+	vertical-align: top;
+	color: white;
+}
+
+.account{
+	background-color: darkblue;
+	width: 12%;
+	list-style: none;
+	border-radius: 1rem;
+	border: 2px solid white;
+	font-size: 1rem;
+	padding: 0.5rem;
+	vertical-align: top;
+}
+
+.aStyle{
+	color: white;
+}
+
+.section1{
+	width: 75%;
+	margin: 0 auto;
+	height: 15rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	text-align: center;
+
+}
+
+/* Footer */
+
+.imgFooter	{
+			display: inline-block;
+			position: relative;
+			bottom: 170px;
+			left: 30px;
+			margin-left: 170px;
+}
+
+.footerListOne	{
+				list-style: none;
+				position: relative;
+				left: 270px;
+				top: 20px;
+}
+
+.footerListTwo	{
+				list-style: none;
+				position: relative;
+				left: 590px;
+				bottom: 80px;
+}
+
+.footerListThree	{
+				list-style: none;
+				position: relative;
+				left: 910px;
+				bottom: 190px;
+}
+
+footer ol li 	{
+				margin-bottom: 10px;
+}
+
+footer ol li > a {
+					color: black;
+					text-decoration: none;
+}
+
+footer ol li > a:hover 	{
+							color: grey;
+}
+
+.hLinks	{
+		color: #CC3300;
+}
