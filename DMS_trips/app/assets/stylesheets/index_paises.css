@@ -1,0 +1,230 @@
+/*Países imágenes*/
+
+#mapamundo {
+	display: block;
+}
+
+
+
+.spain {
+	display: block;
+	position: absolute;
+	top: 24.4%;
+	left: 41.9%;
+}
+
+.spaingreen {
+	display: block;
+	position: absolute;
+	top: 24.4%;
+	left: 41.9%;
+}
+
+.spainyellow {
+	display: block;
+	position: absolute;
+	top: 24.4%;
+	left: 41.9%;
+}
+
+.spainred {
+	display: block;
+	position: absolute;
+	top: 24.4%;
+	left: 41.9%;
+}
+
+
+
+.portugal {
+	display: block;
+	position: absolute;
+	top: 26.75%;
+	left: 41.4%;
+}
+
+.portugalgreen {
+	display: block;
+	position: absolute;
+	top: 26.75%;
+	left: 41.4%;
+}
+
+.portugalyellow {
+	display: block;
+	position: absolute;
+	top: 26.75%;
+	left: 41.4%;
+}
+
+.portugalred {
+	display: block;
+	position: absolute;
+	top: 26.75%;
+	left: 41.4%;
+}
+
+.francia {
+	display: block;
+	position: absolute;
+	top: 20.1%;
+	left: 43.6%;
+}
+
+.franciagreen {
+	display: block;
+	position: absolute;
+	top: 20.1%;
+	left: 43.6%;
+}
+
+.franciayellow {
+	display: block;
+	position: absolute;
+	top: 20.1%;
+	left: 43.6%;
+}
+
+.franciared {
+	display: block;
+	position: absolute;
+	top: 20.1%;
+	left: 43.6%;
+}
+
+.unitedkingdom {
+	display: block;
+	position: absolute;
+	top: 12.8%;
+	left: 42%;
+}
+
+.unitedkingdomgreen {
+	display: block;
+	position: absolute;
+	top: 12.8%;
+	left: 42%;
+}
+
+.unitedkingdomyellow {
+	display: block;
+	position: absolute;
+	top: 12.8%;
+	left: 42%;
+}
+
+.unitedkingdomred {
+	display: block;
+	position: absolute;
+	top: 12.8%;
+	left: 42%;
+}
+
+.italia {
+	display: block;
+	position: absolute;
+	top: 23.6%;
+	left: 45.7%;
+}
+
+.suiza {
+	display: block;
+	position: absolute;
+	top: 21.9%;
+	left: 45.9%;
+}
+
+.alemania {
+	display: block;
+	position: absolute;
+	top: 17%;
+	left: 45.9%;
+}
+
+.alemaniagreen {
+	display: block;
+	position: absolute;
+	top: 17%;
+	left: 45.9%;
+}
+
+.alemaniayellow {
+	display: block;
+	position: absolute;
+	top: 17%;
+	left: 45.9%;
+}
+
+.alemaniared {
+	display: block;
+	position: absolute;
+	top: 17%;
+	left: 45.9%;
+}
+
+.luxemburgo {
+	display: block;
+	position: absolute;
+	top: 20.9%;
+	left: 46%;
+}
+
+.belgica {
+	display: block;
+	position: absolute;
+	top: 19.5%;
+	left: 45.1%;
+}
+
+.holanda {
+	display: block;
+	position: absolute;
+	top: 18.4%;
+	left: 45.35%;
+}
+
+.austria {
+	display: block;
+	position: absolute;
+	top: 21.8%;
+	left: 46.9%;
+}
+
+.eslovenia {
+	display: block;
+	position: absolute;
+	top: 23%;
+	left: 47.6%;
+}
+
+.croacia {
+	display: block;
+	position: absolute;
+	top: 23.8%;
+	left: 48%;
+}
+
+.bosnia {
+	display: block;
+	position: absolute;
+	top: 24.6%;
+	left: 48.5%;
+}
+
+.montenegro {
+	display: block;
+	position: absolute;
+	top: 25.9%;
+	left: 49.15%;
+}
+
+.serbia {
+	display: block;
+	position: absolute;
+	top: 24%;
+	left: 49.15%;
+}
+
+.display {
+	display: none;
+}

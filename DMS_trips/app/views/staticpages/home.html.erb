@@ -1,0 +1,170 @@
+
+
+	<!-- <header>
+
+		<div class="logIn">
+			<p class="e-mail-text">E-mail:</p>
+			<input type="e-mail" class="logIn-input">
+			<p class="password-text">Password:</p>
+			<input type="text" class="password-input">
+			<a href="" class="signUp-btn">Sign Up</a>
+			<button type="submit" class="logIn-btn">Log In</button>
+		</div>
+
+		<%= image_tag "logodms200.png", class: "logo" %>
+
+
+
+	</header>
+
+
+		<ul id="menu">
+
+   			<li id="cost">
+   				<p class="categories">Cost</p>
+    			<ul>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_lowcost" value="value"><p class="textfilters">Low Cost</p></li>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_mediumcost" value="value"><p class="textfilters">Medium Cost</p></li>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_highcost" value="value"><p class="textfilters">High Cost</p></li>
+    			</ul>
+    		</li>
+
+    		<li id="theme">
+    			<p class="categories">Theme</p>
+    		    <ul>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Adventure</p></li>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Sun & Beach</p></li>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Snow</p></li>
+    				<li><input type="checkbox" name="checkbox" id="checkbox_id" value="value"><p class="textfilters">Relax</p></li>
+    			</ul>
+    		</li>
+
+    	</ul>
+		<div class="menuDec"></div> -->
+
+	
+		
+
+
+
+
+
+	<article class="form">
+		<!-- <form action='/summary' method="GET" id="allForm" class="form"> -->
+		<%= form_tag summary_path, id: "allForm", class: "form", :method => 'get' do %>
+			<input id="roundTrip-btn" class="input round-btn" type="radio" checked="checked"><span>Round trip</span>
+			<input id="oneWay-btn" class="input round-btn" type="radio"><span>One way</span><br>
+			<div id="divInputs" class="divInputs">
+				<%= label_tag(:origin) %>
+				<%= text_field_tag (:origin), params[:origin], id: "origin-input", class: "input inputText" %>
+				<!-- <input id="origin-input" class="input inputText" type="text" placeholder="Origin"> -->
+				<%= label_tag(:from_date) %>
+				<%= date_select(:from_date, default: Date.today), id:"origin-date", class: "input inputDate" %>
+				<!-- <input id="origin-date" class="input inputDate" type="date"><br> -->
+				<%= label_tag(:destination) %>
+				<%= text_field_tag (:destination), params[:destination], id: "dest-input", class: "input inputText" %>
+				<!-- <input id="dest-input" class="input inputText" type="text" placeholder="Destination"> -->
+				<%= label_tag(:to_date) %>
+				<%= date_select(:to_date, default: Date.today), id: "dest-date" class: "input inputDate" %>
+				<!-- <input id="dest-date" class="input inputDate" type="date"><br> -->
+			</div>
+			<!-- <button id="addDest-btn" class="input addDest-btn">Add destination</button><br>
+			<button id="remDest-btn" class="input remDest-btn">Remove destination</button><br> -->
+			<span>Passengers</span>
+			<select>
+					<option value="1" selected="selected">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+			</select>
+				<%= submit_tag "Search", id: "go-btn", :name => nil %>
+				<!-- <button action='submit' id="go-btn">GO!</button> -->
+			<% end %>
+		
+	</article>
+
+
+	<section class="bd ilblock">
+
+
+<!-- ******************************************************** -->
+
+	<!--	<%= image_tag "mapadelmundo.svg.png", id:"mapamundo" %>
+		<%= image_tag "spain36default.png", class: "spain" %>
+		<%= image_tag "spain36green.png", class: "spaingreen display" %>
+		<%= image_tag "spain36yellow.png", class: "spainyellow display" %>
+		<%= image_tag "spain36red.png", class: "spainred display" %>
+		<%= image_tag "portugal18default.png", class: "portugal" %>
+		<%= image_tag "portugal18green.png", class: "portugalgreen display" %>
+		<%= image_tag "portugal18yellow.png", class: "portugalyellow display" %>
+		<%= image_tag "portugal18red.png", class: "portugalred display" %>
+		<%= image_tag "francia31default.png", class: "francia" %>
+		<%= image_tag "francia31green.png", class: "franciagreen display" %>
+		<%= image_tag "francia31yellow.png", class: "franciayellow display" %>
+		<%= image_tag "francia31red.png", class: "franciared display" %>
+		<%= image_tag "unitedkingdom34default.png", class: "unitedkingdom" %>
+		<%= image_tag "unitedkingdom34green.png", class: "unitedkingdomgreen display" %>
+		<%= image_tag "unitedkingdom34yellow.png", class: "unitedkingdomyellow display" %>
+		<%= image_tag "unitedkingdom34red.png", class: "unitedkingdomred display" %>
+		<%= image_tag "italia36default.png", class: "italia" %>
+		<%= image_tag "alemania25default.png", class: "alemania" %>
+		<%= image_tag "alemania25green.png", class: "alemaniagreen display" %>
+		<%= image_tag "alemania25yellow.png", class: "alemaniayellow display" %>
+		<%= image_tag "alemania25red.png", class: "alemaniared display" %>
+		<%= image_tag "belgica10default.png", class: "belgica" %>
+		<%= image_tag "holanda10default.png", class: "holanda" %>
+		<%= image_tag "austria17default.png", class: "austria" %>
+	</section>
+<!--</div>-->
+
+<!-- ******************************************************** -->
+
+<!-- HOVER´S -->
+
+	<!-- France -->
+<!--	<div class="franceDiv">
+		<h3 class="francetitle">France</h3>
+		<div class="citiesFranceOne">
+			<ul class="ulOne">
+				<li class="cityLinks"><button id="butParis" class="addBut">Add</button><a href="/paris">Paris</a></li>
+				<li class="cityLinks"><button id="butTropez" class="addBut">Add</button><a href="">S.Tropez</a></li>
+				<li class="cityLinks"><button id="butLyon" class="addBut">Add</button><a href="">Lyon</a></li>
+				<li class="cityLinks"><button id="butJorobado" class="addBut">Add</button><a href="">Jorobado</a></li>
+			</ul>
+		</div>
+		<div class="citiesFranceTwo">
+			<ul class="ulTwo">
+				<li class="cityLinks"><button id="butMarsella" class="addBut">Add</button><a href="">Marsella</a></li>
+				<li class="cityLinks"><button id="butNiza" class="addBut">Add</button><a href="">Niza</a></li>
+				<li class="cityLinks"><button id="butMasPijos" class="addBut">Add</button><a href="">Mas Pijos</a></li>
+			</ul>
+		</div>
+	</div>
+
+<!-- ******************************************************** -->
+
+<!--<footer>
+	<ol class="footerListOne">
+		<li class="hLinks">Follow us:</li>
+		<li><a href="">Facebook</a></li>
+		<li><a href="">Twitter</a></li>
+		<li><a href="">Email us</a></li>
+	</ol>
+	<ol class="footerListTwo">
+		<li class="hLinks">Who are we?</li>
+		<li><a href="">DMS Trips</a></li>
+		<li><a href="">The Team</a></li>
+		<li><a href="">The History</a></li>
+	</ol>
+	<ol class="footerListThree">
+		<li class="hLinks">Patterns:</li>
+		<li><a href="">McKinsey Social Iniciative</a></li>
+		<li><a href="">Generation Spain</a></li>
+		<li><a href="">Ironhack</a></li>
+		<li><a href="">ISDI</a></li>
+	</ol>
+	<%= image_tag "ironhackicon.png", class: "imgFooter", style: "width:90px; height: 50px" %>
+	<%= image_tag "generation.png", class: "imgFooter", style: "width:110px; height: 50px" %>
+	<%= image_tag "isdi.png", class: "imgFooter", style: "width:160px; height: 50px" %>
+	<%= image_tag "mckinsey.jpg", class: "imgFooter", style: "width:70px; height: 70px" %>
+</footer>
+ -->
