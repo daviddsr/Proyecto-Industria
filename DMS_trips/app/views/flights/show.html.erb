@@ -26,7 +26,7 @@
 	</section> -->
 
 	<h1>Vuelos de ida</h1>
-	<ul id="lista_resumen_vuelos">
+	<ul class="lista_resumen_vuelos">
 
 		<% @price=[] %>
 
@@ -115,7 +115,7 @@
 	
 
 	<h1>Vuelos de vuelta</h1>
-	<ul id="lista_resumen_vuelos">			
+	<ul class="lista_resumen_vuelos">			
 
 				<% @flights_back.each do |flight| %>
 				<% @price << flight.price %>

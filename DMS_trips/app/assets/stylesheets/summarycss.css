@@ -9,7 +9,7 @@ header{
 
 li {
 	list-style-type: none;
-	margin-left: 20%;
+	margin-left: 8%;
 	display: inline-block;
 }
 
@@ -35,6 +35,7 @@ td {
 }
 
 .lista_resumen_vuelos {
+	margin-top: 100px;
 	display: inline-block;
 }
 
