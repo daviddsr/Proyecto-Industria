@@ -1,7 +1,7 @@
 class StaticpagesController < ApplicationController
 
 	def home
-		render 'home'
+		render 'home', :layout=>'applicationhome'
 	end
 
 	def paris

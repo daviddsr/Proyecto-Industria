@@ -1,0 +1,1 @@
+getElementByClass('calculateprice')
