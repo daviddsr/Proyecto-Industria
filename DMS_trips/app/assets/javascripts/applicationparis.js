@@ -14,8 +14,6 @@
 //= require jquery_ujs
 // require turbolinks
 // require_tree .
+//= require paris
 
 
-//= require dataBase_funcionalities
-//= require index_storage_form
-//= require radiobutton

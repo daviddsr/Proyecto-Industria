@@ -1629,3 +1629,269 @@ Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-11 1
 
 
 Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-11 18:40:29 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-11 18:56:08 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Tue, 11 Nov 2014}(1i)"=>"2014", "{:default=>Tue, 11 Nov 2014}(2i)"=>"11", "{:default=>Tue, 11 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Tue, 11 Nov 2014}(1i)"=>"2014", "{:default=>Tue, 11 Nov 2014}(2i)"=>"11", "{:default=>Tue, 11 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.7ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.4ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (64.8ms)
+Completed 500 Internal Server Error in 77ms
+
+ActionView::Template::Error (undefined local variable or method `flight_back' for #<#<Class:0xa5b3664>:0xa5b2ebc>):
+    160: 					<td class="display_inline_block">						
+    161: 					</td>
+    162: 					<td class="ciudad_origen display_inline_block">
+    163: 						<%= flight_back.origin %>
+    164: 						
+    165: 					</td>
+    166: 					<td class="ciudad_destino display_inline_block">
+  app/views/flights/show.html.erb:163:in `block (2 levels) in _app_views_flights_show_html_erb___360647602_86871670'
+  app/views/flights/show.html.erb:122:in `block in _app_views_flights_show_html_erb___360647602_86871670'
+  app/views/flights/show.html.erb:34:in `_app_views_flights_show_html_erb___360647602_86871670'
+  app/controllers/flights_controller.rb:27:in `show'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (43.2ms)
+Completed 200 OK in 411ms (Views: 410.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/dataBase_funcionalities.js?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/index_storage_form.js?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/radiobutton.js?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/applicationhome.js?body=1" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/logodms200.png" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/mapadelmundo.svg.png" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/spain36default.png" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/spain36green.png" for 127.0.0.1 at 2014-11-11 18:56:27 +0100
+
+
+Started GET "/assets/spain36yellow.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/portugal18default.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/portugal18green.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/spain36red.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/portugal18yellow.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/portugal18red.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/francia31default.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/francia31green.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/francia31red.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/francia31yellow.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/unitedkingdom34default.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/unitedkingdom34green.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/unitedkingdom34yellow.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/italia36default.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/alemania25green.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/alemania25default.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/unitedkingdom34red.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/alemania25yellow.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/alemania25red.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/belgica10default.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/holanda10default.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/assets/austria17default.png" for 127.0.0.1 at 2014-11-11 18:56:28 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-11 18:56:54 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Tue, 11 Nov 2014}(1i)"=>"2014", "{:default=>Tue, 11 Nov 2014}(2i)"=>"11", "{:default=>Tue, 11 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Tue, 11 Nov 2014}(1i)"=>"2014", "{:default=>Tue, 11 Nov 2014}(2i)"=>"11", "{:default=>Tue, 11 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.4ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.4ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (40.6ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined local variable or method `flight_back' for #<#<Class:0xa5b3664>:0xab327e8>):
+    160: 					<td class="display_inline_block">						
+    161: 					</td>
+    162: 					<td class="ciudad_origen display_inline_block">
+    163: 						<%= flight_back.origin %>
+    164: 						
+    165: 					</td>
+    166: 					<td class="ciudad_destino display_inline_block">
+  app/views/flights/show.html.erb:163:in `block (2 levels) in _app_views_flights_show_html_erb___360647602_86871670'
+  app/views/flights/show.html.erb:122:in `block in _app_views_flights_show_html_erb___360647602_86871670'
+  app/views/flights/show.html.erb:34:in `_app_views_flights_show_html_erb___360647602_86871670'
+  app/controllers/flights_controller.rb:27:in `show'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-11 18:59:49 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Tue, 11 Nov 2014}(1i)"=>"2014", "{:default=>Tue, 11 Nov 2014}(2i)"=>"11", "{:default=>Tue, 11 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Tue, 11 Nov 2014}(1i)"=>"2014", "{:default=>Tue, 11 Nov 2014}(2i)"=>"11", "{:default=>Tue, 11 Nov 2014}(3i)"=>"8"}}
+  Rendered flights/show.html.erb within layouts/applicationsummary (10.7ms)
+Completed 500 Internal Server Error in 18ms
+
+SyntaxError (/home/miguelitomola/Documents/WebDevelopment/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:153: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/miguelitomola/Documents/WebDevelopment/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:155: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/flights/show.html.erb:153: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/flights/show.html.erb:155: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/flights_controller.rb:27:in `show'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3ETue%2C+11+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-11 19:01:10 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Tue, 11 Nov 2014}(1i)"=>"2014", "{:default=>Tue, 11 Nov 2014}(2i)"=>"11", "{:default=>Tue, 11 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Tue, 11 Nov 2014}(1i)"=>"2014", "{:default=>Tue, 11 Nov 2014}(2i)"=>"11", "{:default=>Tue, 11 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.4ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.4ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (21.2ms)
+Completed 200 OK in 189ms (Views: 187.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-11 19:01:10 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-11 19:01:10 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-11 19:01:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 19:01:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 19:01:10 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-11 19:01:10 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-11 19:01:10 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-11 19:01:10 +0100
+
+
+Started GET "/images/professionalpattern.jpg" for 127.0.0.1 at 2014-11-11 19:01:11 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/professionalpattern.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.3ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.2ms)
