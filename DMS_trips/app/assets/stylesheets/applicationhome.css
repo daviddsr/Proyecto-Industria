@@ -13,6 +13,12 @@
  * require_tree .
  *= require_self
  *
- 
+ *=require reset
+ *=require index_style
+ *=require index_filtros
+ *=require index_divOnFrance
+ *=require index_form
+ *=require index_paises
+ *=require index_logIn
 
  */
