@@ -25,51 +25,52 @@
 		<span class="span_pais_destino">FRANCIA</span>
 	</section> -->
 
-	<h1>Vuelos de ida</h1>
-	<ul id="lista_resumen_vuelos">
+	<h1 class="title">Search results:</h1>
+	<ul class="ul" id="lista_resumen_vuelos">
 
 		<% @price=[] %>
 
 		<% @flights.each do |flight| %>
-		<% @price << flight.price %>
+			<% @flights_back.each do |flight_back| %>
+				<% @price << flight.price %>
 		<li>
 			<table class="table_vuelos">
 				<tr>
 					<th class="display_inline_block">
-						Elegir
+						Choose
 					</th>
 					<th class="ciudad_origen display_inline_block">
-						Origen
+						Origin
 					</th>
 					<th class="ciudad_destino display_inline_block">
-						Destino
+						Destination
 					</th>
 					<th class="fecha_vuelo_salida display_inline_block">
-						Fecha Salida
+						Departure date
 					</th>
 					<th class="hora_vuelo_salida display_inline_block">
-						Hora Salida
+						Departure time
 					</th>
 					<th class="fecha_vuelo_llegada display_inline_block">
-						Fecha Llegada
+						Arrival date
 					</th>
 					<th class="hora_vuelo_llegada display_inline_block">
-						Hora Llegada
+						Arrival time
 					</th>
 					<th class="duracion display_inline_block">
-						Duración
+						Duration
 					</th>
 					<th class="aerolinea display_inline_block">
-						Aerolínea
+						Airline
 					</th>
 					<th class="aerolinea display_inline_block">
-						Precio
+						Price
 					</th>
 				</tr>
 
 				<tr class="vuelo_resumen display_inline_block">
 					<td class="display_inline_block">
-						<input type="radio" class="calculateprice">
+						<input name="choice" type="radio" class="calculateprradioice">
 						
 					</td>
 					<td class="ciudad_origen display_inline_block">
@@ -108,91 +109,51 @@
 							<%= flight.price %>
 					</td>
 				</tr>
+				<tr class="vuelo_resumen display_inline_block">
+					<td class="display_inline_block">						
+					</td>
+					<td class="ciudad_origen display_inline_block">
+						<%= flight_back.origin %>
+						
+					</td>
+					<td class="ciudad_destino display_inline_block">
+						<%= flight_back.destination %>
+						
+					</td>
+					<td class="fecha_vuelo_salida display_inline_block">
+							<%= flight_back.from_date.to_s %>
+						
+					</td>
+					<td class="hora_vuelo_salida display_inline_block">
+							<%= flight_back.time_departure.to_s %>
+						
+						
+					</td>
+					<td class="fecha_vuelo_llegada display_inline_block">
+							<%= flight_back.from_date.to_s %>
+					
+					</td>
+					<td class="hora_vuelo_llegada display_inline_block">
+							<%= flight_back.time_arrive.to_s %>
+					
+					</td>
+					<td class="duracion display_inline_block">
+							<%= flight_back.duracion.to_s + "horas" %>
+						
+					</td>
+					<td class="aerolinea display_inline_block">
+							<%= flight_back.aerolinea %>
+					</td>
+					<td class="calculateprice display_inline_block">
+							<%= flight_back.price %>
+					</td>
+				</tr>
 			</table>
 			</li>
 			<% end %>
-	</ul>
-	
-
-	<h1>Vuelos de vuelta</h1>
-	<ul id="lista_resumen_vuelos">			
-
-				<% @flights_back.each do |flight| %>
-				<% @price << flight.price %>
-			<li>
-				<table class="table_vuelos">
-				<tr>
-					<th class="display_inline_block">
-						Elegir
-					</th>
-					<th class="ciudad_origen display_inline_block">
-						Origen
-					</th>
-					<th class="ciudad_destino display_inline_block">
-						Destino
-					</th>
-					<th class="fecha_vuelo_salida display_inline_block">
-						Fecha Salida
-					</th>
-					<th class="hora_vuelo_salida display_inline_block">
-						Hora Salida
-					</th>
-					<th class="fecha_vuelo_llegada display_inline_block">
-						Fecha Llegada
-					</th>
-					<th class="hora_vuelo_llegada display_inline_block">
-						Hora Llegada
-					</th>
-					<th class="duracion display_inline_block">
-						Duración
-					</th>
-					<th class="aerolinea display_inline_block">
-						Aerolínea
-					</th>
-					<th class="aerolinea display_inline_block">
-						Precio
-					</th>
-				</tr>
-
-				<tr class="vuelo_resumen display_inline_block">
-					<td class="display_inline_block">
-						<input type="radio" class="calculateprice" >
-						
-					</td>
-					<td class="ciudad_origen display_inline_block">
-						<%= flight.origin %>
-					</td>
-					<td class="ciudad_destino display_inline_block">
-						<%= flight.destination %>
-					</td>
-					<td class="fecha_vuelo_salida display_inline_block">
-						<%= flight.to_date %>
-					</td>
-					<td class="hora_vuelo_salida display_inline_block">
-						<%= flight.time_departure.to_s %>
-					</td>
-					<td class="fecha_vuelo_llegada display_inline_block">
-						<%= flight.to_date %>
-					</td>
-					<td class="hora_vuelo_llegada display_inline_block">
-						<%= flight.time_arrive.to_s %>
-					</td>
-					<td class="duracion display_inline_block">
-						<%= flight.duracion.to_s + "horas"%>
-					</td>
-					<td class="aerolinea display_inline_block">
-						<%= flight.aerolinea %>
-					</td>
-					<td class="calculateprice display_inline_block">
-						<%= flight.price %>
-					</td>
-				</tr>
-				
-			</table>
-			
-		</li>
 			<% end %>
-		
 	</ul>
+		
+
 	
 

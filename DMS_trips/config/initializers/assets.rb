@@ -8,5 +8,8 @@ Rails.application.config.assets.precompile += %w( applicationsummary.css )
 Rails.application.config.assets.precompile += %w( applicationsummary.js )
 Rails.application.config.assets.precompile += %w( applicationhome.css )
 Rails.application.config.assets.precompile += %w( applicationhome.js )
-# application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
+Rails.application.config.assets.precompile += %w( applicationchoice.css )
+Rails.application.config.assets.precompile += %w( applicationchoice.js )
+
+# application.js, application.css, and all non-JS/CSS in app/assets folder arRails.application.config.assets.precompile += %w( applicationhome.js )e already added.
 # Rails.application.config.assets.precompile += %w( search.js )

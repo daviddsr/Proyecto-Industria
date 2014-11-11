@@ -119,3 +119,14 @@ td {
 	vertical-align: middle;
 	
 }
+
+.ul{
+	width: 60%;
+}
+
+.title{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
