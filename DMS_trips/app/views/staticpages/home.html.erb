@@ -1,6 +1,6 @@
 
 
-	<!-- <header>
+	<header>
 
 		<div class="logIn">
 			<p class="e-mail-text">E-mail:</p>
@@ -40,7 +40,7 @@
     		</li>
 
     	</ul>
-		<div class="menuDec"></div> -->
+		<div class="menuDec"></div> 
 
 	
 		
@@ -49,23 +49,31 @@
 
 
 
-	<article class="form">
+	
 		<!-- <form action='/summary' method="GET" id="allForm" class="form"> -->
 		<%= form_tag summary_path, id: "allForm", class: "form", :method => 'get' do %>
-			<input id="roundTrip-btn" class="input round-btn" type="radio" checked="checked"><span>Round trip</span>
-			<input id="oneWay-btn" class="input round-btn" type="radio"><span>One way</span><br>
+			<input id="roundTrip-btn" class="input round-btn" name="radiobutton" type="radio" checked="checked"><span>Round trip</span>
+			<input id="oneWay-btn" class="input round-btn" name="radiobutton" type="radio"><span>One way</span><br>
 			<div id="divInputs" class="divInputs">
+				<div class="origin_tag tag">
 				<%= label_tag(:origin) %>
-				<%= text_field_tag (:origin), params[:origin], id: "origin-input", class: "input inputText" %>
+				<%= text_field_tag (:origin), params[:origin], id: "origin-input" %>
+				</div>
 				<!-- <input id="origin-input" class="input inputText" type="text" placeholder="Origin"> -->
+				<div class="tag">
 				<%= label_tag(:from_date) %>
-				<%= date_select(:from_date, default: Date.today), id:"origin-date", class: "input inputDate" %>
+				<%= date_select(:from_date, default: Date.today) %>
+				</div>
 				<!-- <input id="origin-date" class="input inputDate" type="date"><br> -->
+				<div class="destination_tag tag">
 				<%= label_tag(:destination) %>
 				<%= text_field_tag (:destination), params[:destination], id: "dest-input", class: "input inputText" %>
+				</div>
 				<!-- <input id="dest-input" class="input inputText" type="text" placeholder="Destination"> -->
+				<div class="tag">
 				<%= label_tag(:to_date) %>
-				<%= date_select(:to_date, default: Date.today), id: "dest-date" class: "input inputDate" %>
+				<%= date_select(:to_date, default: Date.today), disabled: 'disabled' %>
+				</div>
 				<!-- <input id="dest-date" class="input inputDate" type="date"><br> -->
 			</div>
 			<!-- <button id="addDest-btn" class="input addDest-btn">Add destination</button><br>
@@ -80,7 +88,7 @@
 				<!-- <button action='submit' id="go-btn">GO!</button> -->
 			<% end %>
 		
-	</article>
+	
 
 
 	<section class="bd ilblock">
@@ -88,7 +96,7 @@
 
 <!-- ******************************************************** -->
 
-	<!--	<%= image_tag "mapadelmundo.svg.png", id:"mapamundo" %>
+		<%= image_tag "mapadelmundo.svg.png", id:"mapamundo" %>
 		<%= image_tag "spain36default.png", class: "spain" %>
 		<%= image_tag "spain36green.png", class: "spaingreen display" %>
 		<%= image_tag "spain36yellow.png", class: "spainyellow display" %>
@@ -114,7 +122,7 @@
 		<%= image_tag "holanda10default.png", class: "holanda" %>
 		<%= image_tag "austria17default.png", class: "austria" %>
 	</section>
-<!--</div>-->
+</div>
 
 <!-- ******************************************************** -->
 

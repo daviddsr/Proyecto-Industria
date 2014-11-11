@@ -15,6 +15,6 @@
 // require turbolinks
 // require_tree .
 
-//=require calculateprice
 
-
+//= require dataBase_funcionalities
+//= require index_storage_form
