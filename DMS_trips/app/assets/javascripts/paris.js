@@ -5,7 +5,7 @@ var slideImg=new Array();
 var numImg=5;
 for (i=0; i<numImg; i++){
   	slideImg[i]=new Image();
-  	slideImg[i].src="../images/paris"+(i+1)+".jpg";
+  	slideImg[i].src="/assets/paris"+(i+1)+".jpg";
 }
 var curImage=-1;
 function swapImg(){
