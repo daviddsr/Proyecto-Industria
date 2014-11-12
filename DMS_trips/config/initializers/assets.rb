@@ -14,5 +14,12 @@ Rails.application.config.assets.precompile += %w( applicationparis.js )
 Rails.application.config.assets.precompile += %w( applicationhome.css )
 Rails.application.config.assets.precompile += %w( applicationhome.js )
 
+Rails.application.config.assets.precompile += %w( applicationchoice.css )
+Rails.application.config.assets.precompile += %w( applicationchoice.js )
+
+# application.js, application.css, and all non-JS/CSS in app/assets folder arRails.application.config.assets.precompile += %w( applicationhome.js )e already added.
+
+
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
+
 # Rails.application.config.assets.precompile += %w( search.js )

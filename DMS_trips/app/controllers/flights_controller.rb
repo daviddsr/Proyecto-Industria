@@ -39,9 +39,10 @@ class FlightsController < ApplicationController
 
  		
  	end
-		
 
-    
+ 	def choice
+		render 'choice', layout: 'applicationchoice'
+	end
 
     #private
 	# def search_params

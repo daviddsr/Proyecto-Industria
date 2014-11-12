@@ -3,16 +3,19 @@ Rails.application.routes.draw do
 
   root 'staticpages#home'
 
-  get 'summary' =>'flights#show'
-
   get 'paris' => 'staticpages#paris'
 
   get 'madrid' => 'staticpages#madrid'
+
+  get 'summary' =>'flights#show'
 
   post 'summary' => 'flights#index'
   
   get 'summary' => 'flights#index'
 
+  get 'summary/choice' => 'flights#choice'
+
+  post 'summary/choice' => 'flights#choice'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
