@@ -3892,3 +3892,1710 @@ Migrating to CreateResults (20141111191730)
   [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141111191730"]]
   [1m[36m (171.7ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:36:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (250.4ms)
+Completed 200 OK in 901ms (Views: 900.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-12 18:36:31 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 18:36:31 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-12 18:36:31 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-12 18:36:31 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-12 18:36:31 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-12 18:36:31 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 18:36:31 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 18:36:31 +0100
+
+
+Started GET "/assets/radiobutton.js?body=1" for 127.0.0.1 at 2014-11-12 18:36:31 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 18:36:48 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (124.2ms)
+Completed 200 OK in 641ms (Views: 573.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 18:36:49 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 18:36:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 18:36:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 18:36:49 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 18:36:49 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 18:36:49 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 18:36:49 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 18:36:49 +0100
+
+
+Started GET "/images/professionalpattern.jpg" for 127.0.0.1 at 2014-11-12 18:36:49 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/professionalpattern.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (128.2ms)
+
+
+Started POST "/summary/choice" for 127.0.0.1 at 2014-11-12 18:37:53 +0100
+Processing by FlightsController#choice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6CD9zTdmccd3JGQCI8isEUB/C9vi2u/jUeORcbZhQvo=", "commit"=>"Book!"}
+  Rendered flights/choice.html.erb within layouts/applicationchoice (1.0ms)
+Completed 200 OK in 224ms (Views: 222.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-12 18:37:54 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 18:37:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 18:37:54 +0100
+
+
+Started GET "/assets/applicationchoice.js?body=1" for 127.0.0.1 at 2014-11-12 18:37:54 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 18:41:24 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 18:41:24 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 18:41:24 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 19:17:49 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (14.0ms)
+Completed 200 OK in 288ms (Views: 284.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 19:17:49 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 19:17:49 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 19:17:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:17:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:17:49 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 19:17:49 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 19:17:49 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 19:17:49 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 19:17:49 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 19:18:05 +0100
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (35.1ms)
+Completed 200 OK in 249ms (Views: 248.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-12 19:18:05 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-12 19:18:05 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 19:18:06 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-12 19:18:06 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-12 19:18:06 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-12 19:18:06 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:18:06 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:18:06 +0100
+
+
+Started GET "/assets/radiobutton.js?body=1" for 127.0.0.1 at 2014-11-12 19:18:06 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 19:18:19 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (14.0ms)
+Completed 200 OK in 147ms (Views: 144.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 19:18:19 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 19:18:19 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 19:18:19 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:18:19 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 19:18:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:18:19 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 19:18:19 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 19:18:19 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 19:18:19 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 19:20:09 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (15.0ms)
+Completed 200 OK in 246ms (Views: 244.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 19:20:10 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 19:20:10 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 19:20:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:20:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:20:10 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 19:20:10 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 19:20:10 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 19:20:10 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 19:20:10 +0100
+
+
+Started POST "/summary/choice" for 127.0.0.1 at 2014-11-12 19:20:21 +0100
+Processing by FlightsController#choice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6CD9zTdmccd3JGQCI8isEUB/C9vi2u/jUeORcbZhQvo=", "commit"=>"Book!"}
+  Rendered flights/choice.html.erb within layouts/applicationchoice (1.0ms)
+Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:20:22 +0100
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-12 19:20:22 +0100
+
+
+Started GET "/assets/applicationchoice.js?body=1" for 127.0.0.1 at 2014-11-12 19:20:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:20:22 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 19:23:02 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  Rendered flights/show.html.erb within layouts/applicationsummary (4.0ms)
+Completed 500 Internal Server Error in 13ms
+
+SyntaxError (C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:15: syntax error, unexpected '<', expecting ')'
+			<table class="table_vuelos">
+			 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:16: syntax error, unexpected '<'
+				<tr>
+				 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:19: syntax error, unexpected '<', expecting keyword_end
+					</th>
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:22: unknown regexp options - th
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:23: syntax error, unexpected '<'
+					<th class="fecha_vuelo_salida display_inline_block">
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+						Departure date
+						              ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:28: unknown regexp options - th
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:29: syntax error, unexpected '<'
+					<th class="fecha_vuelo_llegada display_inline_block">
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+						Arrival date
+						            ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:34: unknown regexp options - th
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:35: syntax error, unexpected '<'
+					<th class="duracion display_inline_block">
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:37: syntax error, unexpected '<', expecting keyword_end
+					</th>
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:40: unknown regexp options - th
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:41: syntax error, unexpected '<'
+					<th class="aerolinea display_inline_block">
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:43: syntax error, unexpected '<', expecting keyword_end
+					</th>
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:45: unknown regexp options - th
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:46: syntax error, unexpected '<'
+				</tr>
+				 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:53: unknown regexp options - td
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:54: syntax error, unexpected '<'
+					<td class="ciudad_destino display_inline_block">
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:57: syntax error, unexpected '<', expecting keyword_end
+					</td>
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:61: unknown regexp options - td
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:62: syntax error, unexpected '<'
+					<td class="hora_vuelo_salida display_inline_block">
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:66: syntax error, unexpected '<', expecting keyword_end
+					</td>
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:70: unknown regexp options - td
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:71: syntax error, unexpected '<'
+					<td class="hora_vuelo_llegada display_inline_block">
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:74: syntax error, unexpected '<', expecting keyword_end
+					</td>
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:78: unknown regexp options - td
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:79: syntax error, unexpected '<'
+					<td class="aerolinea display_inline_block">
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:84: unknown regexp options - td
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:85: syntax error, unexpected '<'
+					<td>
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:88: syntax error, unexpected tBACK_REF, expecting keyword_end
+...ut_buffer.safe_append='						$'.freeze;@output_buffer.append...
+...                       						  ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:130: syntax error, unexpected '<', expecting ')'
+					</td>
+					 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:133: unknown regexp options - tr
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:134: syntax error, unexpected '<'
+			  	</table>
+			  	 ^
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:136: unknown regexp option - l
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:139: unterminated regexp meets end of file
+C:/Users/Sergio/Desktop/Web Development/Projects/Proyecto-Industria/DMS_trips/app/views/flights/show.html.erb:139: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/flights/show.html.erb:15: syntax error, unexpected '<', expecting ')'
+  app/views/flights/show.html.erb:16: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:19: syntax error, unexpected '<', expecting keyword_end
+  app/views/flights/show.html.erb:22: unknown regexp options - th
+  app/views/flights/show.html.erb:23: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:24: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/flights/show.html.erb:28: unknown regexp options - th
+  app/views/flights/show.html.erb:29: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/flights/show.html.erb:34: unknown regexp options - th
+  app/views/flights/show.html.erb:35: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:37: syntax error, unexpected '<', expecting keyword_end
+  app/views/flights/show.html.erb:40: unknown regexp options - th
+  app/views/flights/show.html.erb:41: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:43: syntax error, unexpected '<', expecting keyword_end
+  app/views/flights/show.html.erb:45: unknown regexp options - th
+  app/views/flights/show.html.erb:46: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:53: unknown regexp options - td
+  app/views/flights/show.html.erb:54: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:57: syntax error, unexpected '<', expecting keyword_end
+  app/views/flights/show.html.erb:61: unknown regexp options - td
+  app/views/flights/show.html.erb:62: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:66: syntax error, unexpected '<', expecting keyword_end
+  app/views/flights/show.html.erb:70: unknown regexp options - td
+  app/views/flights/show.html.erb:71: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:74: syntax error, unexpected '<', expecting keyword_end
+  app/views/flights/show.html.erb:78: unknown regexp options - td
+  app/views/flights/show.html.erb:79: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:84: unknown regexp options - td
+  app/views/flights/show.html.erb:85: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:88: syntax error, unexpected tBACK_REF, expecting keyword_end
+  app/views/flights/show.html.erb:130: syntax error, unexpected '<', expecting ')'
+  app/views/flights/show.html.erb:133: unknown regexp options - tr
+  app/views/flights/show.html.erb:134: syntax error, unexpected '<'
+  app/views/flights/show.html.erb:136: unknown regexp option - l
+  app/views/flights/show.html.erb:139: unterminated regexp meets end of file
+  app/views/flights/show.html.erb:139: syntax error, unexpected end-of-input, expecting ')'
+  app/controllers/flights_controller.rb:27:in `show'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (67.1ms)
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 19:23:29 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (14.0ms)
+Completed 200 OK in 145ms (Views: 142.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 19:23:30 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 19:23:30 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 19:23:30 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:23:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:23:30 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 19:23:30 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 19:23:30 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 19:23:30 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 19:23:30 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 19:24:37 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 261ms (Views: 257.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 19:24:38 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 19:24:38 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 19:24:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:24:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:24:38 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 19:24:38 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 19:24:38 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 19:24:38 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 19:24:38 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 19:27:28 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (12.0ms)
+Completed 200 OK in 252ms (Views: 247.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 19:27:29 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 19:27:29 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 19:27:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:27:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:27:29 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 19:27:29 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 19:27:29 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 19:27:29 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 19:27:29 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 19:27:42 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 264ms (Views: 263.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 19:27:42 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:27:42 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 19:27:42 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 19:27:42 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 19:27:42 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:27:42 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 19:27:42 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 19:27:42 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 19:27:42 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 19:28:02 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 142ms (Views: 138.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 19:28:02 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 19:28:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:28:02 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 19:28:02 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 19:28:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:28:02 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 19:28:02 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 19:28:02 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 19:28:02 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 19:52:18 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (12.0ms)
+Completed 200 OK in 151ms (Views: 149.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 19:52:18 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 19:52:18 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 19:52:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 19:52:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 19:52:18 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 19:52:18 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 19:52:18 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 19:52:18 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 19:52:18 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:10:01 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (10.0ms)
+Completed 200 OK in 268ms (Views: 266.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:10:02 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:10:02 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:10:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:10:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:10:02 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:10:02 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:10:02 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:10:02 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:10:02 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:11:53 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (10.0ms)
+Completed 200 OK in 267ms (Views: 265.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:11:53 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:11:53 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:11:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:11:53 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:11:53 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:11:53 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:11:53 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:11:53 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:11:53 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:13:50 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 269ms (Views: 266.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:13:50 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:13:50 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:13:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:13:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:13:51 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:13:51 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:13:51 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:13:51 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:13:51 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:36:05 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 268ms (Views: 265.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:36:05 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:36:05 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:36:05 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:36:05 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:36:05 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:36:05 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:36:05 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:36:05 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:36:05 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:36:58 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 262ms (Views: 259.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:36:59 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:36:59 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:36:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:36:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:36:59 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:36:59 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:36:59 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:36:59 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:36:59 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:39:40 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 246ms (Views: 243.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:39:40 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:39:40 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:39:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:39:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:39:40 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:39:40 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:39:40 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:39:40 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:39:40 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:40:19 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 138ms (Views: 135.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:40:19 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:40:19 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:40:20 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:40:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:40:20 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:40:20 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:40:20 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:40:20 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:40:20 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:42:55 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 249ms (Views: 248.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:42:55 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:42:55 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:42:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:42:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:42:55 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:42:55 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:42:55 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:42:55 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:42:55 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:44:51 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 256ms (Views: 253.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:44:51 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:44:51 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:44:51 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:44:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:44:51 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:44:51 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:44:51 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:44:51 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:44:51 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:45:28 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 146ms (Views: 144.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:46:20 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (13.0ms)
+Completed 200 OK in 160ms (Views: 157.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:46:20 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:46:21 +0100
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-12 20:46:55 +0100
+
+
+Started GET "/assets/applicationchoice.js?body=1" for 127.0.0.1 at 2014-11-12 20:46:55 +0100
+
+
+Started GET "/summary/" for 127.0.0.1 at 2014-11-12 20:46:59 +0100
+Processing by FlightsController#show as HTML
+  Rendered flights/show.html.erb within layouts/applicationsummary (7.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     7: 
+     8: 		<% @price=[] %>
+     9: 
+    10: 		<% @flights.each do |flight| %>
+    11: 			<% @flights_back.each do |flight_back| %>
+    12: 
+    13: 		<li>
+  app/views/flights/show.html.erb:10:in `_app_views_flights_show_html_erb___1202404774_68720580'
+  app/controllers/flights_controller.rb:27:in `show'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 20:47:15 +0100
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (54.1ms)
+Completed 200 OK in 270ms (Views: 269.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-12 20:47:16 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-12 20:47:16 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-12 20:47:16 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-12 20:47:16 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-12 20:47:16 +0100
+
+
+Started GET "/assets/radiobutton.js?body=1" for 127.0.0.1 at 2014-11-12 20:47:16 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:47:32 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 145ms (Views: 142.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:47:32 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:47:32 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:47:32 +0100
+
+
+Started GET "/images/professionalpattern.jpg" for 127.0.0.1 at 2014-11-12 20:47:32 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/professionalpattern.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.1ms)
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:49:02 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (12.0ms)
+Completed 200 OK in 246ms (Views: 243.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:49:02 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:49:02 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:49:02 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:02 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:02 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:02 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:02 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:49:02 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:49:19 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 263ms (Views: 260.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:20 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:49:20 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:49:20 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:20 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:49:20 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:49:20 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:20 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:20 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:49:48 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (10.0ms)
+Completed 200 OK in 254ms (Views: 253.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:49:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:48 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:48 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:49:48 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:48 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:49:48 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:48 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:49:48 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:49:49 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:50:38 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 264ms (Views: 262.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:50:38 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:50:38 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:50:38 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:50:38 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:50:38 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:50:38 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:50:38 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:50:38 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:50:38 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:51:14 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (12.0ms)
+Completed 200 OK in 265ms (Views: 262.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:51:14 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:51:14 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:51:14 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:14 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:14 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:14 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:14 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:14 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:51:14 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:51:33 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 262ms (Views: 259.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:51:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:34 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:51:34 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:51:34 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:34 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:34 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:34 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:34 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:51:34 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:51:49 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (10.0ms)
+Completed 200 OK in 250ms (Views: 247.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:51:50 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:51:50 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:51:50 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:50 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:50 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:51:50 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:51:50 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:52:18 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (12.0ms)
+Completed 200 OK in 275ms (Views: 272.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:52:18 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:52:18 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:52:18 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:52:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:52:18 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:52:18 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:52:18 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:52:18 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:52:18 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:52:35 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 276ms (Views: 274.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:52:35 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:52:35 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:52:35 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:52:36 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:52:36 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:52:36 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:52:36 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:52:36 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:52:36 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:52:59 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (13.0ms)
+Completed 200 OK in 259ms (Views: 255.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:00 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:00 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:00 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:00 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:00 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:00 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:00 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:00 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:53:00 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:53:04 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 144ms (Views: 142.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:05 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:05 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:05 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:05 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:05 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:05 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:05 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:05 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:53:05 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:53:07 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (12.0ms)
+Completed 200 OK in 146ms (Views: 143.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:08 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:08 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:08 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:08 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:08 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:08 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:53:08 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:53:10 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (12.0ms)
+Completed 200 OK in 145ms (Views: 141.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:10 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:10 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:10 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:10 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:10 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:10 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:10 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:10 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:53:11 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:53:36 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (12.0ms)
+Completed 200 OK in 152ms (Views: 150.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:36 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:36 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:36 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:36 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:36 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:36 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:36 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:36 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:53:36 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:53:46 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (1.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 139ms (Views: 136.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:46 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:46 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:53:46 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:46 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:46 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:53:46 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:53:46 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 20:54:28 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (1.0ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (11.0ms)
+Completed 200 OK in 266ms (Views: 264.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 20:54:29 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 20:54:29 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 20:54:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 20:54:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 20:54:29 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 20:54:29 +0100
+
+
+Started GET "/assets/onlyone.js?body=1" for 127.0.0.1 at 2014-11-12 20:54:29 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 20:54:29 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 20:54:29 +0100
