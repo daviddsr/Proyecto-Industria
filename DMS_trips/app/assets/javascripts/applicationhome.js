@@ -16,6 +16,5 @@
 // require_tree .
 
 
-//= require dataBase_funcionalities
-//= require index_storage_form
+//= require funcion_filtros
 //= require radiobutton

@@ -1,6 +1,12 @@
 class StaticpagesController < ApplicationController
+	def json
+		@flights=Flight.all
+		@flights.to_json
+		render json: @flights
 
+	end
 	def home
+
 		render 'home', :layout=>'applicationhome'
 	end
 

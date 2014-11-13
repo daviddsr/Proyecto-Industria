@@ -12,7 +12,11 @@ class CreateFlights < ActiveRecord::Migration
     	f.string :aerolinea
     	f.string :country
     	f.string :countrydestination
-    	f.integer :price	
+    	f.integer :price
+        f.string :imagennaranja	
+        f.string :imagenverde
+        f.string :imagenamarilla
+        f.string :imagenrojo
 
       	f.timestamps
     end

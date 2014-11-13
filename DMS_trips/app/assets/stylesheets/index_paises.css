@@ -127,6 +127,27 @@
 	left: 45.7%;
 }
 
+.italiagreen {
+	display: block;
+	position: absolute;
+	top: 23.6%;
+	left: 45.7%;
+}
+
+.italiayellow {
+	display: block;
+	position: absolute;
+	top: 23.6%;
+	left: 45.7%;
+}
+
+.italiared {
+	display: block;
+	position: absolute;
+	top: 23.6%;
+	left: 45.7%;
+}
+
 .suiza {
 	display: block;
 	position: absolute;
@@ -183,6 +204,27 @@
 	left: 45.35%;
 }
 
+.holandagreen {
+	display: block;
+	position: absolute;
+	top: 18.4%;
+	left: 45.35%;
+}
+
+.holandayellow {
+	display: block;
+	position: absolute;
+	top: 18.4%;
+	left: 45.35%;
+}
+
+.holandared {
+	display: block;
+	position: absolute;
+	top: 18.4%;
+	left: 45.35%;
+}
+
 .austria {
 	display: block;
 	position: absolute;
@@ -190,39 +232,116 @@
 	left: 46.9%;
 }
 
-.eslovenia {
+.india {
 	display: block;
 	position: absolute;
-	top: 23%;
-	left: 47.6%;
+	top: 30.8%;
+	left: 63.6%;
 }
 
-.croacia {
+.indiagreen {
 	display: block;
 	position: absolute;
-	top: 23.8%;
-	left: 48%;
+	top: 30.8%;
+	left: 63.6%;
 }
 
-.bosnia {
+.indiayellow {
 	display: block;
 	position: absolute;
-	top: 24.6%;
-	left: 48.5%;
+	top: 30.8%;
+	left: 63.6%;
 }
 
-.montenegro {
+.indiared {
 	display: block;
 	position: absolute;
-	top: 25.9%;
-	left: 49.15%;
+	top: 30.8%;
+	left: 63.6%;;
 }
 
-.serbia {
+.turquia {
 	display: block;
 	position: absolute;
 	top: 24%;
-	left: 49.15%;
+	left: 51.8%;
+}
+
+.turquiagreen {
+	display: block;
+	position: absolute;
+	top: 24%;
+	left: 51.8%;
+}
+
+.turquiayellow {
+	display: block;
+	position: absolute;
+	top: 24%;
+	left: 51.8%;
+}
+
+.turquiared {
+	display: block;
+	position: absolute;
+	top: 24%;
+	left: 51.8%;
+}
+
+.china {
+	display: block;
+	position: absolute;
+	top: 14%;
+	left: 66%;
+}
+
+.chinagreen {
+	display: block;
+	position: absolute;
+	top: 14%;
+	left: 66%;
+}
+
+.chinayellow {
+	display: block;
+	position: absolute;
+	top: 14%;
+	left: 66%;
+}
+
+.chinared {
+	display: block;
+	position: absolute;
+	top: 14%;
+	left: 66%;
+}
+
+.australia {
+	display: block;
+	position: absolute;
+	top: 66%;
+	left: 76%;
+}
+
+.australiagreen {
+	display: block;
+	position: absolute;
+	top: 66%;
+	left: 76%;
+}
+
+.australiayellow {
+	display: block;
+	position: absolute;
+	top: 66%;
+	left: 76%;
+}
+
+.australiared {
+	display: block;
+	position: absolute;
+	top: 66%;
+	left: 76%;
 }
 
 .display {

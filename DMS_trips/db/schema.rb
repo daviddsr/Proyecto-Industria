@@ -25,6 +25,10 @@ ActiveRecord::Schema.define(version: 20141111191730) do
     t.string   "aerolinea"
     t.string   "countrydestination"
     t.integer  "price"
+    t.string   "imagennaranja"
+    t.string   "imagenverde"
+    t.string   "imagenamarilla"
+    t.string   "imagenrojo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
