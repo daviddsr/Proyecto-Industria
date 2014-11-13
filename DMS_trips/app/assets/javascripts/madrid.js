@@ -1,9 +1,11 @@
 
+// SLIDE //
+
 var slideImg=new Array();
 var numImg=3;
 for (i=0; i<numImg; i++){
   	slideImg[i]=new Image();
-  	slideImg[i].src="img/image"+(i+1)+".jpg";
+  	slideImg[i].src="/assets/madrid"+(i+1)+".jpg";
 }
 var curImage=-1;
 function swapImg(){
@@ -28,3 +30,59 @@ function swapImg(){
   	}
 }
 setTimeout("swapImg()", 4000);
+
+// VIDEOS //
+
+
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+
+function onPlayerReady(event) {
+  event.target.playVideo();
+}
+
+var done = false;
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.PLAYING && !done) {
+    setTimeout(stopVideo, 6000);
+    done = true;
+  }
+}
+function stopVideo() {
+  player.stopVideo();
+}
+
+// The video appears typing this on the console//
+
+//function onYouTubeIframeAPIReady(x, y) {
+//  player = new YT.Player(x, {
+//    height: '220',
+//    width: '350',
+//    videoId: y,
+//    events: {
+//      //'onReady': onPlayerReady,
+//      'onStateChange': onPlayerStateChange
+//    }
+//  });
+//}
+//onYouTubeIframeAPIReady('paris1', 'hWo-43ObCP8');
+
+//////// Paris 1 ////////
+
+//onYouTubeIframeAPIReady//
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('video1', {
+    height: '220',
+    width: '350',
+    videoId: 'sqXQZAfShJM',
+    events: {
+      //'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}

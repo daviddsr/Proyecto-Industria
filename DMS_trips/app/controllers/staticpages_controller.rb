@@ -9,7 +9,7 @@ class StaticpagesController < ApplicationController
 	end
 
 	def madrid
-		render 'madrid'
+		render 'madrid', :layout=>'applicationmadrid'
 	end
 
 end

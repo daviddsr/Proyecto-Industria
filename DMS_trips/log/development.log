@@ -3892,3 +3892,3059 @@ Migrating to CreateResults (20141111191730)
   [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141111191730"]]
   [1m[36m (171.7ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 09:14:21 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (222.6ms)
+Completed 200 OK in 693ms (Views: 692.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/dataBase_funcionalities.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/index_storage_form.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/radiobutton.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/applicationhome.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/logodms200.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/mapadelmundo.svg.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/spain36green.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/spain36red.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/portugal18default.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/spain36yellow.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/spain36default.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/portugal18green.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/portugal18yellow.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/portugal18red.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/francia31green.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/francia31yellow.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/francia31default.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/francia31red.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/unitedkingdom34default.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/unitedkingdom34green.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/unitedkingdom34yellow.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/unitedkingdom34red.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/italia36default.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/alemania25default.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/alemania25green.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/alemania25yellow.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/alemania25red.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/belgica10default.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/holanda10default.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/assets/austria17default.png" for 127.0.0.1 at 2014-11-12 09:14:23 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 09:14:52 +0100
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.5ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.4ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (40.9ms)
+Completed 200 OK in 253ms (Views: 221.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:52 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:52 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:52 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:52 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:52 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:52 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:52 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 09:14:53 +0100
+
+
+Started GET "/images/professionalpattern.jpg" for 127.0.0.1 at 2014-11-12 09:14:53 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/professionalpattern.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (108.5ms)
+
+
+Started POST "/summary/choice" for 127.0.0.1 at 2014-11-12 09:14:57 +0100
+Processing by FlightsController#choice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SeKFd9+x8VdtUGlr5rwBBEylz5a15tosSD3rA80aHgU=", "commit"=>"Book!"}
+  Rendered flights/choice.html.erb within layouts/applicationchoice (0.7ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:57 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:57 +0100
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-12 09:14:57 +0100
+
+
+Started GET "/assets/applicationchoice.js?body=1" for 127.0.0.1 at 2014-11-12 09:14:57 +0100
+
+
+Started POST "/summary/choice" for 127.0.0.1 at 2014-11-12 09:15:00 +0100
+Processing by FlightsController#choice as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SeKFd9+x8VdtUGlr5rwBBEylz5a15tosSD3rA80aHgU=", "commit"=>"Book!"}
+  Rendered flights/choice.html.erb within layouts/applicationchoice (0.2ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-12 09:15:00 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 09:15:00 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 09:15:00 +0100
+
+
+Started GET "/assets/applicationchoice.js?body=1" for 127.0.0.1 at 2014-11-12 09:15:00 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 11:49:07 +0100
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (45.7ms)
+Completed 200 OK in 362ms (Views: 362.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/dataBase_funcionalities.js?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/radiobutton.js?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/index_storage_form.js?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/applicationhome.js?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/logodms200.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/mapadelmundo.svg.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/spain36green.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/portugal18default.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/spain36red.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/spain36yellow.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/spain36default.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/portugal18green.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/portugal18yellow.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/francia31default.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/francia31green.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/francia31yellow.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/unitedkingdom34default.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/portugal18red.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/francia31red.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/unitedkingdom34green.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/unitedkingdom34red.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/italia36default.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/alemania25default.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/alemania25green.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/unitedkingdom34yellow.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/alemania25yellow.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/alemania25red.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/belgica10default.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/holanda10default.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/assets/austria17default.png" for 127.0.0.1 at 2014-11-12 11:49:08 +0100
+
+
+Started GET "/summary?utf8=%E2%9C%93&radiobutton=on&origin=Madrid&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&from_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=6&destination=Paris&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%281i%29%5D=2014&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%282i%29%5D=11&to_date%5B%7B%3Adefault%3D%3EWed%2C+12+Nov+2014%7D%283i%29%5D=8" for 127.0.0.1 at 2014-11-12 18:44:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FlightsController#show as HTML
+  Parameters: {"utf8"=>"✓", "radiobutton"=>"on", "origin"=>"Madrid", "from_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"6"}, "destination"=>"Paris", "to_date"=>{"{:default=>Wed, 12 Nov 2014}(1i)"=>"2014", "{:default=>Wed, 12 Nov 2014}(2i)"=>"11", "{:default=>Wed, 12 Nov 2014}(3i)"=>"8"}}
+  [1m[35mFlight Load (0.4ms)[0m  SELECT "flights".* FROM "flights"  WHERE (origin like '%Madrid%') AND (destination like '%Paris%') AND (from_date like '%2014-11-06%')
+  [1m[36mFlight Load (0.4ms)[0m  [1mSELECT "flights".* FROM "flights"  WHERE (origin like '%Paris%') AND (destination like '%Madrid%') AND (from_date like '%2014-11-08%')[0m
+  Rendered flights/show.html.erb within layouts/applicationsummary (76.5ms)
+Completed 200 OK in 320ms (Views: 307.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:07 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 18:44:07 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 18:44:08 +0100
+
+
+Started GET "/assets/calculateprice.js?body=1" for 127.0.0.1 at 2014-11-12 18:44:08 +0100
+
+
+Started GET "/assets/applicationsummary.js?body=1" for 127.0.0.1 at 2014-11-12 18:44:08 +0100
+
+
+Started GET "/assets/logo150.png" for 127.0.0.1 at 2014-11-12 18:44:08 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:44:14 +0100
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (211.2ms)
+Completed 200 OK in 779ms (Views: 778.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 18:44:15 +0100
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (19.4ms)
+Completed 200 OK in 239ms (Views: 238.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:15 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:15 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:15 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:15 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:15 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:15 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:15 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/dataBase_funcionalities.js?body=1" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/index_storage_form.js?body=1" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/radiobutton.js?body=1" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/applicationhome.js?body=1" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/logodms200.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/mapadelmundo.svg.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/spain36default.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/spain36yellow.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/spain36red.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/portugal18green.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/portugal18default.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/spain36green.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/portugal18yellow.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/portugal18red.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/francia31default.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/francia31green.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/francia31yellow.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/francia31red.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/unitedkingdom34default.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/unitedkingdom34green.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/unitedkingdom34yellow.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/unitedkingdom34red.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/italia36default.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/alemania25default.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/alemania25green.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/alemania25yellow.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/alemania25red.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/belgica10default.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/holanda10default.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/assets/austria17default.png" for 127.0.0.1 at 2014-11-12 18:44:16 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-13 13:44:03 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (222.1ms)
+Completed 200 OK in 674ms (Views: 673.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/index_storage_form.js?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/radiobutton.js?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/applicationhome.js?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/dataBase_funcionalities.js?body=1" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/logodms200.png" for 127.0.0.1 at 2014-11-13 13:44:04 +0100
+
+
+Started GET "/assets/mapadelmundo.svg.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/spain36green.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/spain36red.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/portugal18default.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/spain36yellow.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/spain36default.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/portugal18green.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/portugal18yellow.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/portugal18red.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/francia31green.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/francia31red.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/francia31yellow.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/francia31default.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/unitedkingdom34default.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/unitedkingdom34green.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/unitedkingdom34yellow.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/unitedkingdom34red.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/italia36default.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/alemania25default.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/alemania25green.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/alemania25yellow.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/alemania25red.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/belgica10default.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/holanda10default.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/assets/austria17default.png" for 127.0.0.1 at 2014-11-13 13:44:05 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (46.5ms)
+Completed 200 OK in 232ms (Views: 231.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/dataBase_funcionalities.js?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/index_storage_form.js?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/radiobutton.js?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/applicationhome.js?body=1" for 127.0.0.1 at 2014-11-13 13:46:04 +0100
+
+
+Started GET "/assets/logodms200.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/mapadelmundo.svg.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/spain36default.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/spain36green.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/spain36red.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/spain36yellow.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/portugal18green.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/portugal18default.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/portugal18red.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/portugal18yellow.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/francia31default.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/francia31green.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/francia31yellow.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/francia31red.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/unitedkingdom34default.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/unitedkingdom34green.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/unitedkingdom34yellow.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/unitedkingdom34red.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/italia36default.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/alemania25default.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/alemania25green.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/alemania25yellow.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/alemania25red.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/belgica10default.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/austria17default.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/assets/holanda10default.png" for 127.0.0.1 at 2014-11-13 13:46:05 +0100
+
+
+Started GET "/paris" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+Processing by StaticpagesController#paris as HTML
+  Rendered staticpages/paris.html.erb within layouts/applicationparis (37.1ms)
+Completed 200 OK in 242ms (Views: 241.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/paris.js?body=1" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/applicationparis.js?body=1" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/paris1.jpg" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/pack.png" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/camera.png" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/gradHat.png" for 127.0.0.1 at 2014-11-13 13:46:08 +0100
+
+
+Started GET "/assets/heart.png" for 127.0.0.1 at 2014-11-13 13:46:09 +0100
+
+
+Started GET "/assets/paris2.jpg" for 127.0.0.1 at 2014-11-13 13:46:09 +0100
+
+
+Started GET "/assets/paris5.jpg" for 127.0.0.1 at 2014-11-13 13:46:09 +0100
+
+
+Started GET "/assets/paris3.jpg" for 127.0.0.1 at 2014-11-13 13:46:09 +0100
+
+
+Started GET "/assets/paris4.jpg" for 127.0.0.1 at 2014-11-13 13:46:09 +0100
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 13:53:59 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 813ms (Views: 812.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 13:53:59 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 13:53:59 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 13:53:59 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/madrid.css" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+Processing by StaticpagesController#madrid as CSS
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template staticpages/madrid, application/madrid with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/home/miguelitomola/Documents/WebDevelopment/Projects/Proyecto-Industria/DMS_trips/app/views"
+):
+  app/controllers/staticpages_controller.rb:12:in `madrid'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+
+Started GET "/madrid.js" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+Processing by StaticpagesController#madrid as JS
+  Rendered staticpages/madrid.html.erb (3.1ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/image1.jpg" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/img/image1.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.8ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.1ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.4ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (89.8ms)
+
+
+Started GET "/images/professionalpattern.jpg" for 127.0.0.1 at 2014-11-13 13:54:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/professionalpattern.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.2ms)
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:05:19 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 423ms (Views: 422.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/madrid.css" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+Processing by StaticpagesController#madrid as CSS
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template staticpages/madrid, application/madrid with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/home/miguelitomola/Documents/WebDevelopment/Projects/Proyecto-Industria/DMS_trips/app/views"
+):
+  app/controllers/staticpages_controller.rb:12:in `madrid'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+
+Started GET "/madrid.js" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+Processing by StaticpagesController#madrid as JS
+  Rendered staticpages/madrid.html.erb (0.1ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/img/image1.jpg" for 127.0.0.1 at 2014-11-13 15:05:20 +0100
+
+ActionController::RoutingError (No route matches [GET] "/img/image1.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.8ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.9ms)
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:09:28 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 421ms (Views: 420.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/madrid.css" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+Processing by StaticpagesController#madrid as CSS
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template staticpages/madrid, application/madrid with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/home/miguelitomola/Documents/WebDevelopment/Projects/Proyecto-Industria/DMS_trips/app/views"
+):
+  app/controllers/staticpages_controller.rb:12:in `madrid'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (4.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+
+Started GET "/madrid.js" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+Processing by StaticpagesController#madrid as JS
+  Rendered staticpages/madrid.html.erb (42.2ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/image1.jpg" for 127.0.0.1 at 2014-11-13 15:09:29 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/image1.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.7ms)
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (47.9ms)
+Completed 200 OK in 354ms (Views: 354.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/madrid.css" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+Processing by StaticpagesController#madrid as CSS
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template staticpages/madrid, application/madrid with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/home/miguelitomola/Documents/WebDevelopment/Projects/Proyecto-Industria/DMS_trips/app/views"
+):
+  app/controllers/staticpages_controller.rb:12:in `madrid'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (7.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+
+
+Started GET "/madrid.js" for 127.0.0.1 at 2014-11-13 15:14:58 +0100
+Processing by StaticpagesController#madrid as JS
+  Rendered staticpages/madrid.html.erb (38.5ms)
+Completed 200 OK in 48ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/madrid1.jpg" for 127.0.0.1 at 2014-11-13 15:14:59 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/madrid1.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.7ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.7ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:42 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:42 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+
+
+Started GET "/madrid.css" for 127.0.0.1 at 2014-11-13 15:15:43 +0100
+Processing by StaticpagesController#madrid as CSS
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template staticpages/madrid, application/madrid with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/home/miguelitomola/Documents/WebDevelopment/Projects/Proyecto-Industria/DMS_trips/app/views"
+):
+  app/controllers/staticpages_controller.rb:12:in `madrid'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:18:24 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 339ms (Views: 338.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/images/madrid1.jpg" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/madrid1.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 15:18:25 +0100
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:18:48 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (39.9ms)
+Completed 200 OK in 371ms (Views: 370.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:48 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:48 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+
+Started GET "/images/madrid1" for 127.0.0.1 at 2014-11-13 15:18:49 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/madrid1"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.4ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.1ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.2ms)
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:19:28 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 364ms (Views: 364.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+
+Started GET "/images/madrid1" for 127.0.0.1 at 2014-11-13 15:19:29 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/madrid1"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.8ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.6ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.3ms)
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:19:58 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 365ms (Views: 364.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+
+Started GET "/images/madrid1" for 127.0.0.1 at 2014-11-13 15:19:59 +0100
+
+ActionController::RoutingError (No route matches [GET] "/images/madrid1"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.6ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.1ms)
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:20:23 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 371ms (Views: 370.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:23 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:23 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/assets/madrid1.jpg" for 127.0.0.1 at 2014-11-13 15:20:24 +0100
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:21:22 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 493ms (Views: 492.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:22 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:22 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:22 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/assets/madrid1.jpg" for 127.0.0.1 at 2014-11-13 15:21:23 +0100
+
+
+Started GET "/paris" for 127.0.0.1 at 2014-11-13 15:22:07 +0100
+Processing by StaticpagesController#paris as HTML
+  Rendered staticpages/paris.html.erb within layouts/applicationparis (2.0ms)
+Completed 200 OK in 141ms (Views: 140.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:22:07 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:22:07 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:22:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:22:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:22:07 +0100
+
+
+Started GET "/assets/paris1.jpg" for 127.0.0.1 at 2014-11-13 15:22:07 +0100
+
+
+Started GET "/assets/pack.png" for 127.0.0.1 at 2014-11-13 15:22:07 +0100
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:26:58 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 465ms (Views: 465.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/madrid1.jpg" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/pack.png" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/camera.png" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/gradHat.png" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/assets/heart.png" for 127.0.0.1 at 2014-11-13 15:26:59 +0100
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:28:29 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 496ms (Views: 496.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationchoice.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/applicationparis.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/applicationsummary.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/summarycss.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/paris.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/common.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/flights.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/rails_form_home.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/staticpages.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:28:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:28:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-13 15:28:31 +0100
+
+
+Started GET "/assets/madrid1.jpg" for 127.0.0.1 at 2014-11-13 15:28:31 +0100
+
+
+Started GET "/assets/pack.png" for 127.0.0.1 at 2014-11-13 15:28:31 +0100
+
+
+Started GET "/assets/camera.png" for 127.0.0.1 at 2014-11-13 15:28:31 +0100
+
+
+Started GET "/assets/gradHat.png" for 127.0.0.1 at 2014-11-13 15:28:31 +0100
+
+
+Started GET "/assets/heart.png" for 127.0.0.1 at 2014-11-13 15:28:31 +0100
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:31:43 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/applicationmadrid (2.5ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( applicationmadrid.css )` to `config/initializers/assets.rb` and restart your server):
+    2: <html>
+    3: <head>
+    4:   <title>DMSTrips</title>
+    5:   <%= stylesheet_link_tag    'applicationmadrid', media: 'all' %>
+    6:   <%= javascript_include_tag 'applicationmadrid' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/applicationmadrid.html.erb:5:in `_app_views_layouts_applicationmadrid_html_erb__17698333_96103230'
+  app/controllers/staticpages_controller.rb:12:in `madrid'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.9ms)
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:33:40 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/applicationmadrid (8.1ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( applicationmadrid.css )` to `config/initializers/assets.rb` and restart your server):
+    2: <html>
+    3: <head>
+    4:   <title>DMSTrips</title>
+    5:   <%= stylesheet_link_tag    'applicationmadrid', media: 'all' %>
+    6:   <%= javascript_include_tag 'applicationmadrid' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/applicationmadrid.html.erb:5:in `_app_views_layouts_applicationmadrid_html_erb__17698333_96103230'
+  app/controllers/staticpages_controller.rb:12:in `madrid'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (27.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.3ms)
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:33:41 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/applicationmadrid (2.2ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( applicationmadrid.css )` to `config/initializers/assets.rb` and restart your server):
+    2: <html>
+    3: <head>
+    4:   <title>DMSTrips</title>
+    5:   <%= stylesheet_link_tag    'applicationmadrid', media: 'all' %>
+    6:   <%= javascript_include_tag 'applicationmadrid' %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/applicationmadrid.html.erb:5:in `_app_views_layouts_applicationmadrid_html_erb__17698333_96103230'
+  app/controllers/staticpages_controller.rb:12:in `madrid'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.4ms)
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:33:57 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/applicationmadrid (27.4ms)
+Completed 200 OK in 254ms (Views: 253.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/madrid.js?body=1" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/applicationmadrid.js?body=1" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/madrid1.jpg" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/pack.png" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/camera.png" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/gradHat.png" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/heart.png" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/madrid2.jpg" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:33:58 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.3ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:34:10 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.3ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:34:22 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.6ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:34:35 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.5ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:34:47 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (37.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.4ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:34:59 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.3ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:35:11 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.4ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (61.5ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:35:23 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.9ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.6ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.4ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:35:35 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.8ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:35:47 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.7ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.0ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:35:59 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.9ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:36:11 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.2ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:36:23 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.8ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:36:35 +0100
+
+ActionController::RoutingError (No route matches [GET] "/madrid3.jpg"):
+  actionpack (4.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.7) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.7) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.7) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.7) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.7) lib/rails/engine.rb:514:in `call'
+  railties (4.1.7) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/miguelitomola/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/miguelitomola/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.2ms)
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:36:47 +0100
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/applicationmadrid (2.3ms)
+Completed 200 OK in 160ms (Views: 159.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/applicationmadrid.js?body=1" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/madrid1.jpg" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/madrid.js?body=1" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/pack.png" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/camera.png" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/gradHat.png" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/heart.png" for 127.0.0.1 at 2014-11-13 15:41:50 +0100
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:41:51 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-13 15:42:26 +0100
+Processing by StaticpagesController#home as HTML
+  Rendered staticpages/home.html.erb within layouts/applicationhome (236.2ms)
+Completed 200 OK in 558ms (Views: 557.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/applicationhome.css?body=1" for 127.0.0.1 at 2014-11-13 15:42:26 +0100
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:42:26 +0100
+
+
+Started GET "/assets/index_form.css?body=1" for 127.0.0.1 at 2014-11-13 15:42:26 +0100
+
+
+Started GET "/assets/index_style.css?body=1" for 127.0.0.1 at 2014-11-13 15:42:26 +0100
+
+
+Started GET "/assets/index_filtros.css?body=1" for 127.0.0.1 at 2014-11-13 15:42:26 +0100
+
+
+Started GET "/assets/index_divOnFrance.css?body=1" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/index_paises.css?body=1" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/index_logIn.css?body=1" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/dataBase_funcionalities.js?body=1" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/index_storage_form.js?body=1" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/radiobutton.js?body=1" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/applicationhome.js?body=1" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/logodms200.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/mapadelmundo.svg.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/spain36default.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/spain36green.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/spain36yellow.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/spain36red.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/portugal18default.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/portugal18green.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/portugal18yellow.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/portugal18red.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/francia31default.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/francia31yellow.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/francia31green.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/francia31red.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/unitedkingdom34default.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/unitedkingdom34green.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/unitedkingdom34yellow.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/unitedkingdom34red.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/italia36default.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/alemania25default.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/alemania25green.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/alemania25yellow.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/alemania25red.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/belgica10default.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/holanda10default.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/assets/austria17default.png" for 127.0.0.1 at 2014-11-13 15:42:27 +0100
+
+
+Started GET "/madrid" for 127.0.0.1 at 2014-11-13 15:43:45 +0100
+Processing by StaticpagesController#madrid as HTML
+  Rendered staticpages/madrid.html.erb within layouts/applicationmadrid (2.0ms)
+Completed 200 OK in 102ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/applicationmadrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/madrid.css?body=1" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/madrid.js?body=1" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/applicationmadrid.js?body=1" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/madrid1.jpg" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/pack.png" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/camera.png" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/gradHat.png" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/heart.png" for 127.0.0.1 at 2014-11-13 15:43:46 +0100
+
+
+Started GET "/assets/madrid3.jpg" for 127.0.0.1 at 2014-11-13 15:43:46 +0100

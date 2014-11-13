@@ -1,41 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<script type="text/javascript" src="./madrid.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="madrid.css">
-	<title>Madrid</title>
-</head>
-<body>
-	<div id="maindiv">
-		<header class="header">
-
-			<p class="toptitle">Madrid - Spain</p>
-		</header>
+<div id="maindiv">
+	<header class="header">
+		<p class="toptitle">Madrid - Spain</p>
+	</header>
 	<!-- Images //-->
 		<div class="imgdiv">
-			<img src="./img/image1.jpg" width="100%" height="500" name="madrid" class="madrid" id="madrid">
+			<%= image_tag 'madrid1.jpg', style:"width:100%; height:500", name:"madrid", class:"madrid", id:"madrid"%>
 			<div class="imgdetails">
 				<h3 class="txtdetails">Lorem lo peta</h3>
 				<p class="txtdetails">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur voluptatibus omnis quia impedit nihil veniam possimus aspernatur rem similique, deleniti aliquid consequuntur veritatis nulla eligendi assumenda, eaque nostrum, inventore alias.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias asperiores debitis esse, nam, aperiam inventore. Eveniet distinctio, ullam veniam ab? At, culpa voluptatum vitae, dignissimos fugiat eligendi error iste!
-				</p>
-			</div>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias asperiores debitis esse, nam, aperiam inventore. Eveniet distinctio, ullam veniam ab? At, culpa voluptatum vitae, dignissimosfugiat eligendi error iste!
+			</p>
 		</div>
-	<!-- Prices //-->
-		<section class="sections oddsections">
-			<h3 class="pricetitle">The best prices on the market</h3>
-		</section>
-	<!-- Information //-->
-		<section class="sections evensections">
-
-		</section>
-	<!-- Videos //-->
-		<section class="sections oddsections">
-			
-		</section>
 	</div>
-</body>
-</html>
+<!-- Prices //-->
+	<section class="sections oddsections">
+		<h3 class="pricetitle">Choose any of our awesome packs</h3>
+		<h4 class="prtitledetails">There are different kinds of packs:</h4>
+		<p class="pricedetails">
+			We have prepared several Travel-pack´s<br/><br/> with different places, activities, resorts, prices...<br/><br/> Always looking for diversity to find the<br/><br/> perfect trip for our costumers.
+		</p>
+		<%= image_tag "pack.png", style:"width:100px; height:100px", class:"giftimg"%>
+		<div class="packs packs-top">
+			<%= image_tag "camera.png", class:"packimg cameraimg" %>
+			<h3 class="price">$220</h3>
+			<p class="byperson">By person</p>
+			<p class="infopack">
+				2 Nights<br/>
+				+<br/>
+				Breackfast
+			</p>
+		</div>
+		<div class="packs packs-top">
+			<%= image_tag "gradHat.png", class:"packimg"%>
+			<h3 class="price">$420</h3>
+			<p class="byperson">By person</p>
+			<p class="infopack">
+				2 Nights<br/>
+				+<br/>
+				2 Speeches<br/>
+			</p>
+			<p class="infopack extrainfo">
+				(Google & Amazon)
+			</p>
+		</div>
+		<div class="packs packs-top">
+			<%= image_tag "heart.png", class:"packimg"%>
+			<h3 class="price">$180</h3>
+			<p class="byperson">By person</p>
+			<p class="infopack">
+				1 Night<br/>
+				+<br/>
+				Breackfast
+			</p>
+		</div>
+		<div class="packs packs-bot">
+			<%= image_tag "heart.png", class:"packimg"%>
+			<h3 class="price">$310</h3>
+			<p class="byperson">By person</p>
+			<p class="infopack">
+				2 Nights<br/>
+				+<br/>
+				Dinner
+			</p>
+		</div>
+		<div class="packs packs-bot">
+			<%= image_tag "camera.png", class:"packimg cameraimg"%>
+			<h3 class="price">$140</h3>
+			<p class="byperson">By person</p>
+			<p class="infopack">
+				1 Night<br/>
+				+<br/>
+				Breackfast
+			</p>
+		</div>
+		<div class="packs packs-bot">
+			<%= image_tag "camera.png",class:"packimg cameraimg"%>
+			<h3 class="price">$395</h3>
+			<p class="byperson">By person</p>
+			<p class="infopack">
+				2 Nights<br/>
+				+<br/>
+				Breackfast<br/>
+				<p class="infopack extrainfo">
+					(5 Stars Hotel)
+				</p>
+			</p>
+		</div>
+	</section>
+<!-- Videos //-->
+	<section class="sections evensections">
+		<div id="video1" class="videoTop"></div>
+		<div id="video2" class="videoTop"></div>
+		<div id="video2" class="videoBot"></div>
+		<div id="video2" class="videoBot"></div>
+	</section>
+<!-- Information //-->
+	<section class="sections oddsections">
+
+	</section>
+</div>
