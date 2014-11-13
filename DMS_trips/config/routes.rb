@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'madrid' => 'staticpages#madrid'
 
+  get 'under_construction' => 'staticpages#under_construction'
+
   get 'summary' =>'flights#show'
 
   post 'summary' => 'flights#index'

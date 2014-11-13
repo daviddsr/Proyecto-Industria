@@ -12,4 +12,8 @@ class StaticpagesController < ApplicationController
 		render 'madrid', :layout=>'applicationmadrid'
 	end
 
+	def under_construction
+		render 'under_construction', :layout=>'applicationunder_construction'
+	end
+
 end

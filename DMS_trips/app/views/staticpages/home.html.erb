@@ -47,9 +47,11 @@
 
 
 
+<!-- ********************************************************************** -->
+
+<!-- OUR FORM TO SEARCH FLIGHTS -->
 
 
-	
 		<!-- <form action='/summary' method="GET" id="allForm" class="form"> -->
 		<%= form_tag summary_path, id: "allForm", class: "form", :method => 'get' do %>
 			<input id="roundTrip-btn" class="input round-btn" name="radiobutton" type="radio" checked="checked"><span>Round trip</span>
@@ -134,16 +136,36 @@
 		<div class="citiesFranceOne">
 			<ul class="ulOne">
 				<li class="cityLinks"><button id="butParis" class="addBut">Add</button><a href="/paris">Paris</a></li>
-				<li class="cityLinks"><button id="butTropez" class="addBut">Add</button><a href="">S.Tropez</a></li>
-				<li class="cityLinks"><button id="butLyon" class="addBut">Add</button><a href="">Lyon</a></li>
-				<li class="cityLinks"><button id="butJorobado" class="addBut">Add</button><a href="">Jorobado</a></li>
+				<li class="cityLinks"><button id="butTropez" class="addBut">Add</button><a href="/under_construction">S.Tropez</a></li>
+				<li class="cityLinks"><button id="butLyon" class="addBut">Add</button><a href="/under_construction">Lyon</a></li>
+				<li class="cityLinks"><button id="butJorobado" class="addBut">Add</button><a href="/under_construction">Jorobado</a></li>
 			</ul>
 		</div>
 		<div class="citiesFranceTwo">
 			<ul class="ulTwo">
-				<li class="cityLinks"><button id="butMarsella" class="addBut">Add</button><a href="">Marsella</a></li>
-				<li class="cityLinks"><button id="butNiza" class="addBut">Add</button><a href="">Niza</a></li>
-				<li class="cityLinks"><button id="butMasPijos" class="addBut">Add</button><a href="">Mas Pijos</a></li>
+				<li class="cityLinks"><button id="butMarsella" class="addBut">Add</button><a href="/under_construction">Marsella</a></li>
+				<li class="cityLinks"><button id="butNiza" class="addBut">Add</button><a href="/under_construction">Niza</a></li>
+				<li class="cityLinks"><button id="butMasPijos" class="addBut">Add</button><a href="/under_construction">Mas Pijos</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Spain -->
+	<div class="spainDiv">
+		<h3 class="spaintitle">Spain</h3>
+		<div class="citiesSpainOne">
+			<ul class="ulOne">
+				<li class="cityLinks"><button id="butMadrid" class="addBut">Add</button><a href="/madrid">Madrid</a></li>
+				<li class="cityLinks"><button id="butBarcelone" class="addBut">Add</button><a href="/under_construction">Barcelone</a></li>
+				<li class="cityLinks"><button id="butValence" class="addBut">Add</button><a href="/under_construction">Valence</a></li>
+				<li class="cityLinks"><button id="butAlicante" class="addBut">Add</button><a href="/under_construction">Alicante</a></li>
+			</ul>
+		</div>
+		<div class="citiesSpainTwo">
+			<ul class="ulTwo">
+				<li class="cityLinks"><button id="butSevilla" class="addBut">Add</button><a href="/under_construction">Sevilla</a></li>
+				<li class="cityLinks"><button id="butMalaga" class="addBut">Add</button><a href="/under_construction">Malaga</a></li>
+				<li class="cityLinks"><button id="butBilbao" class="addBut">Add</button><a href="/under_construction">Bilbao</a></li>
 			</ul>
 		</div>
 	</div>
