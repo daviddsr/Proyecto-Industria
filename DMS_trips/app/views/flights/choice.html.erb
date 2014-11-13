@@ -1,42 +1,5 @@
 <header>
 
-	<!-- Header -->
+	Hola
 
 </header>
-<section>
-
-	<%= form_tag ticket_path, id: "", class: "", :method => 'POST' do %>
-
-		<div class="origin_tag tag">
-		<%= label_tag(:name) %>
-		<%= email_field_tag (:origin), params[:origin], id: "origin-input" %>
-		</div>
-		<!-- <input id="origin-input" class="input inputText" type="text" placeholder="Origin"> -->
-				<div class="tag">
-				<%= label_tag(:from_date) %>
-				<%= date_select(:from_date, default: Date.today) %>
-				</div>
-				<!-- <input id="origin-date" class="input inputDate" type="date"><br> -->
-				<div class="destination_tag tag">
-				<%= label_tag(:destination) %>
-				<%= text_field_tag (:destination), params[:destination], id: "dest-input", class: "input inputText" %>
-				</div>
-				<!-- <input id="dest-input" class="input inputText" type="text" placeholder="Destination"> -->
-				<div class="tag">
-				<%= label_tag(:to_date) %>
-				<%= date_select(:to_date, default: Date.today) %>
-				</div>
-				<!-- <input id="dest-date" class="input inputDate" type="date"><br> -->
-			</div>
-			<!-- <button id="addDest-btn" class="input addDest-btn">Add destination</button><br>
-			<button id="remDest-btn" class="input remDest-btn">Remove destination</button><br> -->
-			<span>Passengers</span>
-			<select>
-					<option value="1" selected="selected">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-			</select>
-				<%= submit_tag "Search", id: "go-btn", :name => nil %>
-				<!-- <button action='submit' id="go-btn">GO!</button> -->
-		<% end %>
-</section>

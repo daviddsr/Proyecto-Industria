@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141108113601) do
+ActiveRecord::Schema.define(version: 20141111191730) do
 
   create_table "flights", force: true do |t|
     t.string   "origin"
@@ -29,6 +29,27 @@ ActiveRecord::Schema.define(version: 20141108113601) do
     t.string   "imagenverde"
     t.string   "imagenamarilla"
     t.string   "imagenrojo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "results", force: true do |t|
+    t.string   "origin_departure"
+    t.string   "origin_return"
+    t.string   "destination_departure"
+    t.string   "destination_return"
+    t.date     "from_date_departure"
+    t.date     "from_date_return"
+    t.date     "to_date_departure"
+    t.date     "to_date_return"
+    t.integer  "time_departure_departure"
+    t.integer  "time_departure_return"
+    t.integer  "time_arrive_departure"
+    t.integer  "time_arrive_return"
+    t.integer  "duration_departure"
+    t.integer  "duration_return"
+    t.string   "airline"
+    t.integer  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
   get 'summary/choice' => 'flights#choice'
 
+  post 'summary/choice' => 'flights#choice'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

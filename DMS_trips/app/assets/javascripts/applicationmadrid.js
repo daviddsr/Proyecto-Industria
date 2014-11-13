@@ -14,8 +14,6 @@
 //= require jquery_ujs
 // require turbolinks
 // require_tree .
-
-//=require calculateprice
-//=require onlyone
+//= require madrid
 
 

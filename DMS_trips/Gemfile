@@ -45,3 +45,6 @@ gem 'pry'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
 gem 'tzinfo'
+
+# Accounts
+gem 'devise'

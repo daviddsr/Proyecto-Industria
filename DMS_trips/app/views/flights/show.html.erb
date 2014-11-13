@@ -2,30 +2,6 @@
 		<%= image_tag "logo150.png" %>
 	</header>
 
-   <!--  <ul>
-		<% @flights.each do |flight| %>
-			<li>
-				<b>Flight: </b><%= flight.origin + " - " + flight.from_date.to_s + " - " + flight.time_departure.to_s + " - " + flight.destination + " - " + flight.time_arrive.to_s + " - " + flight.duracion.to_s + " - " + flight.aerolinea %> 
-			</li>
-			<% end %>
-		<% @flights_back.each do |flight| %>
-			<li>
-				<b>Flight: </b><%= flight.origin + " - " + flight.from_date.to_s + " - " + flight.time_departure.to_s + " - " + flight.destination + " - " + flight.time_arrive.to_s + " - " + flight.duracion.to_s + " - " + flight.aerolinea %> 
-			</li>
-		<% end %>
-
-	</ul> -->
-	
-
-
-	<!-- <section class="resumen">
-		<span class="span_origen">MADRID</span>
-		<span class="span_pais_origen">ESPAÑA</span>
-		<span class="span_destino">PARÍS</span>
-		<span class="span_pais_destino">FRANCIA</span>
-	</section> -->
-
-
 	<h1 class="title">Search results:</h1>
 	<ul class="ul" id="lista_resumen_vuelos">
 
@@ -33,8 +9,9 @@
 
 		<% @flights.each do |flight| %>
 			<% @flights_back.each do |flight_back| %>
-				<% @price << flight.price %>
+
 		<li>
+
 			<table class="table_vuelos">
 				<tr>
 					<th class="ciudad_origen display_inline_block">
@@ -63,6 +40,8 @@
 					</th>
 					<th class="aerolinea display_inline_block">
 						Price
+					</th>
+					<th>
 					</th>
 				</tr>
 
@@ -101,11 +80,15 @@
 							<%= flight.aerolinea %>
 					</td>
 					<td class="calculateprice display_inline_block">
-							<%= flight.price %>
+							$<%= flight.price %>
+					</td>
+					<td>
+						<% p_departure = flight.price %>
+						<% p_return = flight_back.price %>
+						$<%= p_departure + p_return %>
 					</td>
 				</tr>
 				<tr class="vuelo_resumen display_inline_block">
-					
 					<td class="ciudad_origen display_inline_block">
 						<%= flight_back.origin %>
 						
@@ -139,13 +122,20 @@
 							<%= flight_back.aerolinea %>
 					</td>
 					<td class="calculateprice display_inline_block">
-							<%= flight_back.price %>
+							$<%= flight_back.price %>
 					</td>
-				</tr>
-			</table>
+					<td>
+						<input type="submit" value="Book!">
+
+					</td>
+
+
+				  </tr>
+			  	</table>
+
 			</li>
-			<% end %>
-		<% end %>
+		  <%end%>
+		<%end%>
 	</ul>
 	
 	
