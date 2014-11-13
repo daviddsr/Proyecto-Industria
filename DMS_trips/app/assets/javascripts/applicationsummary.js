@@ -16,5 +16,6 @@
 // require_tree .
 
 //=require calculateprice
+//=require onlyone
 
 

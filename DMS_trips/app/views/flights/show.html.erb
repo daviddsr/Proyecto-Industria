@@ -11,7 +11,7 @@
 			<% @flights_back.each do |flight_back| %>
 
 		<li>
-		  <%= form_tag("/summary/choice", method: "POST") do %>
+
 			<table class="table_vuelos">
 				<tr>
 					<th class="ciudad_origen display_inline_block">
@@ -125,13 +125,14 @@
 							$<%= flight_back.price %>
 					</td>
 					<td>
-				  		<%= submit_tag("Book!") %>
+						<input type="submit" value="Book!">
+
 					</td>
 
 
 				  </tr>
 			  	</table>
-			  <%end%>
+
 			</li>
 		  <%end%>
 		<%end%>
