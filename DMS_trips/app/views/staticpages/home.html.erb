@@ -114,13 +114,34 @@
 		<%= image_tag "unitedkingdom34yellow.png", class: "unitedkingdomyellow display" %>
 		<%= image_tag "unitedkingdom34red.png", class: "unitedkingdomred display" %>
 		<%= image_tag "italia36default.png", class: "italia" %>
+		<%= image_tag "italia36green.png", class: "italiagreen display" %>
+		<%= image_tag "italia36yellow.png", class: "italiayellow display" %>
+		<%= image_tag "italia36red.png", class: "italiared display" %>
 		<%= image_tag "alemania25default.png", class: "alemania" %>
 		<%= image_tag "alemania25green.png", class: "alemaniagreen display" %>
 		<%= image_tag "alemania25yellow.png", class: "alemaniayellow display" %>
 		<%= image_tag "alemania25red.png", class: "alemaniared display" %>
-		<%= image_tag "belgica10default.png", class: "belgica" %>
 		<%= image_tag "holanda10default.png", class: "holanda" %>
-		<%= image_tag "austria17default.png", class: "austria" %>
+		<%= image_tag "holanda10green.png", class: "holandagreen display" %>
+		<%= image_tag "holanda10yellow.png", class: "holandayellow display" %>
+		<%= image_tag "holanda10red.png", class: "holandared display" %>
+		<%= image_tag "turquia44default.png", class: "turquia" %>
+		<%= image_tag "turquia44green.png", class: "turquiagreen display" %>
+		<%= image_tag "turquia44yellow.png", class: "turquiayellow display" %>
+		<%= image_tag "turquia44red.png", class: "turquiared display" %>
+		<%= image_tag "india90default.png", class: "india" %>
+		<%= image_tag "india90green.png", class: "indiagreen display" %>
+		<%= image_tag "india90yellow.png", class: "indiayellow display" %>
+		<%= image_tag "india90red.png", class: "indiared display" %>
+		<%= image_tag "china140default.png", class: "china" %>
+		<%= image_tag "china140green.png", class: "chinagreen display" %>
+		<%= image_tag "china140yellow.png", class: "chinayellow display" %>
+		<%= image_tag "china140red.png", class: "chinared display" %>
+		<%= image_tag "australia120default.png", class: "australia" %>
+		<%= image_tag "australia120green.png", class: "australiagreen display" %>
+		<%= image_tag "australia120yellow.png", class: "australiayellow display" %>
+		<%= image_tag "australia120red.png", class: "australiared display" %>
+
 	</section>
 </div>
 
@@ -149,7 +170,11 @@
 	</div>
 
 <!-- ******************************************************** -->
-
+<script>
+document.getElementById('checkbox_lowcost').addEventListener("change", getdata);
+document.getElementById('checkbox_mediumcost').addEventListener("change", getdata);
+document.getElementById('checkbox_highcost').addEventListener("change", getdata);
+    </script>
 <!--<footer>
 	<ol class="footerListOne">
 		<li class="hLinks">Follow us:</li>

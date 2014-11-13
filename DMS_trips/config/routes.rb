@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
 
   root 'staticpages#home'
+  
+  get 'filtros' => 'staticpages#json'
 
   get 'paris' => 'staticpages#paris'
 
