@@ -22,4 +22,8 @@ class StaticpagesController < ApplicationController
 		render 'under_construction', :layout=>'applicationunder_construction'
 	end
 
+	def print_error
+		render 'print_error'
+	end
+
 end

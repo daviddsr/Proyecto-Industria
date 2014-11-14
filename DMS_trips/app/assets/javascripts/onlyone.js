@@ -232,6 +232,15 @@ $(function(){
 
 			document.body.appendChild(ticket)
 
+			a = document.createElement('a')
+			a.setAttribute('href', '/summary/print_error')
+			a.setAttribute('style', 'position:relative;display:inline-block')
+			print = document.createElement('img')
+			print.src = 'assets/printer.png'
+			print.setAttribute('style', 'display:inline-block')
+			a.appendChild(print)
+			document.body.appendChild(a)
+
 		}
 
 		but.onclick = getIt

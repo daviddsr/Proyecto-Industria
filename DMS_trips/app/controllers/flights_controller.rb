@@ -49,7 +49,9 @@ class FlightsController < ApplicationController
 	# 	params.permit(:origin, :destination)
 	# end
 
-	
+
+
+
 end
 
 #(:all, :conditions => ['name LIKE ?', "%#{params[:origin]}%"], :conditions => ['name LIKE ?', "%#{params[:destination]}%"] )

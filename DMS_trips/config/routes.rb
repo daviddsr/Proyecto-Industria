@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 
   root 'staticpages#home'
-  
+
   get 'filtros' => 'staticpages#json'
 
   get 'paris' => 'staticpages#paris'
@@ -11,15 +11,18 @@ Rails.application.routes.draw do
 
   get 'under_construction' => 'staticpages#under_construction'
 
+  get 'summary/print_error' => 'staticpages#print_error'
+
   get 'summary' =>'flights#show'
 
   post 'summary' => 'flights#index'
-  
+
   get 'summary' => 'flights#index'
 
   get 'summary/choice' => 'flights#choice'
 
   post 'summary/choice' => 'flights#choice'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
