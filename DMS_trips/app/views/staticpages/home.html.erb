@@ -42,7 +42,7 @@
     	</ul>
 		<div class="menuDec"></div> 
 
-	
+		
 		
 
 
@@ -147,6 +147,14 @@
 		<%= image_tag "australia120green.png", class: "australiagreen display" %>
 		<%= image_tag "australia120yellow.png", class: "australiayellow display" %>
 		<%= image_tag "australia120red.png", class: "australiared display" %>
+		<%= image_tag "eeuu135default.png", class: "eeuu" %>
+		<%= image_tag "eeuu135green.png", class: "eeuugreen display" %>
+		<%= image_tag "eeuu135yellow.png", class: "eeuuyellow display" %>
+		<%= image_tag "eeuu135red.png", class: "eeuured display" %>
+		<%= image_tag "mexico75default.png", class: "mexico" %>
+		<%= image_tag "mexico75green.png", class: "mexicogreen display" %>
+		<%= image_tag "mexico75yellow.png", class: "mexicoyellow display" %>
+		<%= image_tag "mexico75red.png", class: "mexicored display" %>
 
 	</section>
 </div>
@@ -162,16 +170,17 @@
 			<ul class="ulOne">
 				<li class="cityLinks"><button id="butParis" class="addBut">Add</button><a href="/paris">Paris</a></li>
 				<li class="cityLinks"><button id="butTropez" class="addBut">Add</button><a href="/under_construction">S.Tropez</a></li>
-				<li class="cityLinks"><button id="butLyon" class="addBut">Add</button><a href="/under_construction">Lyon</a></li>
-				<li class="cityLinks"><button id="butJorobado" class="addBut">Add</button><a href="/under_construction">Jorobado</a></li>
+				
 			</ul>
 		</div>
 		<div class="citiesFranceTwo">
 			<ul class="ulTwo">
 				<li class="cityLinks"><button id="butMarsella" class="addBut">Add</button><a href="/under_construction">Marsella</a></li>
 				<li class="cityLinks"><button id="butNiza" class="addBut">Add</button><a href="/under_construction">Niza</a></li>
-				<li class="cityLinks"><button id="butMasPijos" class="addBut">Add</button><a href="/under_construction">Mas Pijos</a></li>
 			</ul>
+		</div>
+		<div class="offerflight flighthidden">
+					<%= "Fly to " + @flight_minor_price.destination + " for " + @flight_minor_price.price.to_s + " euros " %>
 		</div>
 	</div>
 
@@ -184,7 +193,7 @@
 				<li class="cityLinks"><button id="butBarcelone" class="addBut">Add</button><a href="/under_construction">Barcelone</a></li>
 				<li class="cityLinks"><button id="butValence" class="addBut">Add</button><a href="/under_construction">Valence</a></li>
 				<li class="cityLinks"><button id="butAlicante" class="addBut">Add</button><a href="/under_construction">Alicante</a></li>
-			</ul>
+							</ul>
 		</div>
 		<div class="citiesSpainTwo">
 			<ul class="ulTwo">
