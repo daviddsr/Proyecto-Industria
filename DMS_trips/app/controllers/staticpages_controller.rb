@@ -7,6 +7,7 @@ class StaticpagesController < ApplicationController
 	end
 	def home
 
+		@flight_minor_price = Flight.search_cheaper_flight
 		render 'home', :layout=>'applicationhome'
 	end
 

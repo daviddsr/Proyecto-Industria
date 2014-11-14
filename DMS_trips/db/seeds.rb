@@ -37,3 +37,7 @@ Flight.create origin: 'Madrid', destination: 'Nueva Delhi', price: 885, from_dat
 Flight.create origin: 'Madrid', destination: 'Pekin', price: 1125, from_date: Date.new(2014, 11, 24), time_departure: 1100, to_date: Date.new(2014, 11, 24), time_arrive: 1030, duracion: 18, aerolinea: 'DMS Trips', country: 'España', countrydestination: 'China', imagennaranja: 'china', imagenverde: 'chinagreen', imagenamarilla: 'chinayellow', imagenrojo: 'chinared'
 
 Flight.create origin: 'Madrid', destination: 'Melbourne', price: 1250, from_date: Date.new(2014, 11, 28), time_departure: 1000, to_date: Date.new(2014, 11, 28), time_arrive: 2400, duracion: 14, aerolinea: 'DMS Trips', country: 'España', countrydestination: 'Australia', imagennaranja: 'australia', imagenverde: 'australiagreen', imagenamarilla: 'australiayellow', imagenrojo: 'australiared'
+
+Flight.create origin:'Madrid', destination: 'Miami', price: 655, from_date: Date.new(2014, 11, 21), time_departure: 1200, to_date: Date.new(2014, 11, 21), time_arrive: 1800, duracion: 6, aerolinea: 'DMS Trips', country: 'España', countrydestination: 'EEUU', imagennaranja: 'eeuu', imagenverde: 'eeuugreen', imagenamarilla: 'eeuuyellow', imagenrojo: 'eeuured'
+
+Flight.create origin:'Madrid', destination: 'Mexico DF', price: 775, from_date: Date.new(2014, 11, 19), time_departure: 1000, to_date: Date.new(2014, 11, 19), time_arrive: 1900, duracion: 9, aerolinea: 'DMS Trips', country: 'España', countrydestination: 'México', imagennaranja: 'mexico', imagenverde: 'mexicogreen', imagenamarilla: 'mexicoyellow', imagenrojo: 'mexicored'

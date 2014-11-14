@@ -1,3 +1,5 @@
+/* Local Storage **************************************/
+
 // var go = document.getElementById("go-btn")
 
 // function locStorage (){
@@ -13,7 +15,7 @@
 //     window.localStorage.setItem("Destination2", myInput5);
 //     window.localStorage.setItem("Destination2-Date", myInput6);
 //    }
-//    /**************************************************************************/
+//    /*********************************/
 //    window.localStorage.setItem("Origin", myInput);
 //    window.localStorage.setItem("Origin-Date", myInput2);
 //    window.localStorage.setItem("Destination", myInput3);
@@ -23,6 +25,10 @@
 // go.onclick=function(){
 //    locStorage();
 // }
+
+/********************************************************/
+
+/* Add extra destination inputs *************************/
 
 var addDest = document.getElementById('addDest-btn')
 addDest.onclick = moreDest
@@ -48,6 +54,7 @@ function moreDest () {
   }
 };
 
+/* Remove extra destination inputs *********************/
 
 function removeDest(){
   var dest2 = document.getElementById('dest2-input')
@@ -57,6 +64,7 @@ function removeDest(){
   dest2Date.parentNode.removeChild(dest2Date);
 }
 
+/* Old functions to do the same*************************/
 
   /*  if (inputDestB.className == 'inputB')
        {inputDestB.classList.remove('inputB')
@@ -97,58 +105,65 @@ destB.onclick = moreMoreDest*/
    /*moreDest2();*/
    /*buttonLabel();
 }*/
-/* Add Origin To The Input With Add Button */
+
+/***************************************************************/
+
+/* Add Origin To The Input With Add Button *******************/
 
 var origin = document.getElementById('origin-input');
-
-/* Madrid */
-
-var mad = document.getElementById('butMadrid')
-var madridValue = mad.nextSibling.childNodes[0].textContent;
-
-mad.onclick = function(){
-    origin.value = madridValue;
-}
-
-/* Paris */
-var par = document.getElementById('butParis');
-var parisValue = par.nextSibling.childNodes[0].textContent;
-
-par.onclick = function(){
-    if (dest.value.length > 0){
-      var destTwo = document.getElementById('dest2-input');
-      destTwo.value = parisValue;
-    }else{
-      dest.value = parisValue;
-    }
-}
-
-/* Add Destination To The Input With Add Button */
-
 var dest = document.getElementById('dest-input');
-
-/* Paris */
-var par = document.getElementById('butParis');
-var parisValue = par.nextSibling.childNodes[0].textContent;
-
-par.onclick = function(){
-    if (dest.value.length > 0){
-      var destTwo = document.getElementById('dest2-input');
-      destTwo.value = parisValue;
-    }else{
-      dest.value = parisValue;
+var addButton = document.getElementsByClassName('addBut');
+// Keep the array of all the city buttons in a variable
+for (var i = 0; i < addButton.length; i++){
+  addButton[i].onclick = function (target){
+    var selectedCity = event.target
+    var cityValue = selectedCity.nextSibling.childNodes[0].textContent;
+    // Add Origin To The Input 
+    if(origin.value === ""){
+      origin.value = cityValue;
     }
+    // Add Destination To The Input
+    else if(dest.value === ""){
+      dest.value = cityValue;
+    // Add Extra Destination To The Input
+    }
+    else if(document.getElementsByClassName('dest2-input')){
+        var dest2 = document.getElementsByClassName('dest2-input');
+        for (var j = 0; j < addButton.length; j++){
+          if(dest2[j].value === ""){
+            dest2[j].value = cityValue;
+          }
+        }
+    }  
+  } 
 }
 
-/* Santrope */
-var san = document.getElementById('butTropez');
-var tropezValue = san.nextSibling.childNodes[0].textContent;
+/*****************************************************/
 
-san.onclick = function(){
-    if (dest.value.length > 0){
-      var destTwo = document.getElementById('dest2-input');
-      destTwo.value = tropezValue;
-    }else{
-      dest.value = tropezValue;
-    }
-}
+/* Old functions to add destinations ******************/
+
+// /* Paris */
+// var par = document.getElementById('butParis');
+// var parisValue = par.nextSibling.childNodes[0].textContent;
+
+// par.onclick = function(){
+//     if (dest.value.length > 0){
+//       var destTwo = document.getElementById('dest2-input');
+//       destTwo.value = parisValue;
+//     }else{
+//       dest.value = parisValue;
+//     }
+// }
+
+// /* Santrope */
+// var san = document.getElementById('butTropez');
+// var tropezValue = san.nextSibling.childNodes[0].textContent;
+
+// san.onclick = function(){
+//     if (dest.value.length > 0){
+//       var destTwo = document.getElementById('dest2-input');
+//       destTwo.value = tropezValue;
+//     }else{
+//       dest.value = tropezValue;
+//     }
+// }

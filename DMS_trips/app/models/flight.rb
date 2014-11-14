@@ -26,9 +26,16 @@ class Flight < ActiveRecord::Base
 		
 	end
 
+	def self.search_cheaper_flight
+	arrprice= []
+	flights_prices = Flight.where(origin: 'Madrid').where(countrydestination: 'Francia')
+	flights_prices.each do |flight|
+		arrprice << flight.price 
+	end
 	
+	 Flight.find_by_price(arrprice.min)
 
-
+	end
 
 
 	def searchflights

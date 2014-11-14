@@ -344,6 +344,48 @@
 	left: 76%;
 }
 
+.eeuu {
+	display: block;
+	position: absolute;
+	top: 14%;
+	left: 11%;
+}
+
+.eeuugreen {
+	display: block;
+	position: absolute;
+	top: 14%;
+	left: 11%;
+}
+
+.eeuuyellow {
+	display: block;
+	position: absolute;
+	top: 14%;
+	left: 11%;
+}
+
+.eeuured {
+	display: block;
+	position: absolute;
+	top: 14%;
+	left: 11%;
+}
+
+.mexico {
+	display: block;
+	position: absolute;
+	top: 31%;
+	left: 12%;
+}
+
+.mexicored {
+	display: block;
+	position: absolute;
+	top: 31%;
+	left: 12%;
+}
+
 .display {
 	display: none;
 }
