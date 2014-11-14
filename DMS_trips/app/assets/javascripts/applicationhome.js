@@ -18,3 +18,4 @@
 
 //= require funcion_filtros
 //= require radiobutton
+//= require index_storage_form

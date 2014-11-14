@@ -77,9 +77,13 @@
 				<%= date_select(:to_date, default: Date.today) %>
 				</div>
 				<!-- <input id="dest-date" class="input inputDate" type="date"><br> -->
+				<div>
+				<%= button_tag "Add Destination", id:"addDest-btn", class:"addDest-btn", type:"button"%>
+				<%= button_tag "Remove Destination", id:"remDest-btn", class:"remDest-btn", type:"button"%><br>
+				</div>	
 			</div>
-			<!-- <button id="addDest-btn" class="input addDest-btn">Add destination</button><br>
-			<button id="remDest-btn" class="input remDest-btn">Remove destination</button><br> -->
+			
+			<!-- <button id="remDest-btn" class="input remDest-btn">Remove destination</button><br> -->
 			<span>Passengers</span>
 			<select>
 					<option value="1" selected="selected">1</option>
@@ -223,3 +227,4 @@ document.getElementById('checkbox_highcost').addEventListener("change", getdata)
 	<%= image_tag "mckinsey.jpg", class: "imgFooter", style: "width:70px; height: 70px" %>
 </footer>
  -->
+ <%= javascript_include_tag :applicationhome -%>s
