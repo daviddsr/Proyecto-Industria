@@ -14,6 +14,9 @@ Rails.application.config.assets.precompile += %w( applicationparis.js )
 Rails.application.config.assets.precompile += %w( applicationmadrid.css )
 Rails.application.config.assets.precompile += %w( applicationmadrid.js )
 
+Rails.application.config.assets.precompile += %w( applicationunder_construction.css )
+Rails.application.config.assets.precompile += %w( applicationunder_construction.js )
+
 Rails.application.config.assets.precompile += %w( applicationhome.css )
 Rails.application.config.assets.precompile += %w( applicationhome.js )
 

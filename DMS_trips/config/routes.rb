@@ -2,10 +2,14 @@ Rails.application.routes.draw do
 
 
   root 'staticpages#home'
+  
+  get 'filtros' => 'staticpages#json'
 
   get 'paris' => 'staticpages#paris'
 
   get 'madrid' => 'staticpages#madrid'
+
+  get 'under_construction' => 'staticpages#under_construction'
 
   get 'summary' =>'flights#show'
 

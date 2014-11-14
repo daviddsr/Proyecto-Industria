@@ -62,15 +62,15 @@
     position: absolute;
     left: 1px;
     top: -5px;
-    background-color: orange;
     padding-top: 50px;
 }
 
 p   {
     text-align: center;
     font-size: 24px;
-    color: #CC6600;
+    color: blue;
     display: inline-block;
+
 }
 
 .textfilters {

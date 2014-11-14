@@ -47,9 +47,11 @@
 
 
 
+<!-- ********************************************************************** -->
+
+<!-- OUR FORM TO SEARCH FLIGHTS -->
 
 
-	
 		<!-- <form action='/summary' method="GET" id="allForm" class="form"> -->
 		<%= form_tag summary_path, id: "allForm", class: "form", :method => 'get' do %>
 			<input id="roundTrip-btn" class="input round-btn" name="radiobutton" type="radio" checked="checked"><span>Round trip</span>
@@ -75,9 +77,13 @@
 				<%= date_select(:to_date, default: Date.today) %>
 				</div>
 				<!-- <input id="dest-date" class="input inputDate" type="date"><br> -->
+				<div>
+				<%= button_tag "Add Destination", id:"addDest-btn", class:"addDest-btn", type:"button"%>
+				<%= button_tag "Remove Destination", id:"remDest-btn", class:"remDest-btn", type:"button"%><br>
+				</div>	
 			</div>
-			<!-- <button id="addDest-btn" class="input addDest-btn">Add destination</button><br>
-			<button id="remDest-btn" class="input remDest-btn">Remove destination</button><br> -->
+			
+			<!-- <button id="remDest-btn" class="input remDest-btn">Remove destination</button><br> -->
 			<span>Passengers</span>
 			<select>
 					<option value="1" selected="selected">1</option>
@@ -114,13 +120,34 @@
 		<%= image_tag "unitedkingdom34yellow.png", class: "unitedkingdomyellow display" %>
 		<%= image_tag "unitedkingdom34red.png", class: "unitedkingdomred display" %>
 		<%= image_tag "italia36default.png", class: "italia" %>
+		<%= image_tag "italia36green.png", class: "italiagreen display" %>
+		<%= image_tag "italia36yellow.png", class: "italiayellow display" %>
+		<%= image_tag "italia36red.png", class: "italiared display" %>
 		<%= image_tag "alemania25default.png", class: "alemania" %>
 		<%= image_tag "alemania25green.png", class: "alemaniagreen display" %>
 		<%= image_tag "alemania25yellow.png", class: "alemaniayellow display" %>
 		<%= image_tag "alemania25red.png", class: "alemaniared display" %>
-		<%= image_tag "belgica10default.png", class: "belgica" %>
 		<%= image_tag "holanda10default.png", class: "holanda" %>
-		<%= image_tag "austria17default.png", class: "austria" %>
+		<%= image_tag "holanda10green.png", class: "holandagreen display" %>
+		<%= image_tag "holanda10yellow.png", class: "holandayellow display" %>
+		<%= image_tag "holanda10red.png", class: "holandared display" %>
+		<%= image_tag "turquia44default.png", class: "turquia" %>
+		<%= image_tag "turquia44green.png", class: "turquiagreen display" %>
+		<%= image_tag "turquia44yellow.png", class: "turquiayellow display" %>
+		<%= image_tag "turquia44red.png", class: "turquiared display" %>
+		<%= image_tag "india90default.png", class: "india" %>
+		<%= image_tag "india90green.png", class: "indiagreen display" %>
+		<%= image_tag "india90yellow.png", class: "indiayellow display" %>
+		<%= image_tag "india90red.png", class: "indiared display" %>
+		<%= image_tag "china140default.png", class: "china" %>
+		<%= image_tag "china140green.png", class: "chinagreen display" %>
+		<%= image_tag "china140yellow.png", class: "chinayellow display" %>
+		<%= image_tag "china140red.png", class: "chinared display" %>
+		<%= image_tag "australia120default.png", class: "australia" %>
+		<%= image_tag "australia120green.png", class: "australiagreen display" %>
+		<%= image_tag "australia120yellow.png", class: "australiayellow display" %>
+		<%= image_tag "australia120red.png", class: "australiared display" %>
+
 	</section>
 </div>
 
@@ -134,22 +161,46 @@
 		<div class="citiesFranceOne">
 			<ul class="ulOne">
 				<li class="cityLinks"><button id="butParis" class="addBut">Add</button><a href="/paris">Paris</a></li>
-				<li class="cityLinks"><button id="butTropez" class="addBut">Add</button><a href="">S.Tropez</a></li>
-				<li class="cityLinks"><button id="butLyon" class="addBut">Add</button><a href="">Lyon</a></li>
-				<li class="cityLinks"><button id="butJorobado" class="addBut">Add</button><a href="">Jorobado</a></li>
+				<li class="cityLinks"><button id="butTropez" class="addBut">Add</button><a href="/under_construction">S.Tropez</a></li>
+				<li class="cityLinks"><button id="butLyon" class="addBut">Add</button><a href="/under_construction">Lyon</a></li>
+				<li class="cityLinks"><button id="butJorobado" class="addBut">Add</button><a href="/under_construction">Jorobado</a></li>
 			</ul>
 		</div>
 		<div class="citiesFranceTwo">
 			<ul class="ulTwo">
-				<li class="cityLinks"><button id="butMarsella" class="addBut">Add</button><a href="">Marsella</a></li>
-				<li class="cityLinks"><button id="butNiza" class="addBut">Add</button><a href="">Niza</a></li>
-				<li class="cityLinks"><button id="butMasPijos" class="addBut">Add</button><a href="">Mas Pijos</a></li>
+				<li class="cityLinks"><button id="butMarsella" class="addBut">Add</button><a href="/under_construction">Marsella</a></li>
+				<li class="cityLinks"><button id="butNiza" class="addBut">Add</button><a href="/under_construction">Niza</a></li>
+				<li class="cityLinks"><button id="butMasPijos" class="addBut">Add</button><a href="/under_construction">Mas Pijos</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Spain -->
+	<div class="spainDiv">
+		<h3 class="spaintitle">Spain</h3>
+		<div class="citiesSpainOne">
+			<ul class="ulOne">
+				<li class="cityLinks"><button id="butMadrid" class="addBut">Add</button><a href="/madrid">Madrid</a></li>
+				<li class="cityLinks"><button id="butBarcelone" class="addBut">Add</button><a href="/under_construction">Barcelone</a></li>
+				<li class="cityLinks"><button id="butValence" class="addBut">Add</button><a href="/under_construction">Valence</a></li>
+				<li class="cityLinks"><button id="butAlicante" class="addBut">Add</button><a href="/under_construction">Alicante</a></li>
+			</ul>
+		</div>
+		<div class="citiesSpainTwo">
+			<ul class="ulTwo">
+				<li class="cityLinks"><button id="butSevilla" class="addBut">Add</button><a href="/under_construction">Sevilla</a></li>
+				<li class="cityLinks"><button id="butMalaga" class="addBut">Add</button><a href="/under_construction">Malaga</a></li>
+				<li class="cityLinks"><button id="butBilbao" class="addBut">Add</button><a href="/under_construction">Bilbao</a></li>
 			</ul>
 		</div>
 	</div>
 
 <!-- ******************************************************** -->
-
+<script>
+document.getElementById('checkbox_lowcost').addEventListener("change", getdata);
+document.getElementById('checkbox_mediumcost').addEventListener("change", getdata);
+document.getElementById('checkbox_highcost').addEventListener("change", getdata);
+    </script>
 <!--<footer>
 	<ol class="footerListOne">
 		<li class="hLinks">Follow us:</li>
@@ -176,3 +227,4 @@
 	<%= image_tag "mckinsey.jpg", class: "imgFooter", style: "width:70px; height: 70px" %>
 </footer>
  -->
+ <%= javascript_include_tag :applicationhome -%>s

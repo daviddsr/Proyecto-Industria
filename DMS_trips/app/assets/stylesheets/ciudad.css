@@ -16,12 +16,19 @@ body 	{
 
 .header	{
 		height: 60px;
+		text-align: center;
 		}
 
-.toptitle 	{
-			position: relative;
-			top: 20px;
-			color: white;
+.header:first-child, .header:nth-child(2), .header:nth-child(3) {
+		display: inline;
+		color: white;
+		}
+
+.header:first-child{
+		}
+
+
+.toptitle	{
 			text-align: center;
 			}
 

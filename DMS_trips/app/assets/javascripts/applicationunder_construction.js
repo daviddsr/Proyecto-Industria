@@ -14,8 +14,4 @@
 //= require jquery_ujs
 // require turbolinks
 // require_tree .
-
-
-//= require funcion_filtros
-//= require radiobutton
-//= require index_storage_form
+//= require under_construction

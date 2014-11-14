@@ -1,28 +1,28 @@
-var go = document.getElementById("go-btn")
+// var go = document.getElementById("go-btn")
 
-function locStorage (){
-   var myInput = document.getElementById('origin-input').value;
-   var myInput2 = document.getElementById('origin-date').value;
-   var myInput3 = document.getElementById('dest-input').value;
-   var myInput4 = document.getElementById('dest-date').value;
-   /* Esto era necesario o no va el boton "go", ya que hay que saber si los inputs existen */
-   var inputs = document.getElementsByTagName('input')
-   if ($('#dest2-input').length > 0 && $('#dest2-date').length > 0){
-    var myInput5 = document.getElementById('dest2-input').value;
-    var myInput6 = document.getElementById('dest2-date').value;
-    window.localStorage.setItem("Destination2", myInput5);
-    window.localStorage.setItem("Destination2-Date", myInput6);
-   }
-   /**************************************************************************/
-   window.localStorage.setItem("Origin", myInput);
-   window.localStorage.setItem("Origin-Date", myInput2);
-   window.localStorage.setItem("Destination", myInput3);
-   window.localStorage.setItem("Destination-Date", myInput4);
-};
+// function locStorage (){
+//    var myInput = document.getElementById('origin-input').value;
+//    var myInput2 = document.getElementById('origin-date').value;
+//    var myInput3 = document.getElementById('dest-input').value;
+//    var myInput4 = document.getElementById('dest-date').value;
+//    /* Esto era necesario o no va el boton "go", ya que hay que saber si los inputs existen */
+//    var inputs = document.getElementsByTagName('input')
+//    if ($('#dest2-input').length > 0 && $('#dest2-date').length > 0){
+//     var myInput5 = document.getElementById('dest2-input').value;
+//     var myInput6 = document.getElementById('dest2-date').value;
+//     window.localStorage.setItem("Destination2", myInput5);
+//     window.localStorage.setItem("Destination2-Date", myInput6);
+//    }
+//    /**************************************************************************/
+//    window.localStorage.setItem("Origin", myInput);
+//    window.localStorage.setItem("Origin-Date", myInput2);
+//    window.localStorage.setItem("Destination", myInput3);
+//    window.localStorage.setItem("Destination-Date", myInput4);
+// };
 
-go.onclick=function(){
-   locStorage();
-}
+// go.onclick=function(){
+//    locStorage();
+// }
 
 var addDest = document.getElementById('addDest-btn')
 addDest.onclick = moreDest
@@ -97,6 +97,31 @@ destB.onclick = moreMoreDest*/
    /*moreDest2();*/
    /*buttonLabel();
 }*/
+/* Add Origin To The Input With Add Button */
+
+var origin = document.getElementById('origin-input');
+
+/* Madrid */
+
+var mad = document.getElementById('butMadrid')
+var madridValue = mad.nextSibling.childNodes[0].textContent;
+
+mad.onclick = function(){
+    origin.value = madridValue;
+}
+
+/* Paris */
+var par = document.getElementById('butParis');
+var parisValue = par.nextSibling.childNodes[0].textContent;
+
+par.onclick = function(){
+    if (dest.value.length > 0){
+      var destTwo = document.getElementById('dest2-input');
+      destTwo.value = parisValue;
+    }else{
+      dest.value = parisValue;
+    }
+}
 
 /* Add Destination To The Input With Add Button */
 
